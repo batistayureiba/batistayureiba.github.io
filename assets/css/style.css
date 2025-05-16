@@ -1601,10 +1601,12 @@ a[href^="http"] {
 .terminal-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
+  align-items: flex-start; /* estaba 'center', ahora alinea arriba */
+  margin-top: 2rem; /* reduce el espacio inicial */
+  margin-bottom: 2rem; /* espacio más corto abajo */
   font-family: 'Courier New', Courier, monospace;
 }
+
 
 .terminal-wrapper .intro {
   width: 90%;
