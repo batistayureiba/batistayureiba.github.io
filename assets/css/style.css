@@ -1596,3 +1596,65 @@ a[href^="http"] {
 
 
 
+
+/* === Terminal Section Styles (aislados) === */
+.terminal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-wrapper .intro {
+  width: 90%;
+  max-width: 800px;
+}
+
+.terminal-wrapper .terminal {
+  background-color: #1e1f26;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.terminal-wrapper .terminal-bar {
+  background-color: #2d2f3a;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-wrapper .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.terminal-wrapper .red { background-color: #ff5f56; }
+.terminal-wrapper .yellow { background-color: #ffbd2e; }
+.terminal-wrapper .green { background-color: #27c93f; }
+
+.terminal-wrapper .path {
+  color: #ccc;
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+
+.terminal-wrapper .code-block {
+  padding: 20px;
+  color: #eee;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.terminal-wrapper .comment   { color: #999; }
+.terminal-wrapper .selector  { color: #4fc1ff; }
+.terminal-wrapper .property  { color: #f2c94c; }
+.terminal-wrapper .value     { color: #ffffff; }
+.terminal-wrapper .function  { color: #56b6c2; }
+.terminal-wrapper .string    { color: #98c379; }
+
