@@ -1,34 +1,35 @@
-/* === Terminal Section Styles (aislados y centrados mejor) === */
-.terminal-wrapper {
+/* === Estilos originales (NO BORRAR) === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* alineación hacia arriba */
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  min-height: 60vh; /* asegura balance vertical en pantallas grandes */
-  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  height: 100vh;
 }
 
-.terminal-wrapper .intro {
+.intro {
   width: 90%;
   max-width: 800px;
 }
 
-.terminal-wrapper .terminal {
+.terminal {
   background-color: #1e1f26;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-.terminal-wrapper .terminal-bar {
+.terminal-bar {
   background-color: #2d2f3a;
   padding: 10px 15px;
   display: flex;
   align-items: center;
 }
 
-.terminal-wrapper .dot {
+.dot {
   height: 12px;
   width: 12px;
   border-radius: 50%;
@@ -36,17 +37,17 @@
   display: inline-block;
 }
 
-.terminal-wrapper .red { background-color: #ff5f56; }
-.terminal-wrapper .yellow { background-color: #ffbd2e; }
-.terminal-wrapper .green { background-color: #27c93f; }
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
 
-.terminal-wrapper .path {
+.path {
   color: #ccc;
   margin-left: auto;
   font-size: 0.9rem;
 }
 
-.terminal-wrapper .code-block {
+.code-block {
   padding: 20px;
   color: #eee;
   font-size: 16px;
@@ -54,9 +55,23 @@
   white-space: pre-wrap;
 }
 
-.terminal-wrapper .comment   { color: #999; }
-.terminal-wrapper .selector  { color: #4fc1ff; }
-.terminal-wrapper .property  { color: #f2c94c; }
-.terminal-wrapper .value     { color: #ffffff; }
-.terminal-wrapper .function  { color: #56b6c2; }
-.terminal-wrapper .string    { color: #98c379; }
+.comment   { color: #999; }
+.selector  { color: #4fc1ff; }
+.property  { color: #f2c94c; }
+.value     { color: #ffffff; }
+.function  { color: #56b6c2; }
+.string    { color: #98c379; }
+
+/* === Estilos adicionales para armonizar la sección terminal en GitHub Pages === */
+.terminal-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.terminal-wrapper .intro {
+  margin: 0 auto;
+  max-width: 800px;
+}
