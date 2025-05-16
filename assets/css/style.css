@@ -1644,6 +1644,7 @@ a[href^="http"] {
   color: #ccc;
   margin-left: auto;
   font-size: 0.9rem;
+  text-align: left;
 }
 
 .terminal-wrapper .code-block {
