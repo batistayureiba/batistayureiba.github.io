@@ -516,4 +516,8 @@ tr {
 }
 
 thead tr:nth-child(odd) {
-    background-color: var
+    background-color: var(--color-bg-main);
+}
+
+tbody tr:nth-child(even) {
+    background-
