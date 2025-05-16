@@ -1642,9 +1642,8 @@ a[href^="http"] {
 
 .terminal-wrapper .path {
   color: #ccc;
-  margin-left: auto;
-  font-size: 0.9rem;
-  text-align: left;
+  /*margin-left: auto;
+  font-size: 0.9rem;*/
 }
 
 .terminal-wrapper .code-block {
