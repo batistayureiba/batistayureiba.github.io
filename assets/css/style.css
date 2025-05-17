@@ -1657,10 +1657,11 @@ a[href^="http"] {
   overflow-x: auto;
 }
 
-.terminal-wrapper .code-block .related-group,
-.terminal-wrapper .related-group,
-.terminal-wrapper.related-group {
+.terminal-wrapper .related-group {
   background-color: transparent !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 
