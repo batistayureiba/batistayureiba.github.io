@@ -1656,6 +1656,7 @@ a[href^="http"] {
   white-space: pre-wrap;
   overflow-x: auto;
 }
+pre .code-block {background-color:none;}
 
 .terminal-wrapper .comment   { color: #999; }
 .terminal-wrapper .selector  { color: #4fc1ff; }
