@@ -1720,3 +1720,18 @@ a[href^="http"] {
 .terminal-wrapper .intro {
   background-color: transparent !important;
 }
+
+/* === CORRECCIÓN PARA BLOQUE TERMINAL (añadido al final del CSS original) === */
+.terminal-wrapper .related-group,
+.terminal-wrapper .intro {
+  all: unset;
+  display: block;
+}
+
+.terminal-wrapper .terminal {
+  background-color: #1e1f26 !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+}
