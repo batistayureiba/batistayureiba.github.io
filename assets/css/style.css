@@ -1657,9 +1657,12 @@ a[href^="http"] {
   overflow-x: auto;
 }
 
-.terminal-wrapper .related-group {
+.terminal-wrapper .code-block .related-group,
+.terminal-wrapper .related-group,
+.terminal-wrapper.related-group {
   background-color: transparent !important;
 }
+
 
 .terminal-wrapper .comment   { color: #999; }
 .terminal-wrapper .selector  { color: #4fc1ff; }
