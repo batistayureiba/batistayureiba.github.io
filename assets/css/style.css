@@ -1600,7 +1600,7 @@ a[href^="http"] {
 
 
 
-/* === Terminal Section Styles (aislados) === */
+/* Terminal Styles */
 .terminal-wrapper {
   display: flex;
   justify-content: center;
@@ -1626,6 +1626,7 @@ a[href^="http"] {
   padding: 10px 15px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .terminal-wrapper .dot {
@@ -1642,8 +1643,9 @@ a[href^="http"] {
 
 .terminal-wrapper .path {
   color: #ccc;
-  /*margin-left: auto;
-  font-size: 0.9rem;*/
+  font-size: 0.9rem;
+  margin-left: 10px;
+  word-break: break-all;
 }
 
 .terminal-wrapper .code-block {
@@ -1652,6 +1654,7 @@ a[href^="http"] {
   font-size: 16px;
   line-height: 1.6;
   white-space: pre-wrap;
+  overflow-x: auto;
 }
 
 .terminal-wrapper .comment   { color: #999; }
@@ -1660,3 +1663,59 @@ a[href^="http"] {
 .terminal-wrapper .value     { color: #ffffff; }
 .terminal-wrapper .function  { color: #56b6c2; }
 .terminal-wrapper .string    { color: #98c379; }
+
+@media screen and (max-width: 600px) {
+  .terminal-wrapper .code-block {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .terminal-wrapper .path {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .terminal-wrapper {
+    padding: 1rem;
+  }
+}
+
+
+.terminal-wrapper .line-numbers {
+  list-style: none;
+  padding: 20px 10px 20px 0;
+  margin: 0;
+  text-align: right;
+  color: #555;
+  user-select: none;
+}
+
+.terminal-wrapper .line-numbers li {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* === Números de línea para terminal === */
+.terminal-wrapper .line-numbers {
+  list-style: none;
+  padding: 20px 10px 20px 0;
+  margin: 0;
+  text-align: right;
+  color: #555;
+  user-select: none;
+}
+
+.terminal-wrapper .line-numbers li {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Responsividad adicional */
+@media screen and (max-width: 600px) {
+  .terminal-wrapper .line-numbers li {
+    font-size: 14px;
+  }
+}
+
