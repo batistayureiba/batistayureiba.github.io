@@ -1682,16 +1682,6 @@ a[href^="http"] {
   }
 }
 
-
-.terminal-wrapper .line-numbers {
-  list-style: none;
-  padding: 20px 10px 20px 0;
-  margin: 0;
-  text-align: right;
-  color: #555;
-  user-select: none;
-}
-
 .terminal-wrapper .line-numbers li {
   line-height: 1.6;
   font-size: 16px;
@@ -1700,10 +1690,10 @@ a[href^="http"] {
 /* === Números de línea para terminal === */
 .terminal-wrapper .line-numbers {
   list-style: none;
-  padding: 20px 10px 20px 0;
+  padding: 0px 0px 0px 0px;
   margin: 0;
   text-align: right;
-  color: #555;
+  color: #777;
   user-select: none;
 }
 
