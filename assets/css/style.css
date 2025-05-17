@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-
+/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,86 +6,79 @@
 }
 
 body {
-  font-family: 'Fira Code', monospace;
-  background-color: #0d0d0d; /* Podés cambiar si querés */
-  color: #00ff00;
-  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
   padding: 20px;
 }
 
-.terminal-wrapper {
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+
+main {
   max-width: 800px;
   margin: 0 auto;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: #0a0f14; /* color de fondo oscuro azul muy oscuro */
-  box-shadow: 0 0 20px #00ff00;
-  /* Quité el borde para que quede más parecido */
 }
 
-.terminal-bar {
-  display: flex;
-  align-items: center;
-  background-color: #222f3e; /* barra superior con azul oscuro */
-  padding: 5px 10px;
-  border-radius: 5px 5px 0 0;
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  font-weight: bold;
 }
 
-.dot {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  margin-right: 5px;
-  display: inline-block;
+p {
+  margin-bottom: 15px;
 }
 
-.red { background-color: #ff5f56; }
-.yellow { background-color: #ffbd2e; }
-.green { background-color: #27c93f; }
-
-.path {
-  margin-left: auto;
-  color: #8aa5b1;
-  font-size: 0.9em;
-  font-weight: 600;
+ul, ol {
+  margin: 10px 0 10px 20px;
 }
 
-.code-block {
-  background-color: #0a0f14; /* mismo color fondo que wrapper */
-  padding: 15px 20px 15px 30px; /* más padding izquierda para la línea */
-  border-radius: 0 0 5px 5px;
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
   overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-size: 1em;
-  position: relative;
-  border-left: 4px solid #27c93f; /* línea verde vertical a la izquierda */
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
-.comment {
-  color: #708090; /* gris azulado */
+/* 🎯 Estilo de bloque tipo terminal como en https://nuwit.ccs.neu.edu/ */
+pre code {
+  background-color: #1d273b;         /* azul oscuro */
+  color: #cbd5e0;                    /* gris claro para texto base */
   display: block;
-  margin-bottom: 10px;
+  padding: 1rem;
+  border-left: 4px solid #8fa1c7;    /* línea azul claro */
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  white-space: pre;
+  margin: 0;
+  border-radius: 4px;
 }
 
-.selector {
-  color: #00ffff;
-  display: block;
-  margin-top: 10px;
-}
-
-.property {
-  color: #ff79c6;
-}
-
-.value {
-  color: #f1fa8c;
-}
-
-.function {
-  color: #8be9fd;
-}
-
-.string {
-  color: #f1fa8c;
-}
+/* Opcional: resaltado semántico básico como en la página */
+pre code span.keyword     { color: #ffcb6b; font-weight: bold; } /* amarillo */
+pre code span.property    { color: #82aaff; }                    /* azul claro */
+pre code span.value       { color: #c3e88d; }                    /* verde suave */
+pre code span.string      { color: #c792ea; }                    /* morado */
+pre code span.comment     { color: #697098; font-style: italic; } /* gris azulado */
