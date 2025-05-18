@@ -55,8 +55,9 @@
     white-space: pre-wrap;
 }
 
-.terminal-wrapper pre {
-    background-color: transparent !important; /* No afecta otros elementos fuera de la terminal */
+/* Restaurar el estilo global del tema */
+pre:not(.code-block) {
+    background-color: var(--color-bg-main);
 }
 
 .terminal-wrapper .related-group {
