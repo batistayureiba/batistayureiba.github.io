@@ -1607,6 +1607,8 @@ a[href^="http"] {
   align-items: center;
   padding: 2rem 0;
   font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  z-index: 10;
 }
 
 .terminal-wrapper .intro {
