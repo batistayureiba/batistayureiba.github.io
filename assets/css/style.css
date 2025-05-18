@@ -48,11 +48,15 @@
 }
 
 .terminal-wrapper .code-block {
-    background-color: #1e1f26 !important; /* Fondo exclusivo para la terminal */
+    background-color: #1e1f26; /* Fondo exclusivo para la terminal */
     border-radius: 5px;
     padding: 20px;
     overflow-x: auto;
     white-space: pre-wrap;
+}
+
+.terminal-wrapper pre {
+    background-color: transparent !important; /* No afecta otros elementos fuera de la terminal */
 }
 
 .terminal-wrapper .related-group {
