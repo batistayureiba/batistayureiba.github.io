@@ -22,9 +22,11 @@ p {  font-size: 16px; }
 /* ======================== CODE EDITOR ========================== */
 
 .code-editor {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   margin-top: 30px;
-  width: 100%;
+  width: 800px;
   height: 440px;
   color: #ccc;
   background-color: #030f1e;
@@ -119,6 +121,43 @@ p {  font-size: 16px; }
 @media screen and (max-width: 400px) {
   .code-editor {
     margin-top: 50px;
+  }
+  #headerwrap .fa-chevron-down {
+    margin-top: 20px;
+  }
+}
+
+/* ========== PERSONALIZACIÓN PARA ANCHO RESPONSIVO COMO NUWIT ========== */
+.code-editor {
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Ajustes para mantener centrado en todas las resoluciones */
+@media screen and (max-width: 680px) {
+  .code-editor {
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .code-editor .top-bar .file-path {
+    font-size: 12px;
+  }
+  .no-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .code-editor {
+    margin-top: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   #headerwrap .fa-chevron-down {
     margin-top: 20px;
