@@ -2,122 +2,144 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
 
 
-/* === Terminal Encapsulada === */
 
-#terminal-wrapper {
-  all: initial; /* IMPORTANTE: anula herencias globales */
+.terminal-wrapper {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  -webkit-font-smoothing: antialiased;
+}
+
+.terminal-wrapper #headerwrap {
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  overflow: hidden;
-  box-sizing: border-box;
+
 }
 
-#terminal-wrapper *, #terminal-wrapper *::before, #terminal-wrapper *::after {
-  all: unset;
-  box-sizing: border-box;
-}
-
-/* === Contenedor terminal === */
-
-#terminal-wrapper .code-editor {
+.terminal-wrapper .code-editor {
   position: relative;
   width: 100%;
   max-width: 800px;
   height: 440px;
   color: #ccc;
   background-color: #030f1e;
+  text-align: left;
   border-radius: 8px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-/* Barra superior */
-
-#terminal-wrapper .top-bar {
+.terminal-wrapper .code-editor .top-bar {
   font-size: 14px;
+  color: #ccc;
+  text-align: center;
   height: 30px;
   background-color: #333;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.terminal-wrapper .top-bar ul.control {
+  list-style: none;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 8px 8px 0 0;
-  padding: 0 10px;
 }
 
-#terminal-wrapper .top-bar .control {
-  display: flex;
-  gap: 6px;
-}
-
-#terminal-wrapper .top-bar .button {
+.terminal-wrapper .top-bar ul.control .button {
+  display: inline-block;
   width: 12px;
   height: 12px;
-  border-radius: 50%;
-  display: inline-block;
+  border-radius: 100%;
+  margin-right: 5px;
 }
 
-#terminal-wrapper .top-bar .button:nth-child(1) { background: #df6963; }
-#terminal-wrapper .top-bar .button:nth-child(2) { background: #f5e18a; }
-#terminal-wrapper .top-bar .button:nth-child(3) { background: #97c38a; }
-
-#terminal-wrapper .file-path {
-  color: #ccc;
-  font-size: 12px;
+.terminal-wrapper .top-bar ul.control .button:first-of-type {
+  background-color: #df6963;
 }
 
-/* Números de línea */
+.terminal-wrapper .top-bar ul.control .button:nth-of-type(2) {
+  background-color: #f5e18a;
+}
 
-#terminal-wrapper .line-numbers {
+.terminal-wrapper .top-bar ul.control .button:last-of-type {
+  background-color: #97c38a;
+}
+
+.terminal-wrapper .file-path {
+  padding: 5px;
+}
+
+.terminal-wrapper ul.line-numbers {
   list-style: none;
   padding: 20px 15px 5px;
   text-align: right;
   color: #777;
   position: absolute;
   left: 0;
-  top: 30px;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  border-bottom-left-radius: 5px;
 }
 
-/* Código */
-
-#terminal-wrapper .code {
-  margin-top: 50px;
+.terminal-wrapper .code {
+  margin-top: 20px;
   margin-left: 70px;
   padding-right: 30px;
 }
 
-#terminal-wrapper .code p {
-  margin: 0 0 20px;
-  line-height: 1.5;
-  font-size: 16px;
+.terminal-wrapper .code p {
   color: #ccc;
-  word-break: break-word;
+  margin: 15px 0 24px;
+  line-height: 1.5;
 }
 
-#terminal-wrapper .code p.comment { color: #555; }
-#terminal-wrapper .code p.indent { margin-left: 25px; }
+.terminal-wrapper .code p.indent {
+  margin-left: 25px;
+}
 
-#terminal-wrapper .selector { color: #009897; }
-#terminal-wrapper .prop { color: goldenrod; }
+.terminal-wrapper .code p.comment {
+  color: #555;
+}
 
-/* Responsive */
+.terminal-wrapper .selector {
+  color: #009897;
+}
+
+.terminal-wrapper .prop {
+  color: goldenrod;
+}
+
+.terminal-wrapper .no-mobile {
+  display: block;
+}
 
 @media screen and (max-width: 680px) {
-  #terminal-wrapper .code-editor {
+  .terminal-wrapper .code-editor {
     height: 400px;
   }
-  #terminal-wrapper .file-path {
-    font-size: 10px;
+
+  .terminal-wrapper .file-path {
+    font-size: 12px;
   }
-  #terminal-wrapper .no-mobile {
+
+  .terminal-wrapper .no-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .terminal-wrapper .code-editor {
+    margin-top: 50px;
   }
 }
