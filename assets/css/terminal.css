@@ -2,64 +2,72 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
 
 /* ============================ terminal ============================= */
-p {  font-size: 16px; }
 
-/*#headerwrap {
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-color: transparent;
-  color: #333;
-  position: relative;
-  text-align: center;
+#headerwrap {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}*/
+  padding: 1rem;
+  box-sizing: border-box;
+  background: none;
+}
 
 /* ======================== CODE EDITOR ========================== */
 
 .code-editor {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   margin-top: 30px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 440px;
   color: #ccc;
   background-color: #030f1e;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace !important;
   text-align: left;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 7px 50px 10px rgba(170, 170, 170, 1);
   box-shadow: 1px 7px 50px 10px rgba(170, 170, 170, 1);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
 }
+
 .code-editor .top-bar {
   font-size: 14px;
   color: #ccc;
-  text-align: center;
   height: 30px;
   background-color: #333;
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
+
 .code-editor .top-bar ul.control {
   list-style: none;
-  padding: 5px 5px 5px 10px;
-  text-align: left;
-  position: absolute;
-  left: 0;
-  height: 30px;
-  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  align-items: center;
+  flex-shrink: 0;
 }
+
 .code-editor .top-bar ul.control .button {
   display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .code-editor .top-bar ul.control .button:first-of-type {
   background-color: #df6963;
@@ -70,9 +78,17 @@ p {  font-size: 16px; }
 .code-editor .top-bar ul.control .button:last-of-type {
   background-color: #97c38a;
 }
+
 .code-editor .top-bar .file-path {
-  padding: 5px;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: inherit;
 }
+
 .code-editor ul.line-numbers {
   list-style: none;
   padding: 20px 15px 5px;
@@ -84,61 +100,40 @@ p {  font-size: 16px; }
   line-height: 1.5;
   border-bottom-left-radius: 5px;
   margin: 0;
+  z-index: 0;
 }
+
 .code-editor .code {
   margin-top: 20px;
   margin-left: 70px;
   padding-right: 30px;
+  position: relative;
+  z-index: 1;
 }
+
 .code-editor .code p {
   color: #ccc;
   margin: 15px 0 24px;
   line-height: 1.5;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace !important;
 }
+
 .code-editor .code p.indent {
   margin-left: 25px;
 }
+
 .code-editor .code p.comment {
   color: #555;
 }
+
 .code-editor .selector {
   color: #009897;
 }
+
 .code-editor .prop {
   color: goldenrod;
 }
-@media screen and (max-width: 680px) {
-  .code-editor {
-    height: 400px;
-  }
-  .code-editor .top-bar .file-path {
-    font-size: 12px;
-  }
-  .no-mobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 400px) {
-  .code-editor {
-    margin-top: 50px;
-  }
-  #headerwrap .fa-chevron-down {
-    margin-top: 20px;
-  }
-}
 
-/* ========== PERSONALIZACIÓN PARA ANCHO RESPONSIVO COMO NUWIT ========== */
-.code-editor {
-  max-width: 800px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
-}
-
-/* Ajustes para mantener centrado en todas las resoluciones */
 @media screen and (max-width: 680px) {
   .code-editor {
     height: 400px;
