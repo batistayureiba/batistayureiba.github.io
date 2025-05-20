@@ -96,8 +96,8 @@ defaults:
     values:
       layout: Post
   - scope:
-      path: "_cd"
-      type: pages
+      path: ""
+      type: _cd
     values:
       layout: Post
       permalink: /cd/:title
