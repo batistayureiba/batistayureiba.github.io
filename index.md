@@ -1,60 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Navbar + Terminal</title>
-  <link href="{{ site.baseurl }}/assets/css/combined.css" rel="stylesheet" />
-  <script src="{{ site.baseurl }}/assets/js/z.js"></script>
-</head>
-<body>
+---
+layout: home
+title: "Yureiba Batista"
+---
 
-  <div class="page-wrapper">
-    </br>
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar__left">
-        <a class="site-title" href="/">Yureiba Batista</a>
-      </div>
-      <div class="navbar__toggle" onclick="toggleNavbar()">☰</div>
-      <div class="navbar__links" id="nav-links">
-        <a href="/Portfolio">Portafolio</a>
-        <a href="/about">Resumen</a>
-      </div>
-    </nav>
-  </br>
-    <!-- TERMINAL -->
-    <main class="terminal-section">
-      <div class="code-editor">
-        <div class="top-bar">
-          <ul class="control">
-            <li class="button"></li>
-            <li class="button"></li>
-            <li class="button"></li>
-          </ul>
-          <div class="file-path">~/Users/YBHOST/website</div>
-        </div>
-        <ul class="line-numbers">
-          <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>
-          <li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>
-          <li class="no-mobile">11</li><li class="no-mobile">12</li>
-          <li class="no-mobile">13</li><li class="no-mobile">14</li>
-          <li class="no-mobile">15</li>
-        </ul>
-        <div class="code">
-          <p class="comment">/* 👋 Hola, Soy Yureiba! */</p>
-          <p><span class="selector">#PERFIL</span> {</p>
-          <p class="indent"><span class="prop">role:</span> Ingeniero 🔹 Analista de Operaciones IT 🔹 Desarrollador Backend;</p>
-          <p class="indent hide-on-mobile"><span class="prop">location:</span> A un clic de distancia</p>
-          <p class="indent hide-on-mobile"><span class="prop">description:</span> Me dedico a optimizar procesos de negocio a tráves de soluciones basadas en datos;</p>
-          <p class="indent"><span class="prop">👉 email:</span> 'batistayureiba@gmail.com';</p>
-          <p>}</p>
-        </div>
-      </div>
-    </main>
-
-  </div>
-
-</body>
-</html>
+<!-- El contenido puede estar vacío o tener texto adicional -->
