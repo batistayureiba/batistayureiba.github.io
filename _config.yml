@@ -95,13 +95,7 @@ defaults:
       type: notes
     values:
       layout: Post
-  - scope:
-      path: ""
-      type: cd
-    values:
-      layout: Post
-      permalink: /cd/:title
-      content-type: files
+      content-type: notes
 
 
 
