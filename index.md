@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Navbar + Terminal</title>
   <link href="{{ site.baseurl }}/assets/css/combined.css" rel="stylesheet" />
-  <script src="z.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/z.js"></script>
 </head>
 <body>
 
