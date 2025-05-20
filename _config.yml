@@ -95,7 +95,14 @@ defaults:
       type: notes
     values:
       layout: Post
-      content-type: notes
+  - scope:
+      path: "_cd"
+      type: pages
+    values:
+      layout: Post
+      permalink: /cd/:title
+      content-type: files
+
 
 
 # Exclude from processing.
