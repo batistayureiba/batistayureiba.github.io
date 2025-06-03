@@ -61,21 +61,73 @@ Criterios para la seleccion de un sistema de almacenamiento de datos
 
 Características y capacidades:
 
-las consideraciones de compatibilidad e implementación, 
-la facilidad de uso y las habilidades, 
-las consideraciones de soporte 
-los costos. 
+1. las consideraciones de compatibilidad e implementación, 
+2. la facilidad de uso y las habilidades, 
+3. las consideraciones de soporte 
+4. los costos. 
 
-Una de las principales características o consideraciones del almacén de datos para una organización es la ubicación. Los almacenes de datos pueden existir de forma local, en dispositivos y en una o más ubicaciones en la nube. Para seleccionar una ubicación, las organizaciones deben equilibrar las múltiples demandas relacionadas con la ingesta, el almacenamiento y el acceso a los datos. Para algunas organizaciones, la protección de sus datos es su máxima prioridad y requieren una solución local obligatoria. Las empresas con múltiples ubicaciones que cumplen requisitos de privacidad de datos, como la CCPA o el GDPR, necesitan ubicaciones de almacenamiento de datos locales o geoespecíficas. Todas las organizaciones equilibran los requisitos de seguridad y privacidad de los datos con la necesidad de velocidad para ofrecer información empresarial fundamental que genere beneficios.
+1. las consideraciones de compatibilidad e implementación:
+Una de las principales características o consideraciones del almacén de datos para una organización es la ubicación. Los almacenes de datos pueden existir de forma local, en dispositivos y en una o más ubicaciones en la nube.
 
-Las organizaciones también querrán considerar las características y capacidades relacionadas con la arquitectura y la estructura. ¿Está la organización preparada para comprometerse con una arquitectura específica del proveedor?
+ Para seleccionar una ubicación, las organizaciones deben equilibrar las múltiples demandas relacionadas con la ingesta, el almacenamiento y el acceso a los datos. 
+ 
+ Para algunas organizaciones, la protección de sus datos es su máxima prioridad y requieren una solución local obligatoria. Las empresas con múltiples ubicaciones que cumplen requisitos de privacidad de datos, como la CCPA o el GDPR, necesitan ubicaciones de almacenamiento de datos locales o geoespecíficas. 
+ 
+ Todas las organizaciones equilibran los requisitos de seguridad y privacidad de los datos con la necesidad de velocidad para ofrecer información empresarial fundamental que genere beneficios.
 
-¿Necesita la organización una instalación multinube, como varios almacenes de datos en varias ubicaciones? ¿La solución se amplía para satisfacer las necesidades futuras previstas? ¿Qué tipos de datos se admiten y qué tipos de datos ingiere la organización? Si su organización analiza actualmente datos oscuros o planea implementar el uso de datos semiestructurados y no estructurados, querrá un sistema de almacenamiento de datos que admita estos tipos de datos. Además, una organización que procesa macrodatos necesita un sistema que admita datos por lotes y en streaming. Las capacidades que afectan a la facilidad de implementación incluyen las capacidades de gobierno, migración y transformación de datos. Una vez implementado el sistema de almacenamiento de datos, ¿con qué facilidad puede la organización optimizar y reoptimizar el rendimiento del sistema a medida que cambien las necesidades? Otra consideración es la administración de usuarios. Dado que cada vez más organizaciones implementan una política de seguridad de confianza cero debido a las costosas violaciones de datos, es obligatorio implementar programas que administren y validen a los usuarios del sistema. Además, las notificaciones y los informes son esenciales para que las organizaciones corrijan los errores y mitiguen los riesgos antes de que los problemas menores se conviertan en problemas mayores. Exploremos la facilidad de uso y las habilidades. ¿El personal de su organización tiene las habilidades necesarias para implementar la tecnología de un proveedor de almacenamiento de datos específico y, de no ser así, con qué rapidez y facilidad pueden adquirir esas habilidades? Las implementaciones de almacenes de datos grandes y complejas pueden requerir trabajo adicional por parte de su socio de implementación, por lo que su experiencia también es muy importante.
-Play video starting at :3:43 and follow transcript3:43
-Por último, ¿el personal de tecnología e ingeniería que diseña, implementa y administra las herramientas de consulta, elaboración de informes y visualización front-end tiene las habilidades necesarias para configurar su nuevo sistema rápidamente? A continuación, repasemos algunas consideraciones de soporte. El soporte es esencial y puede resultar frustrante y costoso si no se planifica bien. Puede darse cuenta de que, al utilizar un solo proveedor, puede recurrir a una fuente altamente responsable y responsable, lo que podría ahorrarle tiempo, dinero y frustraciones. También querrá comprobar la disponibilidad de los acuerdos de nivel de servicio en relación con el tiempo de actividad, la seguridad, la escalabilidad y otros problemas del sistema de almacenamiento de datos.
-Play video starting at :4:25 and follow transcript4:25
-Valide el horario y los canales de soporte del proveedor, por ejemplo, por teléfono, correo electrónico, chat o mensaje de texto. Por último, ¿ofrece el proveedor soluciones de autoservicio y una comunidad de usuarios rica y activa? Tras todo este análisis, es hora de evaluar y comparar los costes. Al calcular los costos de un sistema de almacenamiento de datos, tenga en cuenta algo más que los costos iniciales. Tenga en cuenta el costo total de propiedad, o TCO, de los sistemas en funcionamiento durante varios años. El TCO incluye: los costos de infraestructura, como los costos de computación y almacenamiento, ya sean locales o en la nube; las licencias de software o, en el caso de las ofertas en la nube, sus costos de suscripción o uso; los costos de migración e integración de datos para mover los datos
-Play video starting at :5:11 and follow transcript5:11
-al almacén y eliminarlos según sea necesario; los costos de administración del personal que administra los sistemas y los capacita; y los costos recurrentes de soporte y mantenimiento pagados al proveedor de almacenamiento o al socio de implementación. En este vídeo, aprendió que: las empresas evalúan los sistemas de almacenamiento de datos en función de las características y capacidades, la compatibilidad y la implementación, la facilidad de uso y las habilidades requeridas, la calidad y disponibilidad del soporte y múltiples consideraciones de costos. Es posible que una organización necesite una instalación local tradicional para cumplir con los requisitos de seguridad y privacidad de los datos. Los sitios de nube pública ofrecen a las organizaciones los beneficios de las economías de escala, incluida una potente potencia de procesamiento y un almacenamiento escalable, lo que se traduce en opciones flexibles de precio en función del rendimiento. Además, al seleccionar un sistema de almacenamiento de datos, tenga en cuenta en sus cálculos el costo total de propiedad, incluidos los costos de infraestructura, procesamiento y almacenamiento, migración de datos, administración y mantenimiento de datos.
-Data Marts, Data Lakes, DataWarehouse, Data Lake House
+Data Marts 
+
+Un data mart es una parte aislada del almacén de datos empresarial más grande que está diseñado específicamente para servir a una función empresarial, un propósito o una comunidad de usuarios en particular. Por ejemplo, los departamentos de ventas y finanzas de una empresa pueden tener acceso a mercados de datos específicos que proporcionan los datos necesarios para sus informes y proyecciones de ventas trimestrales.
+
+La estructura típica de un data mart es una base de datos relacional con una estrella o, más a menudo, un esquema de copo de nieve, lo que significa que contiene una tabla de datos central que consiste en las métricas empresariales relevantes para un proceso empresarial, que está rodeada por una jerarquía relacionada de tablas de dimensiones que proporcionan contexto para los hechos. 
+
+Veamos algunas diferencias típicas entre tres tipos de repositorios de datos: data marts, bases de datos transaccionales y data warehouses, empezando por los data marts y bases de datos. 
+
+Tanto los data marts como los almacenes de datos son sistemas de procesamiento analítico en línea (OLAP) optimizados para consultas y operaciones de lectura intensiva, mientras que las bases de datos transaccionales son sistemas de procesamiento de transacciones en línea (OLTP) que están optimizados para consultas y aplicaciones de escritura intensiva.
+
+
+Los data marts utilizan bases de datos transaccionales o almacenes de datos como fuentes de datos, mientras que en las bases de datos transaccionales, las aplicaciones operativas, como los sistemas de puntos de venta, sirven como fuentes de datos.
+
+Un data mart almacena datos validados, transformados y limpiados, mientras que una base de datos tendrá datos sin procesar que aún no se han limpiado. Los data marts acumulan datos históricos que se pueden utilizar para el análisis de tendencias, mientras que las bases de datos transaccionales no siempre almacenan datos antiguos. 
+
+Un data mart es muy parecido a un almacén de datos, excepto que tiene un alcance táctico más reducido. Los almacenes de datos respaldan en general los requisitos estratégicos de la empresa. Los data marts son ágiles y rápidos en comparación con los almacenes de datos, que pueden ser muy grandes y, por lo tanto, más lentos.
+
+Existen tres tipos básicos de data marts: dependientes, independientes e híbridos. La diferencia entre estos tres tipos de data marts depende de su relación con el almacén de datos y las fuentes utilizadas para suministrar los datos a cada uno de ellos. 
+
+Los data marts dependientes extraen datos del almacén de datos empresarial, mientras que los data marts independientes eluden el almacén de datos y se crean directamente a partir de fuentes, que pueden incluir sistemas operativos internos o datos externos de proveedores u otras fuentes ajenas a la empresa.
+Los data marts híbridos solo dependen parcialmente del almacén de datos empresarial. Combinan las entradas de los almacenes de datos con los datos de los sistemas operativos y otros sistemas externos al almacén.
+
+Los data marts dependientes ofrecen capacidades analíticas dentro de un área restringida del almacén de datos empresarial. Por lo tanto, heredan la seguridad que viene con el almacén de datos empresarial. Y dado que los data marts dependientes extraen los datos directamente del almacén de datos, donde los datos ya se han limpiado y transformado, suelen tener canalizaciones de datos más sencillas que los data marts independientes.
+
+Los data marts independientes se diferencian de los data marts dependientes porque requieren canalizaciones personalizadas de extracción, transformación y carga de datos para llevar a cabo los procesos de transformación e integración de los datos de origen, ya que provienen directamente de sistemas operativos y fuentes externas, y los data marts independientes también pueden requerir medidas de seguridad independientes. 
+
+Data Lakes 
+Un lago de datos es un repositorio de almacenamiento que puede almacenar grandes cantidades de datos estructurados, semiestructurados y no estructurados en su formato nativo, clasificados y etiquetados con metadatos.
+
+Mientras que un almacén de datos almacena los datos procesados para una necesidad específica, un lago de datos es un conjunto de datos sin procesar en el que cada elemento de datos recibe un identificador único y se etiqueta con metatags para su uso posterior. Optaría por un lago de datos si genera grandes cantidades de datos de forma continua o si tiene acceso a ellas, pero no quiere limitarse a casos de uso específicos o predefinidos.
+
+Un lago de datos es un repositorio de datos que puede almacenar una gran cantidad de datos estructurados, semiestructurados y no estructurados en su formato nativo. No es necesario definir la estructura y el esquema de los datos antes de cargarlos en el lago de datos. Ni siquiera necesita conocer todos los casos de uso para los que analizará los datos. Un lago de datos existe como un repositorio de datos sin procesar, directamente desde la fuente, para transformarlos en función del caso de uso para el que se deban analizar, lo que no significa que un lago de datos sea un lugar al que se puedan descargar datos sin control.
+
+Algunos de los proveedores que ofrecen tecnologías, plataformas y arquitecturas de referencia para los lagos de datos son: Amazon Cloudera, Google, IBM Informatica, Microsoft Oracle SAS, Snowflake, Teradata y Zaloni. 
+Data LakeHouse
+
+Es una arquitectura de datos que combina las fortalezas de un data lake y un data warehouse. Permite almacenar datos de manera flexible y a bajo costo, al tiempo que ofrece funciones de gestión y análisis de datos estructurados. 
+
+En resumen, un data lakehouse:
+Almacena datos sin procesar (como un data lake), pero también datos estructurados (como un data warehouse) . 
+Ofrece flexibilidad para diversos tipos de datos: (estructurados, semiestructurados y no estructurados). 
+Facilita el análisis de datos, la inteligencia empresarial y el aprendizaje automático . 
+Reduce la necesidad de duplicar datos y procesos ETL . 
+Permite una gestión más eficiente de los datos y una mejor gobernanza . 
+Beneficios de un data lakehouse:
+Unificar la gestión de datos:
+Permite a los equipos de datos acceder a los datos desde una única fuente, lo que reduce la complejidad y los costos. 
+Mejorar la gobernanza y la seguridad de los datos:
+Ofrece herramientas para gestionar el ciclo de vida de los datos, desde la recopilación hasta la eliminación, lo que garantiza que se utilicen de forma segura y rentable. 
+Acelerar los análisis y la toma de decisiones:
+Facilita la creación de modelos de aprendizaje automático y la generación de informes de inteligencia empresarial a partir de los mismos datos. 
+Reducir costos:
+El almacenamiento de datos sin procesar a bajo costo reduce la necesidad de procesos ETL y la duplicación de datos. 
+Escalabilidad:
+Permite escalar la capacidad de computación y almacenamiento independientemente, según las necesidades del negocio
 
