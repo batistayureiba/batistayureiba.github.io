@@ -20,8 +20,8 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 ###  Generacion e inserción de datos 
 ---
 
-{:#images}
-### Images
+{:#queries}
+### Consultas
 --- 
 texto
 
@@ -29,14 +29,16 @@ From Assets/Img
 
 ![Alt Text](/assets/img/1-how-to.png "Title Here")
 
-{:#queries}
-### Consultas
+{:#conclu}
+### Conclusiones
 ---
 consultas
 
 ```sql
-var s = "JavaScript syntax highlighting";
-alert(s);
+SELECT NULL AS IngresosXAnnio, SUBSTR(vtaFecha,0,5) AS annio, SUM(vtaTotal) AS total_ingreso
+FROM venta
+GROUP BY annio
+LIMIT 5;
 ```
  
 ```python
