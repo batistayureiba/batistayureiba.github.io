@@ -25,9 +25,9 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 --- 
 texto
 
-From Assets/Img
+Diagrama Entidad relación ElectroMarket
 
-![Alt Text](/assets/img/1-how-to.png "Title Here")
+![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/ElectroMarket_DER.png "DER - EletroMarket")
 
 {:#conclu}
 ### Conclusiones
