@@ -9,25 +9,26 @@ ElectroMarket es una cadena de tiendas de electrónica que busca optimizar su ge
 Se requiere construir una base de datos con información de ventas simuladas y, a través de análisis SQL, proporcionar información clave que ayude a ElectroMarket a tomar decisiones informadas.
 
 
-* TOC
+# Contenido
 {:toc}
 
 {:#desing}
 ### Diseño del esquema relacional 
+
+![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/ElectroMarket_DER.png "DER - EletroMarket")
+
+Diagrama Entidad relación ElectroMarket
+
 ---
 
 {:#load}
-###  Generacion e inserción de datos 
+###  Generación e inserción de datos 
 ---
 
 {:#queries}
 ### Consultas
 --- 
 texto
-
-Diagrama Entidad relación ElectroMarket
-
-![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/ElectroMarket_DER.png "DER - EletroMarket")
 
 {:#conclu}
 ### Conclusiones
