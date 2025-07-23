@@ -57,7 +57,7 @@ En este sentido me pemiti contruir indices explicitos que pueden mejorar el rend
 --- 
 Para efectuar el analisis de los datos con los datos de prueba, escribi 20 consultas, estas las pase a vistas para enmascarar datos y proteccion de datos sensibles.
 
-![Definición de Vistas](/assets/img/AVI/.png "Definición de vistas")
+![Definición de Vistas](/assets/img/AVI/DDL03.png "Definición de vistas")
 
 Finalmente este el total de objetos creados para el caso de estudio.
 
