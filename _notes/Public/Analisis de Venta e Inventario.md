@@ -55,16 +55,53 @@ En este sentido me pemiti contruir indices explicitos que pueden mejorar el rend
 {:#queries}
 ### Consultas
 --- 
+Para efectuar el analisis de los datos con los datos de prueba, escribi 20 consultas, estas las pase a vistas para enmascarar datos y proteccion de datos sensibles.
+
+![Definición de Vistas](/assets/img/AVI/.png "Definición de vistas")
+
+Finalmente este el total de objetos creados para el caso de estudio.
+
 ![Esquema completo de DDBB](/assets/img/AVI/DML06.png "Objetos de la Base de Datos")
 
 {:#conclu}
 ### Conclusiones
 ---
-conslussasasdsd
+Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
+
+1. Análisis de Rendimiento de Venta General 
+...* Ingreso por año
+...* Promedio de venta por transacción
+...* Total de transacciones
+...* Tendencia de Ventas por Mes
+
+2. Análisis de Rendimiento de Productos
+...* Productos por ingresos
+...* Top 10 Productos Más Vendidos por Cantidad de Unidades 
+...* Top 5 Categorías de Productos que Generan Más Ingresos 
+...* Productos con bajo rendimiento
+
+3. Análisis de Comportamiento del Cliente
+...* Total de clientes únicos
+...* Top 10 clientes por gasto promedio
+...* Recencia por cliente
+...* Pares de productos comprados juntos
+
+4. Análisis de Rendimiento de Tiendas
+...* Análisis de tiendas (por ingresos)
+...* Promedio de venta por tienda
+...* Ingreso total por región
+
+5. Análisis de Precios de Venta 
+...* Análisis de precio promedio por producto
+...* Desviación estándar aproximada de precios
+...* Margen promedio general
+...* Productos con margen negativo
+...* Comparación de precio de venta promedio vs costo
+
 
 {:#resources}
 ###  Recursos 
 ---
 Este proyecto esta elaborado en SQLite3 & DB Browser for SQLite.
 
-Puedes obtener el script del proyecto en el siguiente enlace. 
+Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](../blob/master/script.sql)
