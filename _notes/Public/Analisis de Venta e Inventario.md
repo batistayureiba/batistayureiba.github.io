@@ -67,7 +67,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
-     ![Esquema completo de DDBB](/assets/img/AVI/q_1.1.png "Ingreso por año")
+     ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
      
      Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
      En 2024, se generaron $1,087,901.24.
@@ -76,13 +76,26 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      Esto representa una disminución considerable. Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    - Promedio de venta por transacción
-     ![Esquema completo de DDBB](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
-   - Total de transacciones
-     ![Esquema completo de DDBB](/assets/img/AVI/q_1.3.png "Total de transacciones")
-   - Tendencia de Ventas por Mes
-     ![Esquema completo de DDBB](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
+     ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
+     
+     Este dato nos indica que, en promedio, cada transacción de venta genera $976.44 en ingresos.
+     Este es un valor importante porque si lo comparamos con el descenso en los ingresos generales (de la consulta anterior), siendo promedio alto por transacción puede
+     sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menos
+     ventas de alto valor que antes impulsaban el total.
 
-2. Análisis de Rendimiento de Productos
+   - Total de transacciones
+     ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
+     
+     Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
+     consulta venta promedio por transacción.
+
+     Sabemos que el ingreso total se redujo drásticamente de 2024 a 2025, y que la distibucion del total de trasacciones es muy desigual, lo que podria explicar el
+     decesenso en los ingresos, como concecuencia de la disminucion del volumen de ventas.
+
+   - Tendencia de Ventas por Mes
+     ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
+
+1. Análisis de Rendimiento de Productos
    - Productos por ingresos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos por ingresos")
    - Top 10 Productos Más Vendidos por Cantidad de Unidades
@@ -92,7 +105,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
    - Productos con bajo rendimiento
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos con bajo rendimiento")
 
-3. Análisis de Comportamiento del Cliente
+2. Análisis de Comportamiento del Cliente
    - Total de clientes únicos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Total de clientes únicos")
    - Top 10 clientes por gasto promedio
@@ -102,7 +115,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
    - Pares de productos comprados juntos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Pares de productos comprados juntos")
 
-4. Análisis de Rendimiento de Tiendas
+3. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de tiendas (por ingresos)")
    -  Promedio de venta por tienda
@@ -123,11 +136,14 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Comparación de precio de venta promedio vs costo")
 
 {:#conclu}
-### Conclusiones
+### Conclusiones y recomendaciones
 ---
 Destaque las habilidades de Ingeniero de Datos demostradas (modelado de datos, DDL, DML, SQL avanzado, análisis de datos, extracción de insights).
 
-1. Análisis de Rendimiento de Venta General 
+1. Análisis de Rendimiento de Venta General
+   Es un buen punto de referencia. Para determinar si este promedio es "bueno" o "malo", necesitaríamos compararlo con promedios históricos, con la competencia,
+   o con los objetivos de negocio. Sin embargo, por sí mismo, nos dice que cada vez que se cierra una venta, aporta casi mil dólares.
+   
 2. Análisis de Rendimiento de Productos
 3. Análisis de Comportamiento del Cliente
 4. Análisis de Rendimiento de Tiendas
