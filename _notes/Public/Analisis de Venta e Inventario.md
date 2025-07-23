@@ -34,7 +34,7 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Inserción de datos](/assets/img/AVI/DML00.png "Inserción de datos")
 
-![Inserción de datos](/assets/img/AVI/DDL02.png "Inserción de datos")
+![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
