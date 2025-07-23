@@ -69,10 +69,10 @@ Finalmente este el total de objetos creados para el caso de estudio.
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
 1. Análisis de Rendimiento de Venta General
-  1.1 Ingreso por año
-  1.2 Promedio de venta por transacción
-  1.3 Total de transacciones
-  1.4 Tendencia de Ventas por Mes
+   1.1 Ingreso por año
+   1.2 Promedio de venta por transacción
+   1.3 Total de transacciones
+   1.4 Tendencia de Ventas por Mes
 
 2. Análisis de Rendimiento de Productos
    - Productos por ingresos
