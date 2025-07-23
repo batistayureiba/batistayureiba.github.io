@@ -67,7 +67,7 @@ Finalmente este el total de objetos creados para el caso de estudio.
 ### Conclusiones
 ---
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
-
+```
 1. Análisis de Rendimiento de Venta General 
 ...* Ingreso por año
 ...* Promedio de venta por transacción
@@ -97,7 +97,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 ...* Margen promedio general
 ...* Productos con margen negativo
 ...* Comparación de precio de venta promedio vs costo
-
+```
 
 {:#resources}
 ###  Recursos 
