@@ -9,42 +9,52 @@ ElectroMarket es una cadena de tiendas de electrónica que busca optimizar su ge
 Se requiere construir una base de datos con información de ventas simuladas y, a través de análisis SQL, proporcionar información clave que ayude a ElectroMarket a tomar decisiones informadas.
 
 
-# Contenido
+* TOC
 {:toc}
 
 {:#desing}
 ### Diseño del esquema relacional 
+---
+
+Para poder abordar y simular el caso de estudio, se abordo el respectivo analisis de este a fin de identificar los elementos principales del negocio que necesitábamos registrar. Así, definí las entidades centrales: Productos, Categorías, Clientes, Tiendas, y, por supuesto, las Ventas con sus Detalles. En la siguiente imagen anexo el diagrama resultante:
 
 ![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/ElectroMarket_DER.png "DER - EletroMarket")
 
-Diagrama Entidad relación ElectroMarket
+Diagrama Entidad-Relación ElectroMarket
 
----
 
 {:#load}
 ###  Generación e inserción de datos 
 ---
+De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la base de datos: entidades, relaciones y restricciones. Una vez que la estructura estaba lista, el siguiente paso fue llenarla con algunos datos. Para esta fase inicial, usé datos de prueba, emplenado sentencias ISERTS directas y asi simular cómo se vería la información real para poder empezar a probar el sistema.
+
+Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
+
++ Ingrese más de 100 productos.
++ Los clasifiqué en al menos 7 categorías distintas.
++ Registré 20 tiendas de diferentes zonas.
++ Cargué los datos de 50 clientes.
+
+Para evaluar flujo de la operación, incluí más de 1000 transacciones de venta.
+
+En resumen, construí la base de datos con una estructura clara y la llené con datos controlados. Esto me permitió tener un entorno funcional para empezar a analizar y, al mismo tiempo, demuestra que la base de datos está pensada para crecer y soportar muchos más datos en el futuro. Es un diseño práctico y que puede escalarse.
+
+En este sentido me pemiti contruir indices explicitos que pueden mejorar el rendimiento de la base de datos cuando su volumen de datos sea mayor.
+
 
 {:#queries}
 ### Consultas
 --- 
-texto
+consultas
 
 {:#conclu}
 ### Conclusiones
 ---
-consultas
+conslussasasdsd
 
-```sql
-SELECT NULL AS IngresosXAnnio, SUBSTR(vtaFecha,0,5) AS annio, SUM(vtaTotal) AS total_ingreso
-FROM venta
-GROUP BY annio
-LIMIT 5;
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
+{:#resources}
+###  Recursos 
+---
+Este proyecto esta elaborado en SQLite3 & DB Browser for SQLite.
 
-License: CC-BY
+Puedes obtener el script del proyecto en el siguiente enlace. 
