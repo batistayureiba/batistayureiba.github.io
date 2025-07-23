@@ -69,35 +69,35 @@ Finalmente este el total de objetos creados para el caso de estudio.
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
 1. Análisis de Rendimiento de Venta General
-   1.1 Ingreso por año
-   1.2 Promedio de venta por transacción
-   1.3 Total de transacciones
-   1.4 Tendencia de Ventas por Mes
+   1. Ingreso por año
+   2. Promedio de venta por transacción
+   3. Total de transacciones
+   4. Tendencia de Ventas por Mes
 
-2. Análisis de Rendimiento de Productos
+3. Análisis de Rendimiento de Productos
    - Productos por ingresos
    - Top 10 Productos Más Vendidos por Cantidad de Unidades
    - Top 5 Categorías de Productos que Generan Más Ingresos
    - Productos con bajo rendimiento
 
-3. Análisis de Rendimiento de Productos
+4. Análisis de Rendimiento de Productos
 ...* Productos por ingresos
 ...* Top 10 Productos Más Vendidos por Cantidad de Unidades 
 ...* Top 5 Categorías de Productos que Generan Más Ingresos 
 ...* Productos con bajo rendimiento
 
-4. Análisis de Comportamiento del Cliente
+5. Análisis de Comportamiento del Cliente
 ...* Total de clientes únicos
 ...* Top 10 clientes por gasto promedio
 ...* Recencia por cliente
 ...* Pares de productos comprados juntos
 
-5. Análisis de Rendimiento de Tiendas
+6. Análisis de Rendimiento de Tiendas
 ...* Análisis de tiendas (por ingresos)
 ...* Promedio de venta por tienda
 ...* Ingreso total por región
 
-6. Análisis de Precios de Venta 
+7. Análisis de Precios de Venta 
 ...* Análisis de precio promedio por producto
 ...* Desviación estándar aproximada de precios
 ...* Margen promedio general
