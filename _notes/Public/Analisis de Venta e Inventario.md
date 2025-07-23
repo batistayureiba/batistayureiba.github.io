@@ -34,7 +34,7 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Inserción de datos](/assets/img/AVI/DML00.png "Inserción de datos")
 
-![[Inserción de datos](/assets/img/AVI/DDL02.png "Inserción de datos")
+![Inserción de datos](/assets/img/AVI/DDL02.png "Inserción de datos")
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
@@ -49,13 +49,13 @@ En resumen, construí la base de datos con una estructura clara y la llené con 
 
 En este sentido me pemiti contruir indices explicitos que pueden mejorar el rendimiento de la base de datos cuando su volumen de datos sea mayor.
 
-![[Creación de índices](/assets/img/AVI/DML05.png "Creación de índices")
+![Creación de índices](/assets/img/AVI/DML05.png "Creación de índices")
 
 
 {:#queries}
 ### Consultas
 --- 
-![[Esquema completo de DDBB](/assets/img/AVI/DML06.png "Objetos de la Base de Datos")
+![Esquema completo de DDBB](/assets/img/AVI/DML06.png "Objetos de la Base de Datos")
 
 {:#conclu}
 ### Conclusiones
