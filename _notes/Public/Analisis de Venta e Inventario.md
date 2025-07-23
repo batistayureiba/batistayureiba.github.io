@@ -67,13 +67,20 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Ingreso por año")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_1.1.png "Ingreso por año")
+     
+     Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
+     En 2024, se generaron $1,087,901.24.
+     Para 2025, los ingresos han caído a $440,220.75.
+
+     Esto representa una disminución considerable. Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
+     
    - Promedio de venta por transacción
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Promedio de venta por transacción")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
    - Total de transacciones
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Total de transacciones")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_1.3.png "Total de transacciones")
    - Tendencia de Ventas por Mes
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Tendencia de Ventas por Mes")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
 
 2. Análisis de Rendimiento de Productos
    - Productos por ingresos
