@@ -94,20 +94,88 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
    - Tendencia de Ventas por Mes
      ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
+     
+     Esta tabla es crucial, ya que nos permite ver las fluctuaciones mes a mes y confirmar la tendencia descendente general que notamos en la consulta de Ingreso por año.
 
-1. Análisis de Rendimiento de Productos
+     Comparando el primer trimestre observamos los que ingresos de 2024, fueron consistentemente más altos que en el2025. Aunque el mes de enero de 2025 fue fuerte,
+     la caída en febrero y marzo de 2025 fue muy pronunciada en comparacion con el año anterior.
+     
+     Para el segun trimestre de 2024 se muestra ingresos significativamente mayores que en 2025. evidenciando una clara tendencia descendente.
+
+     No obstante si analizamos en el segundo semestre de 2024 vs. 2025 muestra una recuperación notable, donde Julio es el segundo mejor mes de 2025 hasta ahora. Sin
+     embargo, no compensa la caída general del año.
+
+     La tendencia de las unidades vendidas y la cantidad de transacciones muestra una tendencia similar a la de los ingresos. y si bien observamos una señal de recupereción,
+     es fundamental analizar  si la tendencia ascendente de los ultimos meses se mantiene o se revierte.
+
+2. Análisis de Rendimiento de Productos
    - Productos por ingresos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos por ingresos")
+     
+     Esta lista nos revela los productos que más contribuyen a tus ingresos totales. Aquí destacamos que:
+
+     Los primeros cinco productos son que superan la barrera de los $100,000 en ingresos, incluyendo producto con mayor cantidades de unidades vendidas, lo que sugiere
+      que es son productos de alta demanda y precio accesible que se venden en volumen.
+
+     Existen productos de alto valor que, aunque se vendan en menores unidades, generan altos ingresos individuales; y productos de menor precio pero alto volumen
+
+     Finalmente tambien se evidencia una brecha considerable entre los primeros 5vproductos del vs el restode de la lista.
+     
    - Top 10 Productos Más Vendidos por Cantidad de Unidades
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 10 Productos Más Vendidos por Cantidad de Unidades")
+     
+     Esta consulta complementa la anterior al mostrar los productos que se venden en mayor volumen. Existe consistencia en los primeros seis productos en esta lista, son
+     exactamente los mismos que en el Top 10 por Ingresos, y en el mismo orden. Esto refuerza la importancia del dichos productos como "productos estrellas", ya que lideran
+     tanto en ingresos como en unidades vendidas.
+
+     La aparición de nuevos productos a partir del séptimo puesto, la lista cambia, sugiere que son artículos de menor precio unitario pero que aun así tienen un buen
+     volumen de venta.
+
    - Top 5 Categorías de Productos que Generan Más Ingresos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 5 Categorías de Productos que Generan Más Ingresos")
+     
+     La vista por categorías es fundamental para entender qué segmentos de tu negocio son los más rentables, en este sentido la categoría "Accesorios" domina completamente
+      la generación de ingresos, con $459,580, casi el doble que la segunda categoría. También lidera en unidades vendidas (1635). Esto sugiere que los productos de menor
+     recio unitario y alto volumen son un pilar de tu negocio.
+
+     Las categorias de "Televisores" y "Cámaras" son categorías de alto valor unitario que contribuyen significativamente al total. Las categorias "Línea Blanca" y "Audio"
+     en la parte baja del Top 5 están en un rango de ingresos similar, alrededor de los $180,000. Mientras que "Línea Blanca" tiene menos unidades
+     endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tiene más unidades vendidas (849), lo que sugiere un precio unitario promedio más bajo.
+
+
    - Productos con bajo rendimiento
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos con bajo rendimiento")
 
-2. Análisis de Comportamiento del Cliente
+     Esta lista es el reverso de las anteriores: nos muestra los productos que, a pesar de estar en tu inventario, tienen un rendimiento de ventas extremadamente bajo
+     menos de 50 unidades vendidas, y muchos con menos de 10).
+
+     Observamos que hay una amplia variedad de categorías, sino que abarcan una gran diversidad: Audio, Computadoras, Línea Blanca, Cámaras, Televisores, Accesorios y
+     Smartphones. Esto indica que el problema de bajo rendimiento no es exclusivo de un segmento, sino que hay productos rezagados en casi todas partes.
+
+     Existen productos de alto valor unitario como laptops, televisores de alta gama, entre otros con solo 1 unidad vendida aparecen en esta lista. Esto sugiere que,
+     aunque su precio sea alto, no están generando volumen de ventas, lo que podría indicar problemas de demanda, precio, competencia o visibilidad.
+
+     Considerando que hay productos con menos de 10 unidades vendidas en todo el período analizado (que abarca al menos 19 meses, de enero 2024 a julio 2025) es una
+     señal de inventario estancado. Estos artículos ocupan espacio, inmovilizan capital y pueden volverse obsoletos.
+
+     Pocos Accesorios de Bajo Rendimiento solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo
+      como el resto. Reforzando la posición general de la categoría de Accesorios.
+
+
+3. Análisis de Comportamiento del Cliente
    - Total de clientes únicos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Total de clientes únicos")
+
+     Existe un total de 50 clientes únicos registrados en tu base de datos. Revelando un alcance limitado, este número, en el contexto de ventas que superan el millón de
+     dólares en 2024 y casi medio millón en 2025 (según la Consulta 1.1), sugiere que tu negocio tiene una base de clientes relativamente pequeña, pero que realizan
+     compras de alto valor o con una frecuencia considerable.
+
+     Esto implica que la retención de clientes y la maximización del valor de cada cliente (CLV) deben ser prioridades estratégicas clave para ElectroMarket.
+     La pérdida de incluso unos pocos clientes podría tener un impacto significativo en los ingresos.
+
+     Este dato también resalta una clara oportunidad para la adquisición de nuevos clientes. Si bien los 50 clientes actuales generan ingresos sustanciales, expandir
+      la base de clientes podría ser vital para contrarrestar la tendencia descendente de ingresos observada y para el crecimiento a largo plazo.
+
    - Top 10 clientes por gasto promedio
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 10 clientes por gasto promedio")
    - Recencia por cliente
@@ -115,7 +183,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
    - Pares de productos comprados juntos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Pares de productos comprados juntos")
 
-3. Análisis de Rendimiento de Tiendas
+4. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de tiendas (por ingresos)")
    -  Promedio de venta por tienda
@@ -123,7 +191,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
    -  Ingreso total por región
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Ingreso total por región")
 
-6. Análisis de Precios de Venta 
+5. Análisis de Precios de Venta 
    -  Análisis de precio promedio por producto
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de precio promedio por producto")
    -  Desviación estándar aproximada de precios
