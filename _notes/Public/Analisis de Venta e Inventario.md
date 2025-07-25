@@ -10,12 +10,12 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 
 * TOC
+  
 {:toc}
 
 {:#desing}
 ### Diseño del esquema relacional 
 ---
-
 Para poder abordar y simular el caso de estudio, se abordo el respectivo analisis de este a fin de identificar los elementos principales del negocio que necesitábamos registrar. Así, definí las entidades centrales: Productos, Categorías, Clientes, Tiendas, y, por supuesto, las Ventas con sus Detalles. En la siguiente imagen anexo el diagrama resultante:
 
 ![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/AVI/ElectroMarket_DER.png "DER - EletroMarket")
@@ -29,8 +29,10 @@ Diagrama Entidad-Relación ElectroMarket
 De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la base de datos: entidades, relaciones y restricciones. Una vez que la estructura estaba lista, el siguiente paso fue llenarla con algunos datos. Para esta fase inicial, usé datos de prueba, emplenado sentencias ISERTS directas y asi simular cómo se vería la información real para poder empezar a probar el sistema.
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
+Definición de tablas
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
+Inserción de datos
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
@@ -46,6 +48,7 @@ En resumen, construí la base de datos con una estructura clara y la llené con 
 En este sentido me pemiti contruir indices explicitos que pueden mejorar el rendimiento de la base de datos cuando su volumen de datos sea mayor.
 
 ![Creación de índices](/assets/img/AVI/DML05.png "Creación de índices")
+Creación de índices
 
 
 {:#queries}
@@ -64,6 +67,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
      ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
+     Ingreso por año
      
      Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
      En 2024, se generaron $1,087,901.24.
@@ -73,6 +77,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      
    - Promedio de venta por transacción
      ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
+     Promedio de venta por transacción
      
      Este dato nos indica que, en promedio, cada transacción de venta genera $976.44 en ingresos.
      Este es un valor importante porque si lo comparamos con el descenso en los ingresos generales (de la consulta anterior), siendo promedio alto por transacción puede
@@ -81,6 +86,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
    - Total de transacciones
      ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
+     Total de transacciones
      
      Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
      consulta venta promedio por transacción.
@@ -90,6 +96,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
    - Tendencia de Ventas por Mes
      ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
+     Tendencia de Ventas por Mes
      
      Esta tabla es crucial, ya que nos permite ver las fluctuaciones mes a mes y confirmar la tendencia descendente general que notamos en la consulta de Ingreso por año.
 
@@ -106,7 +113,8 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 2. Análisis de Rendimiento de Productos
    - Productos por ingresos
-     ![Esquema completo de DDBB](/assets/img/AVI/q_2,1.png "Productos por ingresos")
+     ![Productos por ingresos](/assets/img/AVI/q_2,1.png "Productos por ingresos")
+     Productos por ingresos
      
      Esta lista nos revela los productos que más contribuyen a tus ingresos totales. Aquí destacamos que:
 
@@ -138,7 +146,6 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      en la parte baja del Top 5 están en un rango de ingresos similar, alrededor de los $180,000. Mientras que "Línea Blanca" tiene menos unidades
      endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tiene más unidades vendidas (849), lo que sugiere un precio unitario promedio más bajo.
 
-
    - Productos con bajo rendimiento
      ![Esquema completo de DDBB](/assets/img/AVI/q_2.4.png "Productos con bajo rendimiento")
 
@@ -156,7 +163,6 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
      Pocos Accesorios de Bajo Rendimiento solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo
       como el resto. Reforzando la posición general de la categoría de Accesorios.
-
 
 3. Análisis de Comportamiento del Cliente
    - Total de clientes únicos
@@ -192,14 +198,12 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
       Top 10 clientes por gasto promedio, han pasado un tiempo considerable sin comprar. Adicional existe disparidad en el valor monetario a pesar de la alta frecuencia,
      sugieriendo una mezcla de clientes que compran pocos artículos costosos versus clientes que compran muchos artículos.
 
-
    - Pares de productos comprados juntos
      ![Esquema completo de DDBB](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
 
      Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen
      una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen
       de datos, diversidad de inventario, y la naturaleza de los productos. 
-
 
 4. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
@@ -236,7 +240,6 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      La Región Caribe logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
      La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
      La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
-
 
 5. Análisis de Precios de Venta 
    -  Análisis de precio promedio por producto
@@ -277,8 +280,8 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      La vista de márgenes por producto, aunque crucial, actualmente ofrece una imagen preocupante y altamente cuestionable de la rentabilidad. La presencia universal de          márgenes negativos en todos los productos es insostenible y, en el contexto de datos de prueba, señala un error fundamental en la forma en que los precios de venta
     zsy/o los costos están siendo registrados o calculados.
 
-   Antes de cualquier análisis de optimización de márgenes o decisiones sobre productos, es absolutamente imprescindible corregir los datos subyacentes de precios de venta
-   (precio_promedio) y asegurar que los costo_promedio sean precisos. Sin esta corrección, cualquier conclusión extraída de esta vista carece de validez.
+     Antes de cualquier análisis de optimización de márgenes o decisiones sobre productos, es absolutamente imprescindible corregir los datos subyacentes de precios de venta
+     (precio_promedio) y asegurar que los costo_promedio sean precisos. Sin esta corrección, cualquier conclusión extraída de esta vista carece de validez.
 
 
 {:#conclu}
@@ -303,11 +306,12 @@ Bucaramanga se destaca por su alto promedio de ventas por transacción, lo que i
 Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro, así como una desviación estándar de precios inusualmente elevada. Esto indica un problema crítico y fundamental en la integridad, registro o definición de los datos de precios, lo cual invalida la fiabilidad de los análisis de rentabilidad y precios hasta que sea corregido.
 
 **Conclusión General del Proyecto**
-Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes (como el rendimiento por volumen vs. por valor), pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis
+Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes (como el rendimiento por volumen vs. por valor), pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis.
+
 
 {:#recommendations}
-###  Recomendaciones 
-
+###  Recomendaciones
+---
 **Recomendación Técnica**
 **Problema Central:** La falta de integridad en los datos de precios y costos (discrepancias entre precio maestro y promedio, márgenes negativos generalizados) invalida todos los análisis financieros y estratégicos.
 
@@ -316,7 +320,7 @@ Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio 
  * Definir y auditar métricas clave: Establecer definiciones claras para cada columna (Ingreso, veces_vendidas, costo_promedio) y auditar su correcta captura y cálculo.
  * Automatizar el monitoreo de datos: Configurar alertas y reportes para detectar anomalías en los precios y márgenes de forma proactiva.
 
- **Impacto Esperado: ** Asegurar la fiabilidad del 100% en los datos financieros, permitiendo análisis precisos de rentabilidad y una toma de decisiones estratégica informada y basada en evidencia real.
+ **Impacto Esperado:** Asegurar la fiabilidad del 100% en los datos financieros, permitiendo análisis precisos de rentabilidad y una toma de decisiones estratégica informada y basada en evidencia real.
 
  **Recomendación Ejecutiva**
  **Situación Actual:** Análisis revelan que todos los productos se venden con margen negativo, y el valor por transacción varía drásticamente entre tiendas y regiones, sin una estrategia de precios consistente.
