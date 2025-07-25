@@ -29,9 +29,11 @@ Diagrama Entidad-Relación ElectroMarket
 De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la base de datos: entidades, relaciones y restricciones. Una vez que la estructura estaba lista, el siguiente paso fue llenarla con algunos datos. Para esta fase inicial, usé datos de prueba, emplenado sentencias ISERTS directas y asi simular cómo se vería la información real para poder empezar a probar el sistema.
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
+
 Definición de tablas
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
+
 Inserción de datos
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
@@ -48,6 +50,7 @@ En resumen, construí la base de datos con una estructura clara y la llené con 
 En este sentido me pemiti contruir indices explicitos que pueden mejorar el rendimiento de la base de datos cuando su volumen de datos sea mayor.
 
 ![Creación de índices](/assets/img/AVI/DML05.png "Creación de índices")
+
 Creación de índices
 
 
@@ -64,9 +67,12 @@ Finalmente este el total de objetos creados para el caso de estudio.
 
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
+
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
+     
      ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
+     
      Ingreso por año
      
      Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
@@ -76,7 +82,9 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      Esto representa una disminución considerable. Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    - Promedio de venta por transacción
+     
      ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
+     
      Promedio de venta por transacción
      
      Este dato nos indica que, en promedio, cada transacción de venta genera $976.44 en ingresos.
@@ -85,7 +93,9 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      ventas de alto valor que antes impulsaban el total.
 
    - Total de transacciones
+     
      ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
+     
      Total de transacciones
      
      Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
@@ -95,7 +105,9 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      decesenso en los ingresos, como concecuencia de la disminucion del volumen de ventas.
 
    - Tendencia de Ventas por Mes
+     
      ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
+     
      Tendencia de Ventas por Mes
      
      Esta tabla es crucial, ya que nos permite ver las fluctuaciones mes a mes y confirmar la tendencia descendente general que notamos en la consulta de Ingreso por año.
@@ -113,7 +125,9 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 2. Análisis de Rendimiento de Productos
    - Productos por ingresos
+     
      ![Productos por ingresos](/assets/img/AVI/q_2,1.png "Productos por ingresos")
+     
      Productos por ingresos
      
      Esta lista nos revela los productos que más contribuyen a tus ingresos totales. Aquí destacamos que:
@@ -126,7 +140,10 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      Finalmente tambien se evidencia una brecha considerable entre los primeros 5vproductos del vs el restode de la lista.
      
    - Top 10 Productos Más Vendidos por Cantidad de Unidades
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_2.2.png "Top 10 Productos Más Vendidos por Cantidad de Unidades")
+  
+     Top 10 Productos Más Vendidos por Cantidad de Unidades
      
      Esta consulta complementa la anterior al mostrar los productos que se venden en mayor volumen. Existe consistencia en los primeros seis productos en esta lista, son
      exactamente los mismos que en el Top 10 por Ingresos, y en el mismo orden. Esto refuerza la importancia del dichos productos como "productos estrellas", ya que lideran
@@ -136,7 +153,10 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      volumen de venta.
 
    - Top 5 Categorías de Productos que Generan Más Ingresos
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_2.3.png "Top 5 Categorías de Productos que Generan Más Ingresos")
+  
+     Top 5 Categorías de Productos que Generan Más Ingresos
      
      La vista por categorías es fundamental para entender qué segmentos de tu negocio son los más rentables, en este sentido la categoría "Accesorios" domina completamente
       la generación de ingresos, con $459,580, casi el doble que la segunda categoría. También lidera en unidades vendidas (1635). Esto sugiere que los productos de menor
@@ -147,6 +167,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tiene más unidades vendidas (849), lo que sugiere un precio unitario promedio más bajo.
 
    - Productos con bajo rendimiento
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_2.4.png "Productos con bajo rendimiento")
 
      Esta lista es el reverso de las anteriores: nos muestra los productos que, a pesar de estar en tu inventario, tienen un rendimiento de ventas extremadamente bajo
@@ -165,7 +186,9 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
       como el resto. Reforzando la posición general de la categoría de Accesorios.
 
 3. Análisis de Comportamiento del Cliente
+   
    - Total de clientes únicos
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_3.1.png "Total de clientes únicos")
 
      Existe un total de 50 clientes únicos registrados en tu base de datos. Revelando un alcance limitado, este número, en el contexto de ventas que superan el millón de
@@ -179,6 +202,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
       la base de clientes podría ser vital para contrarrestar la tendencia descendente de ingresos observada y para el crecimiento a largo plazo.
 
    - Top 10 clientes por gasto promedio
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_3.2.png "Top 10 clientes por gasto promedio")
 
      Esta consulta nos proporciona una visión profunda de tus clientes más valiosos y su comportamiento de compra.
@@ -190,6 +214,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 
    - Recencia por cliente
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_3.3.png "Recencia por cliente")
 
      Esta tabla nos ofrece una visión completa del comportamiento de tus 50 clientes únicos, permitiéndonos segmentarlos y entender su valor potencial.
@@ -199,6 +224,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      sugieriendo una mezcla de clientes que compran pocos artículos costosos versus clientes que compran muchos artículos.
 
    - Pares de productos comprados juntos
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
 
      Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen
@@ -207,6 +233,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 4. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
 
      Esta tabla nos ofrece una visión clara del rendimiento de tus tiendas, destacando las que contribuyen más a los ingresos. Dominio de la Región Cafetera,
@@ -220,6 +247,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      bajo valor unitario, o que el precio promedio por transacción es menor que en otras tiendas.
 
    -  Promedio de venta por tienda
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_4.2.png "Promedio de venta por tienda")
    
      Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior, que mostraba el total de ingresos, esta nos da el valor promedio de cada venta.
@@ -233,6 +261,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      individuales.
 
    -  Ingreso total por región
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_4.3.png "Ingreso total por región")
    
      La Región Andina es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
@@ -241,8 +270,9 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
      La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
-5. Análisis de Precios de Venta 
+5. Análisis de Precios de Venta
    -  Análisis de precio promedio por producto
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
 
      Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro para casi todos los productos.
@@ -253,6 +283,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      la diferencia) o errores en el registro de ventas.
 
    -  Desviación estándar aproximada de precios
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_5.2.png "Desviación estándar aproximada de precios")
 
      Una desviación estándar promedio de $895.3, que es superior al precio promedio de venta ($721.44), indica que hay una dispersión extremadamente alta y consistente
@@ -260,6 +291,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      bruscamente.
 
    -  Margen promedio general
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_5.3.png "Margen promedio general")
 
      El margen promedio general de obtenido para el caso de estudio, no tiene valor analítico en este momento, debido a la probada inexactitud de los precios de venta en
@@ -267,6 +299,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      veces_vendidas, precio_promedio y precio_maestro). 
 
    -  Productos con margen negativo
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_5.4.png "Productos con margen negativo")
 
      La presencia de márgenes negativos en todos los productos es una señal de alerta masiva e insostenible en cualquier negocio real. Para este proyecto ficticio, esta
@@ -275,6 +308,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      la rentabilidad son nulas.
 
    -  Comparación de precio de venta promedio vs costo
+     
      ![Esquema completo de DDBB](/assets/img/AVI/q_5.5.png "Comparación de precio de venta promedio vs costo")
 
      La vista de márgenes por producto, aunque crucial, actualmente ofrece una imagen preocupante y altamente cuestionable de la rentabilidad. La presencia universal de          márgenes negativos en todos los productos es insostenible y, en el contexto de datos de prueba, señala un error fundamental en la forma en que los precios de venta
