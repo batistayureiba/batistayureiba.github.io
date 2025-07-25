@@ -30,10 +30,6 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
 
-![Definición de tablas](/assets/img/AVI/DDL01.png "Definición de tablas")
-
-![Inserción de datos](/assets/img/AVI/DML00.png "Inserción de datos")
-
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
@@ -110,7 +106,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 2. Análisis de Rendimiento de Productos
    - Productos por ingresos
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos por ingresos")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_2,1.png "Productos por ingresos")
      
      Esta lista nos revela los productos que más contribuyen a tus ingresos totales. Aquí destacamos que:
 
@@ -122,7 +118,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      Finalmente tambien se evidencia una brecha considerable entre los primeros 5vproductos del vs el restode de la lista.
      
    - Top 10 Productos Más Vendidos por Cantidad de Unidades
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 10 Productos Más Vendidos por Cantidad de Unidades")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_2.2.png "Top 10 Productos Más Vendidos por Cantidad de Unidades")
      
      Esta consulta complementa la anterior al mostrar los productos que se venden en mayor volumen. Existe consistencia en los primeros seis productos en esta lista, son
      exactamente los mismos que en el Top 10 por Ingresos, y en el mismo orden. Esto refuerza la importancia del dichos productos como "productos estrellas", ya que lideran
@@ -132,7 +128,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      volumen de venta.
 
    - Top 5 Categorías de Productos que Generan Más Ingresos
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 5 Categorías de Productos que Generan Más Ingresos")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_2.3.png "Top 5 Categorías de Productos que Generan Más Ingresos")
      
      La vista por categorías es fundamental para entender qué segmentos de tu negocio son los más rentables, en este sentido la categoría "Accesorios" domina completamente
       la generación de ingresos, con $459,580, casi el doble que la segunda categoría. También lidera en unidades vendidas (1635). Esto sugiere que los productos de menor
@@ -144,7 +140,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 
    - Productos con bajo rendimiento
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos con bajo rendimiento")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_2.4.png "Productos con bajo rendimiento")
 
      Esta lista es el reverso de las anteriores: nos muestra los productos que, a pesar de estar en tu inventario, tienen un rendimiento de ventas extremadamente bajo
      menos de 50 unidades vendidas, y muchos con menos de 10).
@@ -164,7 +160,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 3. Análisis de Comportamiento del Cliente
    - Total de clientes únicos
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Total de clientes únicos")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_3.1.png "Total de clientes únicos")
 
      Existe un total de 50 clientes únicos registrados en tu base de datos. Revelando un alcance limitado, este número, en el contexto de ventas que superan el millón de
      dólares en 2024 y casi medio millón en 2025 (según la Consulta 1.1), sugiere que tu negocio tiene una base de clientes relativamente pequeña, pero que realizan
@@ -177,7 +173,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
       la base de clientes podría ser vital para contrarrestar la tendencia descendente de ingresos observada y para el crecimiento a largo plazo.
 
    - Top 10 clientes por gasto promedio
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 10 clientes por gasto promedio")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_3.2.png "Top 10 clientes por gasto promedio")
 
      Esta consulta nos proporciona una visión profunda de tus clientes más valiosos y su comportamiento de compra.
 
@@ -188,7 +184,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 
    - Recencia por cliente
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Recencia por cliente")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_3.3.png "Recencia por cliente")
 
      Esta tabla nos ofrece una visión completa del comportamiento de tus 50 clientes únicos, permitiéndonos segmentarlos y entender su valor potencial.
 
@@ -198,7 +194,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 
    - Pares de productos comprados juntos
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Pares de productos comprados juntos")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
 
      Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen
      una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen
@@ -207,7 +203,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 4. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de tiendas (por ingresos)")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
 
      Esta tabla nos ofrece una visión clara del rendimiento de tus tiendas, destacando las que contribuyen más a los ingresos. Dominio de la Región Cafetera,
      las tiendas de la Región Cafetera dominan el ranking de ingresos.siendo ElectroMarket Pereira es la clara líder, con más de $314,000
@@ -220,7 +216,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      bajo valor unitario, o que el precio promedio por transacción es menor que en otras tiendas.
 
    -  Promedio de venta por tienda
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Promedio de venta por tienda")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_4.2.png "Promedio de venta por tienda")
    
      Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior, que mostraba el total de ingresos, esta nos da el valor promedio de cada venta.
      Esto explica las variaciones de ingresos entre tiendas que tienen un número similar de transacciones.
@@ -233,7 +229,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      individuales.
 
    -  Ingreso total por región
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Ingreso total por región")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_4.3.png "Ingreso total por región")
    
      La Región Andina es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
      La Región Cafetera es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
@@ -242,33 +238,33 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
 
-6. Análisis de Precios de Venta 
+5. Análisis de Precios de Venta 
    -  Análisis de precio promedio por producto
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de precio promedio por producto")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
 
-    Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro para casi todos los productos.
-    Se observan ejemplos dramáticos donde los productos se venden a precios promedio inconsistentes, a veces mucho más altos y otras veces más bajos que sus precios
-    maestros.
-    Una interpretacion viable es que exista un problema grave en la integridad o interpretación de los datos, incluyendo posibles errores en el registro original, en las
-    definiciones de las columnas, o menos probable, aunque posible, es que se trate de unidades de medida incorrectas, grandes promociones/descuentos (por la magnitud de
-    la diferencia) o errores en el registro de ventas.
+     Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro para casi todos los productos.
+     Se observan ejemplos dramáticos donde los productos se venden a precios promedio inconsistentes, a veces mucho más altos y otras veces más bajos que sus precios
+     maestros.
+     Una interpretacion viable es que exista un problema grave en la integridad o interpretación de los datos, incluyendo posibles errores en el registro original, en las
+     definiciones de las columnas, o menos probable, aunque posible, es que se trate de unidades de medida incorrectas, grandes promociones/descuentos (por la magnitud de
+     la diferencia) o errores en el registro de ventas.
 
    -  Desviación estándar aproximada de precios
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Desviación estándar aproximada de precios")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_5.2.png "Desviación estándar aproximada de precios")
 
      Una desviación estándar promedio de $895.3, que es superior al precio promedio de venta ($721.44), indica que hay una dispersión extremadamente alta y consistente
      en los precios a los que se venden tus productos. En otras palabras, tus productos no se venden a un precio uniforme o cercano a su promedio; más bien, fluctúan
      bruscamente.
 
    -  Margen promedio general
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Margen promedio general")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_5.3.png "Margen promedio general")
 
      El margen promedio general de obtenido para el caso de estudio, no tiene valor analítico en este momento, debido a la probada inexactitud de los precios de venta en
      los datos. No refleja la rentabilidad real. Para que tenga sentido, la prioridad absoluta debe ser la corrección y validación de los datos de precios (Ingreso,
      veces_vendidas, precio_promedio y precio_maestro). 
 
    -  Productos con margen negativo
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos con margen negativo")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_5.4.png "Productos con margen negativo")
 
      La presencia de márgenes negativos en todos los productos es una señal de alerta masiva e insostenible en cualquier negocio real. Para este proyecto ficticio, esta
      vista confirma la existencia de un problema fundamental en la calidad y la lógica de los datos de precios y costos. Antes de cualquier análisis de rentabilidad o
@@ -276,7 +272,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      la rentabilidad son nulas.
 
    -  Comparación de precio de venta promedio vs costo
-     ![Esquema completo de DDBB](/assets/img/AVI/.png "Comparación de precio de venta promedio vs costo")
+     ![Esquema completo de DDBB](/assets/img/AVI/q_5.5.png "Comparación de precio de venta promedio vs costo")
 
      La vista de márgenes por producto, aunque crucial, actualmente ofrece una imagen preocupante y altamente cuestionable de la rentabilidad. La presencia universal de          márgenes negativos en todos los productos es insostenible y, en el contexto de datos de prueba, señala un error fundamental en la forma en que los precios de venta
     zsy/o los costos están siendo registrados o calculados.
@@ -286,22 +282,59 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 
 {:#conclu}
-### Conclusiones y recomendaciones
+### Conclusiones
 ---
-Destaque las habilidades de Ingeniero de Datos demostradas (modelado de datos, DDL, DML, SQL avanzado, análisis de datos, extracción de insights).
+Este proyecto de análisis de ventas e inventario, aunque basado en datos de prueba, ha sido invaluable para identificar puntos clave en el rendimiento y, crucialmente, la integridad de los datos. A continuación, se presentan las conclusiones concisas por cada aspecto analizado:
 
 1. Análisis de Rendimiento de Venta General
+La empresa ficticia tiene un volumen considerable de ventas, pero el alto número de transacciones en algunas regiones no se traduce necesariamente en un alto gasto por cliente. Existe una clara dicotomía entre tiendas que priorizan el volumen y aquellas que se enfocan en el valor por transacción.
+
 2. Análisis de Rendimiento de Productos
+Todos los productos analizados muestran un margen promedio negativo, lo que indica que se están vendiendo consistentemente por debajo de su costo. Esto, si fuera real, sería financieramente insostenible y señala una necesidad urgente de revisar la estrategia de precios o los costos de adquisición.
+
 3. Análisis de Comportamiento del Cliente
+Dado que no se obtuvieron datos concluyentes del análisis específico de comportamiento del cliente, esta conclusión es una deducción basada en los datos de ventas por transacción.
+El comportamiento del cliente varía significativamente por ubicación: en Bucaramanga y la Región Caribe, los clientes realizan compras de mayor valor por visita, mientras que en la Región Cafetera y otras tiendas, el comportamiento se inclina hacia un alto volumen de transacciones con un menor gasto individual.
+
 4. Análisis de Rendimiento de Tiendas
-5. Análisis de Precios de Venta 
+Bucaramanga se destaca por su alto promedio de ventas por transacción, lo que indica eficiencia en el valor de cada venta. Pereira y Armenia lideran en volumen de transacciones y unidades vendidas. Por otro lado, Villavicencio, Centro Bogotá y Norte Medellín muestran promedios de venta por transacción muy bajos, señalando áreas con potencial para mejorar el valor de cada compra.
+
+5. Análisis de Precios de Venta
+Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro, así como una desviación estándar de precios inusualmente elevada. Esto indica un problema crítico y fundamental en la integridad, registro o definición de los datos de precios, lo cual invalida la fiabilidad de los análisis de rentabilidad y precios hasta que sea corregido.
+
+**Conclusión General del Proyecto**
+Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes (como el rendimiento por volumen vs. por valor), pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis
+
+{:#recommendations}
+###  Recomendaciones 
+
+**Recomendación Técnica**
+**Problema Central:** La falta de integridad en los datos de precios y costos (discrepancias entre precio maestro y promedio, márgenes negativos generalizados) invalida todos los análisis financieros y estratégicos.
+
+ **Acción Propuesta:**
+ * Implementar un robusto pipeline de calidad de datos: Desarrollar scripts (ej., en Python/Pandas) para validar, limpiar y transformar los datos de ventas, precios (precio_maestro, precio_promedio) y costos.
+ * Definir y auditar métricas clave: Establecer definiciones claras para cada columna (Ingreso, veces_vendidas, costo_promedio) y auditar su correcta captura y cálculo.
+ * Automatizar el monitoreo de datos: Configurar alertas y reportes para detectar anomalías en los precios y márgenes de forma proactiva.
+
+ **Impacto Esperado: ** Asegurar la fiabilidad del 100% en los datos financieros, permitiendo análisis precisos de rentabilidad y una toma de decisiones estratégica informada y basada en evidencia real.
+
+ **Recomendación Ejecutiva**
+ **Situación Actual:** Análisis revelan que todos los productos se venden con margen negativo, y el valor por transacción varía drásticamente entre tiendas y regiones, sin una estrategia de precios consistente.
+
+ **Acción Propuesta:**
+ * Priorizar la limpieza de datos: Es imprescindible una inversión inmediata en la calidad de los datos de ventas y costos para obtener una imagen real de la rentabilidad.
+ * Desarrollar una estrategia de precios unificada: Definir políticas claras de fijación de precios y descuentos que aseguren márgenes positivos y consistentes.
+ * Optimizar el rendimiento por tienda/región: Replicar el éxito de Bucaramanga y la Región Caribe (alto gasto por cliente) y la eficiencia de la Región Cafetera (alto volumen), mientras se reevalúa la viabilidad y el potencial de las tiendas de bajo rendimiento.
 
 
 {:#resources}
 ###  Recursos 
 ---
-Proporcione instrucciones claras sobre cómo alguien puede replicar tu trabajo (ej. "clonar el repo, ejecutar schema.sql, luego insert_data.py o insert_data.sql").
-
 Este proyecto esta elaborado en SQLite3 & DB Browser for SQLite.
-
 Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](../blob/master/script.sql)
+
+Encontraras la definicion de los objetos y la data utilizada.
+
+
+
+
