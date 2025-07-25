@@ -126,7 +126,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 2. Análisis de Rendimiento de Productos
    - Productos por ingresos
      
-     ![Productos por ingresos](/assets/img/AVI/q_2,1.png "Productos por ingresos")
+     ![Productos por ingresos](/assets/img/AVI/q_2.1.png "Productos por ingresos")
      
      Productos por ingresos
      
