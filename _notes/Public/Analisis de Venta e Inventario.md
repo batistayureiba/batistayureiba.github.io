@@ -178,30 +178,112 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
    - Top 10 clientes por gasto promedio
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Top 10 clientes por gasto promedio")
+
+     Esta consulta nos proporciona una visión profunda de tus clientes más valiosos y su comportamiento de compra.
+
+     Dado que base de clientes es pequeña, estos 10 representan el 20% de tu clientela total.Todos estos clientes muestran una frecuencia de compra excepcionalmente alta,
+     con la mayoría realizando entre 30 y 33 transacciones. Esto que no solo compran productos de alto valor, sino que también son clientes muy recurrentes.
+     Esta alta frecuencia puede ser indicativa de compras de accesorios o productos de reposición frecuente. En contraste, un grupo significativo de los top clientes
+     no han realizado compras desde Diciembre de 2024. Esto es una señal de alerta que merece atención.
+
+
    - Recencia por cliente
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Recencia por cliente")
+
+     Esta tabla nos ofrece una visión completa del comportamiento de tus 50 clientes únicos, permitiéndonos segmentarlos y entender su valor potencial.
+
+     Existen clientes con recencia alta, sin embargo debe gestionarse la recencia, ya que muchos de los clientes, incluyendo algunos del top gastadores de la consulta
+      Top 10 clientes por gasto promedio, han pasado un tiempo considerable sin comprar. Adicional existe disparidad en el valor monetario a pesar de la alta frecuencia,
+     sugieriendo una mezcla de clientes que compran pocos artículos costosos versus clientes que compran muchos artículos.
+
+
    - Pares de productos comprados juntos
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Pares de productos comprados juntos")
+
+     Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen
+     una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen
+      de datos, diversidad de inventario, y la naturaleza de los productos. 
+
 
 4. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de tiendas (por ingresos)")
+
+     Esta tabla nos ofrece una visión clara del rendimiento de tus tiendas, destacando las que contribuyen más a los ingresos. Dominio de la Región Cafetera,
+     las tiendas de la Región Cafetera dominan el ranking de ingresos.siendo ElectroMarket Pereira es la clara líder, con más de $314,000
+     en ingresos y el mayor volumen de unidades vendidas (1399), además de ser una de las que más transacciones registra (161).
+
+     Las tiendas de Rango Medio como ElectroMarket Cartagena y ElectroMarket Villavicencio muestra un buen volumen de unidades vendidas, sugiriendo un buen flujo
+     de clientes.
+  
+     Se destacan tiendas con alto volumen de unidades vendidas y transacciones, pero con ingresos relativamente bajos. Esto podría indicar que vende muchos productos de
+     bajo valor unitario, o que el precio promedio por transacción es menor que en otras tiendas.
+
    -  Promedio de venta por tienda
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Promedio de venta por tienda")
+   
+     Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior, que mostraba el total de ingresos, esta nos da el valor promedio de cada venta.
+     Esto explica las variaciones de ingresos entre tiendas que tienen un número similar de transacciones.
+  
+     **ElectroMarket Bucaramanga** lidera con creces en ventas promedio por transacción, indicando clientes que gastan mucho en cada visita.
+     **ElectroMarket Cartagena y ElectroMarket Sur Cali** también muestran un excelente gasto promedio por transacción por parte de sus clientes.
+     **ElectroMarket Pereira y ElectroMarket Armenia**, a pesar de sus altos ingresos totales, tienen promedios de venta por transacción más bajos.
+     El éxito de **Pereira** se basa en un alto volumen de ventas, no en un gasto elevado por cliente en cada compra.
+     **Villavicencio, Centro Bogotá y Norte Medellín** presentan promedios de venta por transacción muy bajos, lo que es una señal de alerta sobre el valor de sus ventas
+     individuales.
+
    -  Ingreso total por región
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Ingreso total por región")
+   
+     La Región Andina es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
+     La Región Cafetera es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
+     La Región Caribe logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
+     La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
+     La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
-5. Análisis de Precios de Venta 
+
+6. Análisis de Precios de Venta 
    -  Análisis de precio promedio por producto
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Análisis de precio promedio por producto")
+
+    Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro para casi todos los productos.
+    Se observan ejemplos dramáticos donde los productos se venden a precios promedio inconsistentes, a veces mucho más altos y otras veces más bajos que sus precios
+    maestros.
+    Una interpretacion viable es que exista un problema grave en la integridad o interpretación de los datos, incluyendo posibles errores en el registro original, en las
+    definiciones de las columnas, o menos probable, aunque posible, es que se trate de unidades de medida incorrectas, grandes promociones/descuentos (por la magnitud de
+    la diferencia) o errores en el registro de ventas.
+
    -  Desviación estándar aproximada de precios
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Desviación estándar aproximada de precios")
+
+     Una desviación estándar promedio de $895.3, que es superior al precio promedio de venta ($721.44), indica que hay una dispersión extremadamente alta y consistente
+     en los precios a los que se venden tus productos. En otras palabras, tus productos no se venden a un precio uniforme o cercano a su promedio; más bien, fluctúan
+     bruscamente.
+
    -  Margen promedio general
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Margen promedio general")
+
+     El margen promedio general de obtenido para el caso de estudio, no tiene valor analítico en este momento, debido a la probada inexactitud de los precios de venta en
+     los datos. No refleja la rentabilidad real. Para que tenga sentido, la prioridad absoluta debe ser la corrección y validación de los datos de precios (Ingreso,
+     veces_vendidas, precio_promedio y precio_maestro). 
+
    -  Productos con margen negativo
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Productos con margen negativo")
+
+     La presencia de márgenes negativos en todos los productos es una señal de alerta masiva e insostenible en cualquier negocio real. Para este proyecto ficticio, esta
+     vista confirma la existencia de un problema fundamental en la calidad y la lógica de los datos de precios y costos. Antes de cualquier análisis de rentabilidad o
+     decisión estratégica, es absolutamente indispensable identificar y corregir la raíz de estas inconsistencias en los datos. Sin datos fiables, las conclusiones sobre
+     la rentabilidad son nulas.
+
    -  Comparación de precio de venta promedio vs costo
      ![Esquema completo de DDBB](/assets/img/AVI/.png "Comparación de precio de venta promedio vs costo")
+
+     La vista de márgenes por producto, aunque crucial, actualmente ofrece una imagen preocupante y altamente cuestionable de la rentabilidad. La presencia universal de          márgenes negativos en todos los productos es insostenible y, en el contexto de datos de prueba, señala un error fundamental en la forma en que los precios de venta
+    zsy/o los costos están siendo registrados o calculados.
+
+   Antes de cualquier análisis de optimización de márgenes o decisiones sobre productos, es absolutamente imprescindible corregir los datos subyacentes de precios de venta
+   (precio_promedio) y asegurar que los costo_promedio sean precisos. Sin esta corrección, cualquier conclusión extraída de esta vista carece de validez.
+
 
 {:#conclu}
 ### Conclusiones y recomendaciones
@@ -209,9 +291,6 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 Destaque las habilidades de Ingeniero de Datos demostradas (modelado de datos, DDL, DML, SQL avanzado, análisis de datos, extracción de insights).
 
 1. Análisis de Rendimiento de Venta General
-   Es un buen punto de referencia. Para determinar si este promedio es "bueno" o "malo", necesitaríamos compararlo con promedios históricos, con la competencia,
-   o con los objetivos de negocio. Sin embargo, por sí mismo, nos dice que cada vez que se cierra una venta, aporta casi mil dólares.
-   
 2. Análisis de Rendimiento de Productos
 3. Análisis de Comportamiento del Cliente
 4. Análisis de Rendimiento de Tiendas
