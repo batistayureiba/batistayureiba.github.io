@@ -22,6 +22,7 @@ Para poder abordar y simular el caso de estudio, se abordo el respectivo analisi
 <center>Diagrama Entidad-Relación ElectroMarket</center>
 
 
+
 {:#load}
 ###  Generación e inserción de datos 
 ---
@@ -35,6 +36,7 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
 <center>Inserción de datos</center>
+
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
