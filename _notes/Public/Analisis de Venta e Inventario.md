@@ -74,8 +74,8 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 
 1. Análisis de Rendimiento de Venta General
-   <br>*Ingreso por año*
-   <enter> <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año") </center>
+   <br>Ingreso por año
+   <center> <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año") </center>
    <center>Ingreso por año</center><br>
    > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
