@@ -14,7 +14,7 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 {:#anal}
 ---
-### Analisis del caso 
+### 🔎 Analisis del caso 
 Este análisis tiene como objetivo evaluar el comportamiento de las ventas y el estado del inventario durante un periodo determinado. La relevancia de este estudio radica en su capacidad para identificar patrones de consumo, detectar posibles desequilibrios en el stock y proponer estrategias que optimicen la gestión comercial. Al comprender cómo se relacionan las ventas con el inventario disponible, se pueden tomar decisiones más informadas que impacten positivamente en la rentabilidad y eficiencia operativa.
 
 Para este proyecto de análisis de ventas e inventario, se ha optado por utilizar SQLite como sistema de gestión de base de datos relacional. Esta elección responde a criterios de eficiencia, portabilidad y simplicidad, especialmente relevantes en entornos de desarrollo individual y prototipado.
@@ -22,7 +22,7 @@ Para este proyecto de análisis de ventas e inventario, se ha optado por utiliza
 
 
 {:#desing}
-### Diseño del esquema relacional 
+### 🎨 Diseño del esquema relacional 
 ---
 Para poder abordar y simular el caso de estudio, se realizó un análisis exhaustivo a fin de identificar los elementos principales del negocio que necesitábamos registrar. Así, definí las entidades centrales: Productos, Categorías, Clientes, Tiendas, y, por supuesto, las Ventas con sus Detalles. En la siguiente imagen anexo el diagrama resultante:
 
@@ -31,7 +31,7 @@ Para poder abordar y simular el caso de estudio, se realizó un análisis exhaus
 
 
 {:#load}
-###  Generación e inserción de datos 
+###  🔄 Generación e inserción de datos 
 ---
 De acuerdo con lo definido en la fase anterior, creamos el modelo físico de la base de datos: entidades, relaciones y restricciones. Una vez que la estructura estaba lista, el siguiente paso fue llenarla con algunos datos. Para esta fase inicial, usé datos de prueba, empleando sentencias INSERT directas para simular cómo se vería la información real y así poder empezar a probar el sistema.
 
@@ -58,7 +58,7 @@ En este sentido, me permití construir índices explícitos que pueden mejorar e
 
 
 {:#queries}
-### Consultas
+### 📈 Consultas
 --- 
 Para efectuar el análisis de los datos con los datos de prueba, escribí 20 consultas. Estas las pasé a vistas para enmascarar y proteger los datos sensibles..
 
@@ -242,7 +242,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 
 
 {:#conclu}
-### Conclusiones
+### 🧠 Conclusiones
 ---
 Este proyecto de análisis de ventas e inventario, aunque basado en datos de prueba, ha sido invaluable para identificar puntos clave en el rendimiento y, crucialmente, la integridad de los datos. A continuación, se presentan las conclusiones concisas por cada aspecto analizado:
 
@@ -257,7 +257,7 @@ Sin embargo, algunos artículos permanecen en inventario sin movimiento durante 
 Asimismo, se identifican momentos críticos en los que el inventario estuvo cerca del punto de quiebre. Para mitigar este riesgo, se sugiere implementar un sistema de alerta temprana basado en niveles mínimos de stock.
 
 
-**Conclusión General del Proyecto**
+📌 **Conclusión General del Proyecto**
 En función del análisis realizado sobre las dinámicas de venta e inventario, se identificaron patrones que afectan directamente la eficiencia operativa y la gestión de stock. Se evidenció la necesidad de ajustar estrategias de rotación, optimizar el surtido de productos y reforzar el control sobre los niveles de inventario. Estos hallazgos respaldan las siguientes acciones estratégicas para mejorar la eficiencia operativa y la rentabilidad.
 
 Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes, pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis.
@@ -265,7 +265,7 @@ Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio 
 Este análisis proporciona una base sólida para la toma de decisiones estratégicas, orientadas a mejorar la eficiencia operativa, optimizar el inventario y fortalecer la rentabilidad del negocio. Al integrar los hallazgos con acciones concretas, se establece un marco de mejora continua que impulsa el crecimiento sostenible y la adaptabilidad en un entorno comercial dinámico.
 
 {:#recommendations}
-###  Recomendaciones
+###  🛠️ Recomendaciones
 ---
 - Desarrollar un pipeline de calidad de datos con validación automática, usando Python/Pandas, para ventas, precios y costos.
 - Construir un repositorio técnico centralizado con definiciones estandarizadas de métricas clave y reglas de negocio documentadas.
@@ -274,7 +274,7 @@ Este análisis proporciona una base sólida para la toma de decisiones estratég
 
 
 {:#resources}
-###  Recursos 
+###  🗂️ Recursos 
 ---
 Este proyecto esta elaborado en SQLite3 & DB Browser for SQLite.
 Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](../blob/master/script.sql)
