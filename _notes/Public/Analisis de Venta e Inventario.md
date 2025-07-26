@@ -19,7 +19,7 @@ Para poder abordar y simular el caso de estudio, se abordo el respectivo analisi
 
 ![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/AVI/ElectroMarket_DER.png "DER - EletroMarket")
 
-<center>Diagrama Entidad-Relación ElectroMarket</center>
+<center>Diagrama Entidad-Relación ElectroMarket</center></br>
 
 
 {:#load}
@@ -29,11 +29,11 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
 
-Definición de tablas
+<center>Definición de tablas</center>
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
-Inserción de datos
+<center>Inserción de datos</center></br>
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
@@ -41,6 +41,7 @@ Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los an
 + Los clasifiqué en al menos 7 categorías distintas.
 + Registré 20 tiendas de diferentes zonas.
 + Cargué los datos de 50 clientes.
+
 
 Para evaluar flujo de la operación, incluí más de 1000 transacciones de venta.
 
@@ -50,7 +51,7 @@ En este sentido me pemiti contruir indices explicitos que pueden mejorar el rend
 
 ![Creación de índices](/assets/img/AVI/DML05.png "Creación de índices")
 
-Creación de índices
+<center>Creación de índices</center>
 
 
 {:#queries}
@@ -60,9 +61,13 @@ Para efectuar el analisis de los datos con los datos de prueba, escribi 20 consu
 
 ![Definición de Vistas](/assets/img/AVI/DDL03.png "Definición de vistas")
 
+<center>Definición de Vistas</center>
+
 Finalmente este el total de objetos creados para el caso de estudio.
 
 ![Esquema completo de DDBB](/assets/img/AVI/DML06.png "Objetos de la Base de Datos")
+
+<center>Esquema completo de DDBB</center>
 
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
@@ -70,9 +75,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
      
-     ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
-     
-     Ingreso por año
+     ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")</br><center>Ingreso por año</center></br>
      
      Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
      En 2024, se generaron $1,087,901.24.
