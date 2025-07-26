@@ -10,7 +10,8 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 
 * TOC
-{:toc}<br>
+{:toc}
+<br>
 {:#plan}
 ---
 ### 🔎 Análisis del caso 
@@ -282,7 +283,7 @@ Este análisis proporciona una base sólida para la toma de decisiones estratég
 Este proyecto esta elaborado en SQLite3 & DB Browser for SQLite.
 Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](../assets/download/electromarket.sql)
 
-Encontraras la definicion de los objetos y la data utilizada.
+Encontrarás la definición de los objetos y la data utilizada.
 
 
 
