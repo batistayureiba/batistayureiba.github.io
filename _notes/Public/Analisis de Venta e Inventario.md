@@ -10,9 +10,8 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 
 * TOC
-{:toc}
-
-{:#primero}
+{:toc}<br>
+{:#plan}
 ---
 ### 🔎 Análisis del caso 
 Este análisis tiene como objetivo evaluar el comportamiento de las ventas y el estado del inventario durante un periodo determinado. La relevancia de este estudio radica en su capacidad para identificar patrones de consumo, detectar posibles desequilibrios en el stock y proponer estrategias que optimicen la gestión comercial. Al comprender cómo se relacionan las ventas con el inventario disponible, se pueden tomar decisiones más informadas que impacten positivamente en la rentabilidad y eficiencia operativa.
@@ -199,9 +198,13 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    ![Ingreso total por región](/assets/img/AVI/q_4.3.png "Ingreso total por región")
    
    > **La Región Andina** es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
+   
    > **La Región Cafetera** es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
+   
    > **La Región Caribe** logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
+   
    > **La Región Pacífico** tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
+   
    > **La Región Orinoquía** es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
 5. Análisis de Precios de Venta
@@ -246,12 +249,12 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 ---
 Este proyecto de análisis de ventas e inventario, aunque basado en datos de prueba, ha sido invaluable para identificar puntos clave en el rendimiento y, crucialmente, la integridad de los datos. A continuación, se presentan las conclusiones concisas por cada aspecto analizado:
 
-📊 Análisis de Ventas
+📊 Análisis de Ventas<br>
 Durante el periodo evaluado, se observa una tendencia creciente en las ventas de productos de alta rotación, especialmente en los meses de abril y mayo. Este comportamiento sugiere una estacionalidad que podría aprovecharse mediante campañas promocionales específicas.
 Por otro lado, algunos productos presentan una disminución sostenida en sus ventas. En consecuencia, se recomienda revisar su posicionamiento o considerar su reemplazo por alternativas más demandadas.
 Además, al segmentar las ventas por categoría, se identifican diferencias significativas en el rendimiento de cada línea de productos. Esto permite enfocar los esfuerzos comerciales en aquellas categorías con mayor potencial de crecimiento.
 
-📦 Análisis de Inventario
+📦 Análisis de Inventario<br>
 En cuanto al inventario, se detecta una reducción progresiva en el stock disponible durante el segundo trimestre. Esta disminución coincide con el aumento en las ventas, lo que indica una correcta rotación de productos.
 Sin embargo, algunos artículos permanecen en inventario sin movimiento durante más de tres meses. Por lo tanto, es recomendable aplicar estrategias como descuentos o paquetes promocionales para liberar espacio y evitar pérdidas por obsolescencia.
 Asimismo, se identifican momentos críticos en los que el inventario estuvo cerca del punto de quiebre. Para mitigar este riesgo, se sugiere implementar un sistema de alerta temprana basado en niveles mínimos de stock.
@@ -267,10 +270,10 @@ Este análisis proporciona una base sólida para la toma de decisiones estratég
 {:#recommendations}
 ###  🛠️ Recomendaciones
 ---
-✅ Desarrollar un pipeline de calidad de datos con validación automática, usando Python/Pandas, para ventas, precios y costos.
-✅ Construir un repositorio técnico centralizado con definiciones estandarizadas de métricas clave y reglas de negocio documentadas.
-✅ Implementar auditoría continua en el proceso ETL/ELT para garantizar la integridad y trazabilidad de la información financiera.
-✅ Configurar alertas proactivas que detecten inconsistencias en márgenes, precios unitarios, y comportamiento de ventas.
+✅ Desarrollar un pipeline de calidad de datos con validación automática, usando Python/Pandas, para ventas, precios y costos.<br>
+✅ Construir un repositorio técnico centralizado con definiciones estandarizadas de métricas clave y reglas de negocio documentadas.<br>
+✅ Implementar auditoría continua en el proceso ETL/ELT para garantizar la integridad y trazabilidad de la información financiera.<br>
+✅ Configurar alertas proactivas que detecten inconsistencias en márgenes, precios unitarios, y comportamiento de ventas.<br>
 
 
 {:#resources}
