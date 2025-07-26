@@ -188,9 +188,13 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    > Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior que mostraba el total de ingresos, esta nos da el valor promedio de cada venta. Esto explica las variaciones de ingresos entre tiendas que tienen un número similar de transacciones.
    
    > **ElectroMarket Bucaramanga** lidera con creces en ventas promedio por transacción, indicando clientes que gastan mucho en cada visita.
+   
    > **ElectroMarket Cartagena y ElectroMarket Sur Cali** también muestran un excelente gasto promedio por transacción por parte de sus clientes.
+   
    > **ElectroMarket Pereira y ElectroMarket Armenia**, a pesar de sus altos ingresos totales, tienen promedios de venta por transacción más bajos.
+   
    > El éxito de **Pereira** se basa en un alto volumen de ventas, no en un gasto elevado por cliente en cada compra.
+   
    > **Villavicencio, Centro Bogotá y Norte Medellín** presentan promedios de venta por transacción muy bajos, lo que es una señal de alerta sobre el valor de sus ventas individuales.
 
    Ingreso total por región
@@ -198,13 +202,13 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    ![Ingreso total por región](/assets/img/AVI/q_4.3.png "Ingreso total por región")
    
    > **La Región Andina** es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
-   
+
    > **La Región Cafetera** es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
-   
+
    > **La Región Caribe** logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
-   
+
    > **La Región Pacífico** tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
-   
+
    > **La Región Orinoquía** es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
 5. **Análisis de Precios de Venta**
