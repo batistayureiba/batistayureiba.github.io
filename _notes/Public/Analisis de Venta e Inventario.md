@@ -73,15 +73,11 @@ Finalmente este el total de objetos creados para el caso de estudio.
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
 
-1. Análisis de Rendimiento de Venta General 
-   - Ingreso por año
-    <br>
-    ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
-    <center>Ingreso por año</center><br>
-     
-     > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior.
-     > Esto representa una disminución considerable.
-     > Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
+1. Análisis de Rendimiento de Venta General
+   **Ingreso por año**
+   <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
+   <center>Ingreso por año</center><br>
+   > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    - Promedio de venta por transacción
      <br>
@@ -121,7 +117,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      La tendencia de las unidades vendidas y la cantidad de transacciones muestra una tendencia similar a la de los ingresos. y si bien observamos una señal de recupereción,
      es fundamental analizar  si la tendencia ascendente de los ultimos meses se mantiene o se revierte.
 
-2. Análisis de Rendimiento de Productos
+3. Análisis de Rendimiento de Productos
    - Productos por ingresos
      
      ![Productos por ingresos](/assets/img/AVI/q_2.1.png "Productos por ingresos")
@@ -183,7 +179,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      Pocos Accesorios de Bajo Rendimiento solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo
       como el resto. Reforzando la posición general de la categoría de Accesorios.
 
-3. Análisis de Comportamiento del Cliente
+4. Análisis de Comportamiento del Cliente
    
    - Total de clientes únicos
      
@@ -229,7 +225,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen
       de datos, diversidad de inventario, y la naturaleza de los productos. 
 
-4. Análisis de Rendimiento de Tiendas
+5. Análisis de Rendimiento de Tiendas
    -  Análisis de tiendas (por ingresos)
      
      ![Esquema completo de DDBB](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
@@ -268,7 +264,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
      La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
-5. Análisis de Precios de Venta
+6. Análisis de Precios de Venta
    -  Análisis de precio promedio por producto
      
      ![Esquema completo de DDBB](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
