@@ -65,16 +65,17 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 1. Análisis de Rendimiento de Venta General
    <br>Ingreso por año
-   <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
+   <br><br>
+   ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
    > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    Promedio de venta por transacción
-   <br>
+   <br><br>
    ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
    > Este dato nos indica que, los ingresos que ne promedio nos genera cada transacción de venta. y al comprar este valor con la consulta previa puede sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menosventas de alto valor que antes impulsaban el total.
    
    Total de transacciones
-   <br>
+   <br><br>
    ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
      
    > Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
@@ -84,9 +85,8 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      decesenso en los ingresos, como concecuencia de la disminucion del volumen de ventas.
 
    Tendencia de Ventas por Mes
-   <br>
+   <br><br>
    ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
-   <center>Tendencia de Ventas por Mes</center>
      
    > Esta tabla es crucial, ya que nos permite ver las fluctuaciones mes a mes y confirmar la tendencia descendente general que notamos en la consulta de Ingreso por año. Si comparamos el primer trimestre observamos los que ingresos de 2024, fueron consistentemente más altos que en el 2025. Aunque el mes de enero de 2025 fue fuerte, la caída en febrero y marzo de 2025 fue muy pronunciada en comparacion con el año anterior.
 
@@ -94,152 +94,114 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
    > No obstante si analizamos en el segundo semestre de 2024 vs. 2025 muestra una recuperación notable, donde Julio es el segundo mejor mes de 2025 hasta ahora. Sin embargo, no compensa la caída general del año.
    > La tendencia de las unidades vendidas y la cantidad de transacciones muestra una tendencia similar a la de los ingresos. y si bien observamos una señal de recupereción, es fundamental analizar  si la tendencia ascendente de los ultimos meses se mantiene o se revierte.
 
-3. Análisis de Rendimiento de Productos
-   - Productos por ingresos
+2. Análisis de Rendimiento de Productos
+   Productos por ingresos
+   <br><br>
+   ![Productos por ingresos](/assets/img/AVI/q_2.1.png "Productos por ingresos")
+    
+   > Esta lista nos revela los productos que más contribuyen a tus ingresos totales. Aquí destacamos que: los primeros cinco productos son que superan la barrera de los $100,000 en ingresos, incluyendo producto con mayor cantidades de unidades vendidas, lo que sugiere que es son productos de alta demanda y precio accesible que se venden en volumen.
+
+   > Existen productos de alto valor que, aunque se vendan en menores unidades, generan altos ingresos individuales; y productos de menor precio pero alto volumen
+
+   Finalmente tambien se evidencia una brecha considerable entre los primeros 5vproductos del vs el restode de la lista.
      
-     ![Productos por ingresos](/assets/img/AVI/q_2.1.png "Productos por ingresos")
+   Top 10 Productos Más Vendidos por Cantidad de Unidades
+   <br><br>
+   ![Top 10 Productos Más Vendidos por Cantidad de Unidades](/assets/img/AVI/q_2.2.png "Top 10 Productos Más Vendidos por Cantidad de Unidades")
      
-     Productos por ingresos
-     
-     Esta lista nos revela los productos que más contribuyen a tus ingresos totales. Aquí destacamos que:
+   > Esta consulta complementa la anterior al mostrar los productos que se venden en mayor volumen. Existe consistencia en los primeros seis productos en esta lista, son exactamente los mismos que en el Top 10 por Ingresos, y en el mismo orden. Esto refuerza la importancia del dichos productos como "productos estrellas", ya que lideran tanto en ingresos como en unidades vendidas.
 
-     Los primeros cinco productos son que superan la barrera de los $100,000 en ingresos, incluyendo producto con mayor cantidades de unidades vendidas, lo que sugiere
-      que es son productos de alta demanda y precio accesible que se venden en volumen.
+   > La aparición de nuevos productos a partir del séptimo puesto, la lista cambia, sugiere que son artículos de menor precio unitario pero que aun así tienen un buen volumen de venta.
 
-     Existen productos de alto valor que, aunque se vendan en menores unidades, generan altos ingresos individuales; y productos de menor precio pero alto volumen
+   Top 5 Categorías de Productos que Generan Más Ingresos
+   <br><br>
+   ![Top 5 Categorías de Productos que Generan Más Ingresos](/assets/img/AVI/q_2.3.png "Top 5 Categorías de Productos que Generan Más Ingresos")
+ 
+   > La vista por categorías es fundamental para entender qué segmentos de tu negocio son los más rentables, en este sentido la categoría "Accesorios" domina completamente la generación de ingresos, con $459,580, casi el doble que la segunda categoría. También lidera en unidades vendidas (1635). Esto sugiere que los productos de menor recio unitario y alto volumen son un pilar de tu negocio.
 
-     Finalmente tambien se evidencia una brecha considerable entre los primeros 5vproductos del vs el restode de la lista.
-     
-   - Top 10 Productos Más Vendidos por Cantidad de Unidades
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_2.2.png "Top 10 Productos Más Vendidos por Cantidad de Unidades")
-  
-     Top 10 Productos Más Vendidos por Cantidad de Unidades
-     
-     Esta consulta complementa la anterior al mostrar los productos que se venden en mayor volumen. Existe consistencia en los primeros seis productos en esta lista, son
-     exactamente los mismos que en el Top 10 por Ingresos, y en el mismo orden. Esto refuerza la importancia del dichos productos como "productos estrellas", ya que lideran
-     tanto en ingresos como en unidades vendidas.
+   > Las categorias de "Televisores" y "Cámaras" son categorías de alto valor unitario que contribuyen significativamente al total. Las categorias "Línea Blanca" y "Audio"
+en la parte baja del Top 5 están en un rango de ingresos similar, alrededor de los $180,000. Mientras que "Línea Blanca" tiene menos unidades
+endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tiene más unidades vendidas (849), lo que sugiere un precio unitario promedio más bajo.
 
-     La aparición de nuevos productos a partir del séptimo puesto, la lista cambia, sugiere que son artículos de menor precio unitario pero que aun así tienen un buen
-     volumen de venta.
+   Productos con bajo rendimiento
+   <br><br>
+   ![Productos con bajo rendimiento](/assets/img/AVI/q_2.4.png "Productos con bajo rendimiento")
 
-   - Top 5 Categorías de Productos que Generan Más Ingresos
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_2.3.png "Top 5 Categorías de Productos que Generan Más Ingresos")
-  
-     Top 5 Categorías de Productos que Generan Más Ingresos
-     
-     La vista por categorías es fundamental para entender qué segmentos de tu negocio son los más rentables, en este sentido la categoría "Accesorios" domina completamente
-      la generación de ingresos, con $459,580, casi el doble que la segunda categoría. También lidera en unidades vendidas (1635). Esto sugiere que los productos de menor
-     recio unitario y alto volumen son un pilar de tu negocio.
-
-     Las categorias de "Televisores" y "Cámaras" son categorías de alto valor unitario que contribuyen significativamente al total. Las categorias "Línea Blanca" y "Audio"
-     en la parte baja del Top 5 están en un rango de ingresos similar, alrededor de los $180,000. Mientras que "Línea Blanca" tiene menos unidades
-     endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tiene más unidades vendidas (849), lo que sugiere un precio unitario promedio más bajo.
-
-   - Productos con bajo rendimiento
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_2.4.png "Productos con bajo rendimiento")
-
-     Esta lista es el reverso de las anteriores: nos muestra los productos que, a pesar de estar en tu inventario, tienen un rendimiento de ventas extremadamente bajo
-     menos de 50 unidades vendidas, y muchos con menos de 10).
-
-     Observamos que hay una amplia variedad de categorías, sino que abarcan una gran diversidad: Audio, Computadoras, Línea Blanca, Cámaras, Televisores, Accesorios y
-     Smartphones. Esto indica que el problema de bajo rendimiento no es exclusivo de un segmento, sino que hay productos rezagados en casi todas partes.
-
-     Existen productos de alto valor unitario como laptops, televisores de alta gama, entre otros con solo 1 unidad vendida aparecen en esta lista. Esto sugiere que,
-     aunque su precio sea alto, no están generando volumen de ventas, lo que podría indicar problemas de demanda, precio, competencia o visibilidad.
-
-     Considerando que hay productos con menos de 10 unidades vendidas en todo el período analizado (que abarca al menos 19 meses, de enero 2024 a julio 2025) es una
-     señal de inventario estancado. Estos artículos ocupan espacio, inmovilizan capital y pueden volverse obsoletos.
-
-     Pocos Accesorios de Bajo Rendimiento solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo
-      como el resto. Reforzando la posición general de la categoría de Accesorios.
-
-4. Análisis de Comportamiento del Cliente
+   > Esta lista es el reverso de las anteriores: nos muestra los productos que, a pesar de estar en tu inventario, tienen un rendimiento de ventas extremadamente bajo menos de 50 unidades vendidas, y muchos con menos de 10).
    
-   - Total de clientes únicos
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_3.1.png "Total de clientes únicos")
+   > Observamos que hay una amplia variedad de categorías, sino que abarcan una gran diversidad: Audio, Computadoras, Línea Blanca, Cámaras, Televisores, Accesorios y Smartphones. Esto indica que el problema de bajo rendimiento no es exclusivo de un segmento, sino que hay productos rezagados en casi todas partes.
+   > Existen productos de alto valor unitario como laptops, televisores de alta gama, entre otros con solo 1 unidad vendida aparecen en esta lista. Esto sugiere que, aunque su precio sea alto, no están generando volumen de ventas, lo que podría indicar problemas de demanda, precio, competencia o visibilidad.
+   > Considerando que hay productos con menos de 10 unidades vendidas en todo el período analizado (que abarca al menos 19 meses, de enero 2024 a julio 2025) es una señal de inventario estancado. Estos artículos ocupan espacio, inmovilizan capital y pueden volverse obsoletos.
+   > Pocos Accesorios de Bajo Rendimiento solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo como el resto. Reforzando la posición general de la categoría de Accesorios.
 
-     Existe un total de 50 clientes únicos registrados en tu base de datos. Revelando un alcance limitado, este número, en el contexto de ventas que superan el millón de
-     dólares en 2024 y casi medio millón en 2025 (según la Consulta 1.1), sugiere que tu negocio tiene una base de clientes relativamente pequeña, pero que realizan
-     compras de alto valor o con una frecuencia considerable.
+3. Análisis de Comportamiento del Cliente
+   Total de clientes únicos
+   <br><br>
+   ![Total de clientes únicos](/assets/img/AVI/q_3.1.png "Total de clientes únicos")
 
-     Esto implica que la retención de clientes y la maximización del valor de cada cliente (CLV) deben ser prioridades estratégicas clave para ElectroMarket.
+   > Existe un total de 50 clientes únicos registrados en tu base de datos. Revelando un alcance limitado, este número, en el contexto de ventas que superan el millón de dólares en 2024 y casi medio millón en 2025 (según la Consulta 1.1), sugiere que tu negocio tiene una base de clientes relativamente pequeña, pero que realizan compras de alto valor o con una frecuencia considerable.
+   
+   > Esto implica que la retención de clientes y la maximización del valor de cada cliente (CLV) deben ser prioridades estratégicas clave para ElectroMarket.
      La pérdida de incluso unos pocos clientes podría tener un impacto significativo en los ingresos.
-
-     Este dato también resalta una clara oportunidad para la adquisición de nuevos clientes. Si bien los 50 clientes actuales generan ingresos sustanciales, expandir
+   
+   > Este dato también resalta una clara oportunidad para la adquisición de nuevos clientes. Si bien los 50 clientes actuales generan ingresos sustanciales, expandir
       la base de clientes podría ser vital para contrarrestar la tendencia descendente de ingresos observada y para el crecimiento a largo plazo.
 
-   - Top 10 clientes por gasto promedio
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_3.2.png "Top 10 clientes por gasto promedio")
+   Top 10 clientes por gasto promedio
+   <br><br>
+   ![Esquema completo de DDBB](/assets/img/AVI/q_3.2.png "Top 10 clientes por gasto promedio")
 
-     Esta consulta nos proporciona una visión profunda de tus clientes más valiosos y su comportamiento de compra.
-
-     Dado que base de clientes es pequeña, estos 10 representan el 20% de tu clientela total.Todos estos clientes muestran una frecuencia de compra excepcionalmente alta,
-     con la mayoría realizando entre 30 y 33 transacciones. Esto que no solo compran productos de alto valor, sino que también son clientes muy recurrentes.
-     Esta alta frecuencia puede ser indicativa de compras de accesorios o productos de reposición frecuente. En contraste, un grupo significativo de los top clientes
-     no han realizado compras desde Diciembre de 2024. Esto es una señal de alerta que merece atención.
-
-
-   - Recencia por cliente
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_3.3.png "Recencia por cliente")
-
-     Esta tabla nos ofrece una visión completa del comportamiento de tus 50 clientes únicos, permitiéndonos segmentarlos y entender su valor potencial.
-
-     Existen clientes con recencia alta, sin embargo debe gestionarse la recencia, ya que muchos de los clientes, incluyendo algunos del top gastadores de la consulta
-      Top 10 clientes por gasto promedio, han pasado un tiempo considerable sin comprar. Adicional existe disparidad en el valor monetario a pesar de la alta frecuencia,
-     sugieriendo una mezcla de clientes que compran pocos artículos costosos versus clientes que compran muchos artículos.
-
-   - Pares de productos comprados juntos
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
-
-     Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen
-     una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen
-      de datos, diversidad de inventario, y la naturaleza de los productos. 
-
-5. Análisis de Rendimiento de Tiendas
-   -  Análisis de tiendas (por ingresos)
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
-
-     Esta tabla nos ofrece una visión clara del rendimiento de tus tiendas, destacando las que contribuyen más a los ingresos. Dominio de la Región Cafetera,
-     las tiendas de la Región Cafetera dominan el ranking de ingresos.siendo ElectroMarket Pereira es la clara líder, con más de $314,000
-     en ingresos y el mayor volumen de unidades vendidas (1399), además de ser una de las que más transacciones registra (161).
-
-     Las tiendas de Rango Medio como ElectroMarket Cartagena y ElectroMarket Villavicencio muestra un buen volumen de unidades vendidas, sugiriendo un buen flujo
-     de clientes.
-  
-     Se destacan tiendas con alto volumen de unidades vendidas y transacciones, pero con ingresos relativamente bajos. Esto podría indicar que vende muchos productos de
-     bajo valor unitario, o que el precio promedio por transacción es menor que en otras tiendas.
-
-   -  Promedio de venta por tienda
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_4.2.png "Promedio de venta por tienda")
+   > Esta consulta nos proporciona una visión profunda de tus clientes más valiosos y su comportamiento de compra.
    
-     Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior, que mostraba el total de ingresos, esta nos da el valor promedio de cada venta.
-     Esto explica las variaciones de ingresos entre tiendas que tienen un número similar de transacciones.
-  
-     **ElectroMarket Bucaramanga** lidera con creces en ventas promedio por transacción, indicando clientes que gastan mucho en cada visita.
-     **ElectroMarket Cartagena y ElectroMarket Sur Cali** también muestran un excelente gasto promedio por transacción por parte de sus clientes.
-     **ElectroMarket Pereira y ElectroMarket Armenia**, a pesar de sus altos ingresos totales, tienen promedios de venta por transacción más bajos.
-     El éxito de **Pereira** se basa en un alto volumen de ventas, no en un gasto elevado por cliente en cada compra.
-     **Villavicencio, Centro Bogotá y Norte Medellín** presentan promedios de venta por transacción muy bajos, lo que es una señal de alerta sobre el valor de sus ventas
-     individuales.
+   > Dado que base de clientes es pequeña, estos 10 representan el 20% de tu clientela total.Todos estos clientes muestran una frecuencia de compra excepcionalmente alta, con la mayoría realizando entre 30 y 33 transacciones. Esto que no solo compran productos de alto valor, sino que también son clientes muy recurrentes. Esta alta frecuencia puede ser indicativa de compras de accesorios o productos de reposición frecuente. En contraste, un grupo significativo de los top clientes no han realizado compras desde Diciembre de 2024. Esto es una señal de alerta que merece atención.
 
-   -  Ingreso total por región
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_4.3.png "Ingreso total por región")
+
+   Recencia por cliente
+   <br><br>
+   ![Esquema completo de DDBB](/assets/img/AVI/q_3.3.png "Recencia por cliente")
+
+   > Esta tabla nos ofrece una visión completa del comportamiento de tus 50 clientes únicos, permitiéndonos segmentarlos y entender su valor potencial.
    
-     La Región Andina es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
-     La Región Cafetera es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
-     La Región Caribe logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
-     La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
-     La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
+   > Existen clientes con recencia alta, sin embargo debe gestionarse la recencia, ya que muchos de los clientes, incluyendo algunos del top gastadores de la consulta top 10 clientes por gasto promedio, han pasado un tiempo considerable sin comprar. Adicional existe disparidad en el valor monetario a pesar de la alta frecuencia, sugieriendo una mezcla de clientes que compran pocos artículos costosos versus clientes que compran muchos artículos.
+
+   Pares de productos comprados juntos
+   <br><br>
+   ![Esquema completo de DDBB](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
+
+   > Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen de datos, diversidad de inventario, y la naturaleza de los productos. 
+
+4. Análisis de Rendimiento de Tiendas
+   Análisis de tiendas (por ingresos)
+   <br><br>
+   ![Esquema completo de DDBB](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
+
+   > Esta tabla nos ofrece una visión clara del rendimiento de tus tiendas, destacando las que contribuyen más a los ingresos. Dominio de la Región Cafetera, las tiendas de la Región Cafetera dominan el ranking de ingresos.siendo ElectroMarket Pereira es la clara líder, con más de $314,000 en ingresos y el mayor volumen de unidades vendidas (1399), además de ser una de las que más transacciones registra (161).
+   
+   > Las tiendas de Rango Medio como ElectroMarket Cartagena y ElectroMarket Villavicencio muestra un buen volumen de unidades vendidas, sugiriendo un buen flujo de clientes.
+   
+   > Se destacan tiendas con alto volumen de unidades vendidas y transacciones, pero con ingresos relativamente bajos. Esto podría indicar que vende muchos productos de bajo valor unitario, o que el precio promedio por transacción es menor que en otras tiendas.
+
+   Promedio de venta por tienda
+   <br><br>
+   ![Esquema completo de DDBB](/assets/img/AVI/q_4.2.png "Promedio de venta por tienda")
+   
+   > Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior, que mostraba el total de ingresos, esta nos da el valor promedio de cada venta. Esto explica las variaciones de ingresos entre tiendas que tienen un número similar de transacciones.
+   
+   > **ElectroMarket Bucaramanga** lidera con creces en ventas promedio por transacción, indicando clientes que gastan mucho en cada visita.
+   > **ElectroMarket Cartagena y ElectroMarket Sur Cali** también muestran un excelente gasto promedio por transacción por parte de sus clientes.
+   > **ElectroMarket Pereira y ElectroMarket Armenia**, a pesar de sus altos ingresos totales, tienen promedios de venta por transacción más bajos.
+   > El éxito de **Pereira** se basa en un alto volumen de ventas, no en un gasto elevado por cliente en cada compra.
+   > **Villavicencio, Centro Bogotá y Norte Medellín** presentan promedios de venta por transacción muy bajos, lo que es una señal de alerta sobre el valor de sus ventas individuales.
+
+   Ingreso total por región
+   <br><br>
+   ![Esquema completo de DDBB](/assets/img/AVI/q_4.3.png "Ingreso total por región")
+   
+   > La Región Andina es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
+   > La Región Cafetera es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
+   > La Región Caribe logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
+   > La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
+   > La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
 6. Análisis de Precios de Venta
    -  Análisis de precio promedio por producto
