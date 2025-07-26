@@ -267,23 +267,10 @@ Este análisis proporciona una base sólida para la toma de decisiones estratég
 {:#recommendations}
 ###  Recomendaciones
 ---
-**Recomendación Técnica**
-**Problema Central:** La falta de integridad en los datos de precios y costos (discrepancias entre precio maestro y promedio, márgenes negativos generalizados) invalida todos los análisis financieros y estratégicos.
-
- **Acción Propuesta:**
- * Implementar un robusto pipeline de calidad de datos: Desarrollar scripts (ej., en Python/Pandas) para validar, limpiar y transformar los datos de ventas, precios (precio_maestro, precio_promedio) y costos.
- * Definir y auditar métricas clave: Establecer definiciones claras para cada columna (Ingreso, veces_vendidas, costo_promedio) y auditar su correcta captura y cálculo.
- * Automatizar el monitoreo de datos: Configurar alertas y reportes para detectar anomalías en los precios y márgenes de forma proactiva.
-
- **Impacto Esperado:** Asegurar la fiabilidad del 100% en los datos financieros, permitiendo análisis precisos de rentabilidad y una toma de decisiones estratégica informada y basada en evidencia real.
-
- **Recomendación Ejecutiva**
- **Situación Actual:** Análisis revelan que todos los productos se venden con margen negativo, y el valor por transacción varía drásticamente entre tiendas y regiones, sin una estrategia de precios consistente.
-
- **Acción Propuesta:**
- * Priorizar la limpieza de datos: Es imprescindible una inversión inmediata en la calidad de los datos de ventas y costos para obtener una imagen real de la rentabilidad.
- * Desarrollar una estrategia de precios unificada: Definir políticas claras de fijación de precios y descuentos que aseguren márgenes positivos y consistentes.
- * Optimizar el rendimiento por tienda/región: Replicar el éxito de Bucaramanga y la Región Caribe (alto gasto por cliente) y la eficiencia de la Región Cafetera (alto volumen), mientras se reevalúa la viabilidad y el potencial de las tiendas de bajo rendimiento.
+- Desarrollar un pipeline de calidad de datos con validación automática, usando Python/Pandas, para ventas, precios y costos.
+- Construir un repositorio técnico centralizado con definiciones estandarizadas de métricas clave y reglas de negocio documentadas.
+- Implementar auditoría continua en el proceso ETL/ELT para garantizar la integridad y trazabilidad de la información financiera.
+- Configurar alertas proactivas que detecten inconsistencias en márgenes, precios unitarios, y comportamiento de ventas.
 
 
 {:#resources}
