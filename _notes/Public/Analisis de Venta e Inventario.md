@@ -19,8 +19,6 @@ Para poder abordar y simular el caso de estudio, se abordo el respectivo analisi
 
 ![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/AVI/ElectroMarket_DER.png "DER - EletroMarket")
 
-<center>Diagrama Entidad-Relación ElectroMarket</center>
-
 
 
 {:#load}
@@ -30,11 +28,9 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
 
-<center>Definición de tablas</center><br>
-
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
-<center>Inserción de datos</center><br>
+<br>
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
@@ -52,8 +48,6 @@ En este sentido me pemiti contruir indices explicitos que pueden mejorar el rend
 
 ![Creación de índices](/assets/img/AVI/DML05.png "Creación de índices")
 
-<center>Creación de índices</center>
-
 
 {:#queries}
 ### Consultas
@@ -62,13 +56,9 @@ Para efectuar el analisis de los datos con los datos de prueba, escribi 20 consu
 
 ![Definición de Vistas](/assets/img/AVI/DDL03.png "Definición de vistas")
 
-<center>Definición de Vistas</center><br>
-
 Finalmente este el total de objetos creados para el caso de estudio.
 
 ![Esquema completo de DDBB](/assets/img/AVI/DML06.png "Objetos de la Base de Datos")
-
-<center>Esquema completo de DDBB</center><br>
 
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
@@ -76,19 +66,16 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 1. Análisis de Rendimiento de Venta General
    <br>Ingreso por año
    <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
-   <center>Ingreso por año</center><br>
    > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    Promedio de venta por transacción
    <br>
    ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
-   <center>Promedio de venta por transacción</center>
    > Este dato nos indica que, los ingresos que ne promedio nos genera cada transacción de venta. y al comprar este valor con la consulta previa puede sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menosventas de alto valor que antes impulsaban el total.
    
    Total de transacciones
    <br>
    ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
-   <center>Total de transacciones</center>
      
    > Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
      consulta venta promedio por transacción.
