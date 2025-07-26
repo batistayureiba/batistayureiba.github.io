@@ -75,47 +75,37 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 1. Análisis de Rendimiento de Venta General
    <br>Ingreso por año
-   <center> <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año") </center>
+   <br>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
    <center>Ingreso por año</center><br>
    > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
-   - Promedio de venta por transacción
-     <br>
-     ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
-     <center>Promedio de venta por transacción</center>
+   Promedio de venta por transacción
+   <br>
+   ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
+   <center>Promedio de venta por transacción</center>
+   > Este dato nos indica que, los ingresos que ne promedio nos genera cada transacción de venta. y al comprar este valor con la consulta previa puede sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menosventas de alto valor que antes impulsaban el total.
+   
+   Total de transacciones
+   <br>
+   ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
+   <center>Total de transacciones</center>
      
-     > Este dato nos indica que, en promedio, cada transacción de venta genera $976.44 en ingresos. Al comprar este valor con la consulta anterior puede sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menosventas de alto valor que antes impulsaban el total.
-
-   - Total de transacciones
-     
-     ![Total de transacciones](/assets/img/AVI/q_1.3.png "Total de transacciones")
-     
-     Total de transacciones
-     
-     Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
+   > Este dato, por sí solo, es un conteo. Su verdadero valor analítico surge al contrastarlo con las tendencias temporales, la consulta de ingresos totales y la
      consulta venta promedio por transacción.
-
-     Sabemos que el ingreso total se redujo drásticamente de 2024 a 2025, y que la distibucion del total de trasacciones es muy desigual, lo que podria explicar el
+   >
+   > Sabemos que el ingreso total se redujo de 2024 a 2025, y que la distibucion del total de trasacciones es muy desigual, lo que podria explicar el
      decesenso en los ingresos, como concecuencia de la disminucion del volumen de ventas.
 
-   - Tendencia de Ventas por Mes
+   Tendencia de Ventas por Mes
+   <br>
+   ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
+   <center>Tendencia de Ventas por Mes</center>
      
-     ![Tendencia de Ventas por Mes](/assets/img/AVI/q_1.4.png "Tendencia de Ventas por Mes")
-     
-     Tendencia de Ventas por Mes
-     
-     Esta tabla es crucial, ya que nos permite ver las fluctuaciones mes a mes y confirmar la tendencia descendente general que notamos en la consulta de Ingreso por año.
+   > Esta tabla es crucial, ya que nos permite ver las fluctuaciones mes a mes y confirmar la tendencia descendente general que notamos en la consulta de Ingreso por año. Si comparamos el primer trimestre observamos los que ingresos de 2024, fueron consistentemente más altos que en el 2025. Aunque el mes de enero de 2025 fue fuerte, la caída en febrero y marzo de 2025 fue muy pronunciada en comparacion con el año anterior.
 
-     Comparando el primer trimestre observamos los que ingresos de 2024, fueron consistentemente más altos que en el2025. Aunque el mes de enero de 2025 fue fuerte,
-     la caída en febrero y marzo de 2025 fue muy pronunciada en comparacion con el año anterior.
-     
-     Para el segun trimestre de 2024 se muestra ingresos significativamente mayores que en 2025. evidenciando una clara tendencia descendente.
-
-     No obstante si analizamos en el segundo semestre de 2024 vs. 2025 muestra una recuperación notable, donde Julio es el segundo mejor mes de 2025 hasta ahora. Sin
-     embargo, no compensa la caída general del año.
-
-     La tendencia de las unidades vendidas y la cantidad de transacciones muestra una tendencia similar a la de los ingresos. y si bien observamos una señal de recupereción,
-     es fundamental analizar  si la tendencia ascendente de los ultimos meses se mantiene o se revierte.
+   > Para el segun trimestre de 2024 se muestra ingresos significativamente mayores que en 2025. evidenciando una clara tendencia descendente.
+   > No obstante si analizamos en el segundo semestre de 2024 vs. 2025 muestra una recuperación notable, donde Julio es el segundo mejor mes de 2025 hasta ahora. Sin embargo, no compensa la caída general del año.
+   > La tendencia de las unidades vendidas y la cantidad de transacciones muestra una tendencia similar a la de los ingresos. y si bien observamos una señal de recupereción, es fundamental analizar  si la tendencia ascendente de los ultimos meses se mantiene o se revierte.
 
 3. Análisis de Rendimiento de Productos
    - Productos por ingresos
