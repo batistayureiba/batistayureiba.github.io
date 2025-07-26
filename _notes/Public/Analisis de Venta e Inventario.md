@@ -149,7 +149,7 @@ endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tie
 
    Top 10 clientes por gasto promedio
    <br><br>
-   ![Esquema completo de DDBB](/assets/img/AVI/q_3.2.png "Top 10 clientes por gasto promedio")
+   ![Top 10 clientes por gasto promedio](/assets/img/AVI/q_3.2.png "Top 10 clientes por gasto promedio")
 
    > Esta consulta nos proporciona una visión profunda de tus clientes más valiosos y su comportamiento de compra.
    
@@ -158,7 +158,7 @@ endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tie
 
    Recencia por cliente
    <br><br>
-   ![Esquema completo de DDBB](/assets/img/AVI/q_3.3.png "Recencia por cliente")
+   ![Recencia por cliente](/assets/img/AVI/q_3.3.png "Recencia por cliente")
 
    > Esta tabla nos ofrece una visión completa del comportamiento de tus 50 clientes únicos, permitiéndonos segmentarlos y entender su valor potencial.
    
@@ -166,14 +166,14 @@ endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tie
 
    Pares de productos comprados juntos
    <br><br>
-   ![Esquema completo de DDBB](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
+   ![Pares de productos comprados juntos](/assets/img/AVI/q_3.4.png "Pares de productos comprados juntos")
 
    > Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen una vez juntos. En conclusion no se observa una correlación directa y no se puede considerar un patron de compra fuerte o recurrente. Esto podría deberse al volumen de datos, diversidad de inventario, y la naturaleza de los productos. 
 
 4. Análisis de Rendimiento de Tiendas
    Análisis de tiendas (por ingresos)
    <br><br>
-   ![Esquema completo de DDBB](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
+   ![Análisis de tiendas (por ingresos)](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
 
    > Esta tabla nos ofrece una visión clara del rendimiento de tus tiendas, destacando las que contribuyen más a los ingresos. Dominio de la Región Cafetera, las tiendas de la Región Cafetera dominan el ranking de ingresos.siendo ElectroMarket Pereira es la clara líder, con más de $314,000 en ingresos y el mayor volumen de unidades vendidas (1399), además de ser una de las que más transacciones registra (161).
    
@@ -183,7 +183,7 @@ endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tie
 
    Promedio de venta por tienda
    <br><br>
-   ![Esquema completo de DDBB](/assets/img/AVI/q_4.2.png "Promedio de venta por tienda")
+   ![Promedio de venta por tienda](/assets/img/AVI/q_4.2.png "Promedio de venta por tienda")
    
    > Esta tabla es extremadamente reveladora porque, a diferencia de la consulta anterior, que mostraba el total de ingresos, esta nos da el valor promedio de cada venta. Esto explica las variaciones de ingresos entre tiendas que tienen un número similar de transacciones.
    
@@ -195,59 +195,48 @@ endidas (691), lo que implica un precio unitario promedio más alto, "Audio" tie
 
    Ingreso total por región
    <br><br>
-   ![Esquema completo de DDBB](/assets/img/AVI/q_4.3.png "Ingreso total por región")
+   ![Ingreso total por región](/assets/img/AVI/q_4.3.png "Ingreso total por región")
    
-   > La Región Andina es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
-   > La Región Cafetera es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
-   > La Región Caribe logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
-   > La Región Pacífico tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
-   > La Región Orinoquía es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
+   > **La Región Andina** es ahora líder en ingresos, impulsada por el alto gasto por transacción de Bucaramanga y el volumen total de operaciones.
+   > **La Región Cafetera** es la segunda en ingresos y líder en volumen de ventas, pero con un menor gasto promedio por transacción.
+   > **La Región Caribe** logra altos ingresos con menos transacciones, destacando por un elevado ticket promedio de venta.
+   > **La Región Pacífico** tiene ingresos decentes, pero considerablemente por debajo de las tres primeras.
+   > **La Región Orinoquía** es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
-6. Análisis de Precios de Venta
-   -  Análisis de precio promedio por producto
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
+5. Análisis de Precios de Venta
+   Análisis de precio promedio por producto
+   <br><br>
+   ![Análisis de precio promedio por producto](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
 
-     Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro para casi todos los productos.
-     Se observan ejemplos dramáticos donde los productos se venden a precios promedio inconsistentes, a veces mucho más altos y otras veces más bajos que sus precios
-     maestros.
-     Una interpretacion viable es que exista un problema grave en la integridad o interpretación de los datos, incluyendo posibles errores en el registro original, en las
-     definiciones de las columnas, o menos probable, aunque posible, es que se trate de unidades de medida incorrectas, grandes promociones/descuentos (por la magnitud de
-     la diferencia) o errores en el registro de ventas.
+   > Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro para casi todos los productos. Se observan ejemplos dramáticos donde los productos se venden a precios promedio inconsistentes, a veces mucho más altos y otras veces más bajos que sus precios maestros.
+   
+   > Una interpretacion viable es que exista un problema grave en la integridad o interpretación de los datos, incluyendo posibles errores en el registro original, en las definiciones de las columnas, o menos probable, aunque posible, es que se trate de unidades de medida incorrectas, grandes promociones/descuentos (por la magnitud de la diferencia) o errores en el registro de ventas.
 
-   -  Desviación estándar aproximada de precios
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_5.2.png "Desviación estándar aproximada de precios")
+   Desviación estándar aproximada de precios
+   <br><br>
+   ![Desviación estándar aproximada de precios](/assets/img/AVI/q_5.2.png "Desviación estándar aproximada de precios")
 
-     Una desviación estándar promedio de $895.3, que es superior al precio promedio de venta ($721.44), indica que hay una dispersión extremadamente alta y consistente
-     en los precios a los que se venden tus productos. En otras palabras, tus productos no se venden a un precio uniforme o cercano a su promedio; más bien, fluctúan
-     bruscamente.
+   > Una desviación estándar promedio de $895.3, que es superior al precio promedio de venta ($721.44), indica que hay una dispersión extremadamente alta y consistente en los precios a los que se venden tus productos. En otras palabras, tus productos no se venden a un precio uniforme o cercano a su promedio; más bien, fluctúan bruscamente.
 
-   -  Margen promedio general
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_5.3.png "Margen promedio general")
+   Margen promedio general
+   <br><br>
+   ![Margen promedio general](/assets/img/AVI/q_5.3.png "Margen promedio general")
 
-     El margen promedio general de obtenido para el caso de estudio, no tiene valor analítico en este momento, debido a la probada inexactitud de los precios de venta en
-     los datos. No refleja la rentabilidad real. Para que tenga sentido, la prioridad absoluta debe ser la corrección y validación de los datos de precios (Ingreso,
-     veces_vendidas, precio_promedio y precio_maestro). 
+   > El margen promedio general de obtenido para el caso de estudio, no tiene valor analítico en este momento, debido a la probada inexactitud de los precios de venta en los datos. No refleja la rentabilidad real. Para que tenga sentido, la prioridad absoluta debe ser la corrección y validación de los datos de precios (Ingreso, veces_vendidas, precio_promedio y precio_maestro). 
 
-   -  Productos con margen negativo
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_5.4.png "Productos con margen negativo")
+   Productos con margen negativo
+   <br><br>
+   ![Productos con margen negativo](/assets/img/AVI/q_5.4.png "Productos con margen negativo")
 
-     La presencia de márgenes negativos en todos los productos es una señal de alerta masiva e insostenible en cualquier negocio real. Para este proyecto ficticio, esta
-     vista confirma la existencia de un problema fundamental en la calidad y la lógica de los datos de precios y costos. Antes de cualquier análisis de rentabilidad o
-     decisión estratégica, es absolutamente indispensable identificar y corregir la raíz de estas inconsistencias en los datos. Sin datos fiables, las conclusiones sobre
-     la rentabilidad son nulas.
+   > La presencia de márgenes negativos en todos los productos es una señal de alerta masiva e insostenible en cualquier negocio real. Para este proyecto ficticio, esta vista confirma la existencia de un problema fundamental en la calidad y la lógica de los datos de precios y costos. Antes de cualquier análisis de rentabilidad o decisión estratégica, es absolutamente indispensable identificar y corregir la raíz de estas inconsistencias en los datos. Sin datos fiables, las conclusiones sobre la rentabilidad son nulas.
 
-   -  Comparación de precio de venta promedio vs costo
-     
-     ![Esquema completo de DDBB](/assets/img/AVI/q_5.5.png "Comparación de precio de venta promedio vs costo")
+   Comparación de precio de venta promedio vs costo
+   <br><br>
+   ![Comparación de precio de venta promedio vs costo](/assets/img/AVI/q_5.5.png "Comparación de precio de venta promedio vs costo")
 
-     La vista de márgenes por producto, aunque crucial, actualmente ofrece una imagen preocupante y altamente cuestionable de la rentabilidad. La presencia universal de          márgenes negativos en todos los productos es insostenible y, en el contexto de datos de prueba, señala un error fundamental en la forma en que los precios de venta
-    zsy/o los costos están siendo registrados o calculados.
-
-     Antes de cualquier análisis de optimización de márgenes o decisiones sobre productos, es absolutamente imprescindible corregir los datos subyacentes de precios de venta
+   > La vista de márgenes por producto, aunque crucial, actualmente ofrece una imagen preocupante y altamente cuestionable de la rentabilidad. La presencia universal de márgenes negativos en todos los productos es insostenible y, en el contexto de datos de prueba, señala un error fundamental en la forma en que los precios de ventas y/o los costos están siendo registrados o calculados.
+   
+   > Antes de cualquier análisis de optimización de márgenes o decisiones sobre productos, es absolutamente imprescindible corregir los datos subyacentes de precios de venta
      (precio_promedio) y asegurar que los costo_promedio sean precisos. Sin esta corrección, cualquier conclusión extraída de esta vista carece de validez.
 
 
