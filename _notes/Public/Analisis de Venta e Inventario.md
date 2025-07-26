@@ -76,7 +76,7 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
     <br>
-    <center>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")</center>
+    ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
     <center>Ingreso por año</center><br>
      
      > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior.
@@ -84,15 +84,11 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
      > Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    - Promedio de venta por transacción
-     
+     <br>
      ![Promedio de venta por transacción](/assets/img/AVI/q_1.2.png "Promedio de venta por transacción")
+     <center>Promedio de venta por transacción</center>
      
-     Promedio de venta por transacción
-     
-     Este dato nos indica que, en promedio, cada transacción de venta genera $976.44 en ingresos.
-     Este es un valor importante porque si lo comparamos con el descenso en los ingresos generales (de la consulta anterior), siendo promedio alto por transacción puede
-     sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menos
-     ventas de alto valor que antes impulsaban el total.
+     > Este dato nos indica que, en promedio, cada transacción de venta genera $976.44 en ingresos. Al comprar este valor con la consulta anterior puede sugerir que, aunque el valor individual de las ventas es bueno, quizás el número de transacciones ha disminuido significativamente, o que se están realizando menosventas de alto valor que antes impulsaban el total.
 
    - Total de transacciones
      
