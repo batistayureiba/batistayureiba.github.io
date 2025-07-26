@@ -11,9 +11,11 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 * TOC
 {:toc}
-{:#plan}
 ---
+
+{:#plan}
 ### 🔎 Análisis del caso 
+---
 Este análisis tiene como objetivo evaluar el comportamiento de las ventas y el estado del inventario durante un periodo determinado. La relevancia de este estudio radica en su capacidad para identificar patrones de consumo, detectar posibles desequilibrios en el stock y proponer estrategias que optimicen la gestión comercial. Al comprender cómo se relacionan las ventas con el inventario disponible, se pueden tomar decisiones más informadas que impacten positivamente en la rentabilidad y eficiencia operativa.
 
 Para este proyecto de análisis de ventas e inventario, se ha optado por utilizar SQLite como sistema de gestión de base de datos relacional. Esta elección responde a criterios de eficiencia, portabilidad y simplicidad, especialmente relevantes en entornos de desarrollo individual y prototipado.
