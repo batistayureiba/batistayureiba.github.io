@@ -29,7 +29,7 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
 
-<center>Definición de tablas</center>
+</br><center>Definición de tablas</center></br>
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
@@ -61,27 +61,26 @@ Para efectuar el analisis de los datos con los datos de prueba, escribi 20 consu
 
 ![Definición de Vistas](/assets/img/AVI/DDL03.png "Definición de vistas")
 
-<center>Definición de Vistas</center>
+<center>Definición de Vistas</center></br>
 
 Finalmente este el total de objetos creados para el caso de estudio.
 
 ![Esquema completo de DDBB](/assets/img/AVI/DML06.png "Objetos de la Base de Datos")
 
-<center>Esquema completo de DDBB</center>
+<center>Esquema completo de DDBB</center></br>
 
 Completado el diseño fisico de la base de datos. Podemos comenzar a listar las preguntas de analisis y e interpretar los resultados obtenidos
 
 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
-     
+   
      ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")</br><center>Ingreso por año</center></br>
      
-     Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
-     En 2024, se generaron $1,087,901.24.
-     Para 2025, los ingresos han caído a $440,220.75.
-
-     Esto representa una disminución considerable. Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
+     > Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
+     > En 2024, se generaron $1,087,901.24. Para 2025, los ingresos han caído a $440,220.75.
+     >
+     >  Esto representa una disminución considerable. Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    - Promedio de venta por transacción
      
