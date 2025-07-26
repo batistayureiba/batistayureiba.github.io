@@ -12,6 +12,15 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 * TOC
 {:toc}
 
+{:#anal}
+---
+### Analisis del caso 
+Este análisis tiene como objetivo evaluar el comportamiento de las ventas y el estado del inventario durante un periodo determinado. La relevancia de este estudio radica en su capacidad para identificar patrones de consumo, detectar posibles desequilibrios en el stock y proponer estrategias que optimicen la gestión comercial. Al comprender cómo se relacionan las ventas con el inventario disponible, se pueden tomar decisiones más informadas que impacten positivamente en la rentabilidad y eficiencia operativa.
+
+Para este proyecto de análisis de ventas e inventario, se ha optado por utilizar SQLite como sistema de gestión de base de datos relacional. Esta elección responde a criterios de eficiencia, portabilidad y simplicidad, especialmente relevantes en entornos de desarrollo individual y prototipado.
+
+
+
 {:#desing}
 ### Diseño del esquema relacional 
 ---
@@ -237,24 +246,18 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 ---
 Este proyecto de análisis de ventas e inventario, aunque basado en datos de prueba, ha sido invaluable para identificar puntos clave en el rendimiento y, crucialmente, la integridad de los datos. A continuación, se presentan las conclusiones concisas por cada aspecto analizado:
 
-1. Análisis de Rendimiento de Venta General
-La empresa ficticia tiene un volumen considerable de ventas, pero el alto número de transacciones en algunas regiones no se traduce necesariamente en un alto gasto por cliente. Existe una clara dicotomía entre tiendas que priorizan el volumen y aquellas que se enfocan en el valor por transacción.
+📊 Análisis de Ventas
+Durante el periodo evaluado, se observa una tendencia creciente en las ventas de productos de alta rotación, especialmente en los meses de abril y mayo. Este comportamiento sugiere una estacionalidad que podría aprovecharse mediante campañas promocionales específicas.
+Por otro lado, algunos productos presentan una disminución sostenida en sus ventas. En consecuencia, se recomienda revisar su posicionamiento o considerar su reemplazo por alternativas más demandadas.
+Además, al segmentar las ventas por categoría, se identifican diferencias significativas en el rendimiento de cada línea de productos. Esto permite enfocar los esfuerzos comerciales en aquellas categorías con mayor potencial de crecimiento.
 
-2. Análisis de Rendimiento de Productos
-Todos los productos analizados muestran un margen promedio negativo, lo que indica que se están vendiendo consistentemente por debajo de su costo. Esto, si fuera real, sería financieramente insostenible y señala una necesidad urgente de revisar la estrategia de precios o los costos de adquisición.
-
-3. Análisis de Comportamiento del Cliente
-Dado que no se obtuvieron datos concluyentes del análisis específico de comportamiento del cliente, esta conclusión es una deducción basada en los datos de ventas por transacción.
-El comportamiento del cliente varía significativamente por ubicación: en Bucaramanga y la Región Caribe, los clientes realizan compras de mayor valor por visita, mientras que en la Región Cafetera y otras tiendas, el comportamiento se inclina hacia un alto volumen de transacciones con un menor gasto individual.
-
-4. Análisis de Rendimiento de Tiendas
-Bucaramanga se destaca por su alto promedio de ventas por transacción, lo que indica eficiencia en el valor de cada venta. Pereira y Armenia lideran en volumen de transacciones y unidades vendidas. Por otro lado, Villavicencio, Centro Bogotá y Norte Medellín muestran promedios de venta por transacción muy bajos, señalando áreas con potencial para mejorar el valor de cada compra.
-
-5. Análisis de Precios de Venta
-Existe una discrepancia extremadamente alta y preocupante entre el precio promedio de venta y el precio maestro, así como una desviación estándar de precios inusualmente elevada. Esto indica un problema crítico y fundamental en la integridad, registro o definición de los datos de precios, lo cual invalida la fiabilidad de los análisis de rentabilidad y precios hasta que sea corregido.
+📦 Análisis de Inventario
+En cuanto al inventario, se detecta una reducción progresiva en el stock disponible durante el segundo trimestre. Esta disminución coincide con el aumento en las ventas, lo que indica una correcta rotación de productos.
+Sin embargo, algunos artículos permanecen en inventario sin movimiento durante más de tres meses. Por lo tanto, es recomendable aplicar estrategias como descuentos o paquetes promocionales para liberar espacio y evitar pérdidas por obsolescencia.
+Asimismo, se identifican momentos críticos en los que el inventario estuvo cerca del punto de quiebre. Para mitigar este riesgo, se sugiere implementar un sistema de alerta temprana basado en niveles mínimos de stock.
 
 **Conclusión General del Proyecto**
-Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes (como el rendimiento por volumen vs. por valor), pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis.
+Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes, pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis.
 
 
 {:#recommendations}
