@@ -277,7 +277,7 @@ Este análisis proporciona una base sólida para la toma de decisiones estratég
 ###  🗂️ Recursos 
 ---
 Este proyecto esta elaborado en SQLite3 & DB Browser for SQLite.
-Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](../blob/master/script.sql)
+Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](https://raw.githubusercontent.com/batistayureiba/batistayureiba.github.io/main/assets/download/electromarket.sql)
 
 Encontraras la definicion de los objetos y la data utilizada.
 
