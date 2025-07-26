@@ -71,8 +71,8 @@ Finalmente, este es el total de objetos creados para el caso de estudio.
 Con el diseño físico de la base de datos completado, podemos comenzar a listar las preguntas de análisis y a interpretar los resultados obtenidos.
 
 
-1. Análisis de Rendimiento de Venta General
-   <br>Ingreso por año
+1. **Análisis de Rendimiento de Venta General**
+   <br>######Ingreso por año
    <br><br>
    ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
    > En esta comparativa, podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
@@ -250,18 +250,18 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 ---
 Este proyecto de análisis de ventas e inventario, aunque basado en datos de prueba, ha sido invaluable para identificar puntos clave en el rendimiento y, crucialmente, la integridad de los datos. A continuación, se presentan las conclusiones concisas por cada aspecto analizado:
 
-📊 Análisis de Ventas<br>
+📊 Análisis de Ventas<br><br>
 Durante el periodo evaluado, se observa una tendencia creciente en las ventas de productos de alta rotación, especialmente en los meses de abril y mayo. Este comportamiento sugiere una estacionalidad que podría aprovecharse mediante campañas promocionales específicas.
 Por otro lado, algunos productos presentan una disminución sostenida en sus ventas. En consecuencia, se recomienda revisar su posicionamiento o considerar su reemplazo por alternativas más demandadas.
 Además, al segmentar las ventas por categoría, se identifican diferencias significativas en el rendimiento de cada línea de productos. Esto permite enfocar los esfuerzos comerciales en aquellas categorías con mayor potencial de crecimiento.
 
-📦 Análisis de Inventario<br>
+📦 Análisis de Inventario<br><br>
 En cuanto al inventario, se detecta una reducción progresiva en el stock disponible durante el segundo trimestre. Esta disminución coincide con el aumento en las ventas, lo que indica una correcta rotación de productos.
 Sin embargo, algunos artículos permanecen en inventario sin movimiento durante más de tres meses. Por lo tanto, es recomendable aplicar estrategias como descuentos o paquetes promocionales para liberar espacio y evitar pérdidas por obsolescencia.
 Asimismo, se identifican momentos críticos en los que el inventario estuvo cerca del punto de quiebre. Para mitigar este riesgo, se sugiere implementar un sistema de alerta temprana basado en niveles mínimos de stock.
 
 
-📌 **Conclusión General del Proyecto**
+📌 **Conclusión General del Proyecto**<br><br>
 En función del análisis realizado sobre las dinámicas de venta e inventario, se identificaron patrones que afectan directamente la eficiencia operativa y la gestión de stock. Se evidenció la necesidad de ajustar estrategias de rotación, optimizar el surtido de productos y reforzar el control sobre los niveles de inventario. Estos hallazgos respaldan las siguientes acciones estratégicas para mejorar la eficiencia operativa y la rentabilidad.
 
 Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes, pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis.
