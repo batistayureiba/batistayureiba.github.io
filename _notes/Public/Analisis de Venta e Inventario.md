@@ -256,9 +256,13 @@ En cuanto al inventario, se detecta una reducción progresiva en el stock dispon
 Sin embargo, algunos artículos permanecen en inventario sin movimiento durante más de tres meses. Por lo tanto, es recomendable aplicar estrategias como descuentos o paquetes promocionales para liberar espacio y evitar pérdidas por obsolescencia.
 Asimismo, se identifican momentos críticos en los que el inventario estuvo cerca del punto de quiebre. Para mitigar este riesgo, se sugiere implementar un sistema de alerta temprana basado en niveles mínimos de stock.
 
+
 **Conclusión General del Proyecto**
+En función del análisis realizado sobre las dinámicas de venta e inventario, se identificaron patrones que afectan directamente la eficiencia operativa y la gestión de stock. Se evidenció la necesidad de ajustar estrategias de rotación, optimizar el surtido de productos y reforzar el control sobre los niveles de inventario. Estos hallazgos respaldan las siguientes acciones estratégicas para mejorar la eficiencia operativa y la rentabilidad.
+
 Este proyecto ha demostrado la capacidad para identificar dinámicas de negocio interesantes, pero su hallazgo más crítico es la absoluta necesidad de un saneamiento de datos. Antes de poder extraer conclusiones financieras o estratégicas fiables, o de implementar mejoras operativas, es imperativo resolver los problemas de calidad de datos, especialmente en la información de precios y costos. Como ingeniero de datos, este ejercicio subraya la importancia de la confianza en la fuente de datos como pilar de cualquier análisis.
 
+Este análisis proporciona una base sólida para la toma de decisiones estratégicas, orientadas a mejorar la eficiencia operativa, optimizar el inventario y fortalecer la rentabilidad del negocio. Al integrar los hallazgos con acciones concretas, se establece un marco de mejora continua que impulsa el crecimiento sostenible y la adaptabilidad en un entorno comercial dinámico.
 
 {:#recommendations}
 ###  Recomendaciones
