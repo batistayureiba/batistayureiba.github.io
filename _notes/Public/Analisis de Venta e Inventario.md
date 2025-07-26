@@ -11,7 +11,6 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 * TOC
 {:toc}
-<br>
 {:#plan}
 ---
 ### 🔎 Análisis del caso 
@@ -72,7 +71,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 
 
 1. **Análisis de Rendimiento de Venta General**
-   <br>######Ingreso por año
+   <br>Ingreso por año
    <br><br>
    ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
    > En esta comparativa, podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior. Esto representa una disminución considerable. Tomando en cuenta que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
@@ -100,7 +99,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    > No obstante, si analizamos el segundo semestre de 2024 vs. 2025, se muestra una recuperación notable, donde julio es el segundo mejor mes de 2025 hasta ahora. Sin embargo, esto no compensa la caída general del año.
    > La tendencia de las unidades vendidas y la cantidad de transacciones muestra un comportamiento similar a la de los ingresos. Si bien observamos una señal de recuperación, es fundamental analizar si la tendencia ascendente de los últimos meses se mantiene o se revierte.
 
-2. Análisis de Rendimiento de Productos
+2. **Análisis de Rendimiento de Productos**
    Productos por ingresos
    <br><br>
    ![Productos por ingresos](/assets/img/AVI/q_2.1.png "Productos por ingresos")
@@ -137,7 +136,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    > Considerando que hay productos con menos de 10 unidades vendidas en todo el período analizado (que abarca al menos 19 meses, de enero 2024 a julio 2025), es una señal de inventario estancado. Estos artículos ocupan espacio, inmovilizan capital y pueden volverse obsoletos.
    > Pocos Accesorios de Bajo Rendimiento: Solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo como el resto. Esto refuerza la posición general de la categoría de Accesorios.
 
-3. Análisis de Comportamiento del Cliente
+3. **Análisis de Comportamiento del Cliente**
    Total de clientes únicos
    <br><br>
    ![Total de clientes únicos](/assets/img/AVI/q_3.1.png "Total de clientes únicos")
@@ -171,7 +170,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 
    > Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen una vez juntos. En conclusión, no se observa una correlación directa y no se puede considerar un patrón de compra fuerte o recurrente. Esto podría deberse al volumen de datos, la diversidad de inventario y la naturaleza de los productos. 
 
-4. Análisis de Rendimiento de Tiendas
+4. **Análisis de Rendimiento de Tiendas**
    Análisis de tiendas (por ingresos)
    <br><br>
    ![Análisis de tiendas (por ingresos)](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
@@ -208,7 +207,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    
    > **La Región Orinoquía** es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
-5. Análisis de Precios de Venta
+5. **Análisis de Precios de Venta**
    Análisis de precio promedio por producto
    <br><br>
    ![Análisis de precio promedio por producto](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
