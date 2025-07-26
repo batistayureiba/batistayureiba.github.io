@@ -19,7 +19,7 @@ Para poder abordar y simular el caso de estudio, se abordo el respectivo analisi
 
 ![Diagrama entidad relación de la Base de Datos ElectroMarket](/assets/img/AVI/ElectroMarket_DER.png "DER - EletroMarket")
 
-<center>Diagrama Entidad-Relación ElectroMarket</center></br>
+<center>Diagrama Entidad-Relación ElectroMarket</center>
 
 
 {:#load}
@@ -29,11 +29,12 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
 
-</br><center>Definición de tablas</center></br>
+<center>Definición de tablas</center>
+
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
-<center>Inserción de datos</center></br>
+<center>Inserción de datos</center>
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
