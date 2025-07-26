@@ -62,7 +62,7 @@ Para efectuar el analisis de los datos con los datos de prueba, escribi 20 consu
 
 ![Definición de Vistas](/assets/img/AVI/DDL03.png "Definición de vistas")
 
-<center>Definición de Vistas</center></br>
+<center>Definición de Vistas</center><br>
 
 Finalmente este el total de objetos creados para el caso de estudio.
 
@@ -75,14 +75,12 @@ Completado el diseño fisico de la base de datos. Podemos comenzar a listar las 
 
 1. Análisis de Rendimiento de Venta General 
    - Ingreso por año
-     <br>
-     ![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")
-     center>Ingreso por año</center></br>
+    <br>
+    <center>![Ingreso por año](/assets/img/AVI/q_1.1.png "Ingreso por año")</center>
+    <center>Ingreso por año</center><br>
      
-     > Este resultado nos muestra los ingresos totales para los años 2024 y 2025. Podemos observar una tendencia descendente significativa en los ingresos.
-     > En 2024, se generaron $1,087,901.24. Para 2025, los ingresos han caído a $440,220.75.
-     
-     >  Esto representa una disminución considerable.
+     > En esta comparativa podemos observar una tendencia descendente significativa en los ingresos del año 2025 con respecto al año anterior.
+     > Esto representa una disminución considerable.
      > Considerando que 2025 aún no ha terminado, es crucial monitorear si esta tendencia continúa.
      
    - Promedio de venta por transacción
