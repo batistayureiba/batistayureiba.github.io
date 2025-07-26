@@ -30,13 +30,11 @@ De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la 
 
 ![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
 
-<center>Definición de tablas</center>
-
+<center>Definición de tablas</center><br>
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
-<center>Inserción de datos</center>
-
+<center>Inserción de datos</center><br>
 
 Este conjunto de datos, aunque es de prueba, me permite efectuar elaborar los analisis del caso de estudio:
 
