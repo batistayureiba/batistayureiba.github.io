@@ -10,7 +10,6 @@ Se requiere construir una base de datos con información de ventas simuladas y, 
 
 
 * TOC
-  
 {:toc}
 
 {:#desing}
@@ -28,9 +27,9 @@ Diagrama Entidad-Relación ElectroMarket
 ---
 De acuerdo a lo definido en en la fase anterior, creamos el modelo fisico de la base de datos: entidades, relaciones y restricciones. Una vez que la estructura estaba lista, el siguiente paso fue llenarla con algunos datos. Para esta fase inicial, usé datos de prueba, emplenado sentencias ISERTS directas y asi simular cómo se vería la información real para poder empezar a probar el sistema.
 
-![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas")
-
-Definición de tablas
+|:![Definición de tablas](/assets/img/AVI/DDL00.png "Definición de tablas"):|
+|---|
+|Definición de tablas|
 
 ![Inserción de datos](/assets/img/AVI/DML02.png "Inserción de datos")
 
