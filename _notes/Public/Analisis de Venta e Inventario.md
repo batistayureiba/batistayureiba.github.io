@@ -134,8 +134,11 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
    > Esta lista es el reverso de las anteriores: nos muestra los productos que, a pesar de estar en tu inventario, tienen un rendimiento de ventas extremadamente bajo (menos de 50 unidades vendidas, y muchos con menos de 10).
    
    > Observamos que hay una amplia variedad de categorías, que no solo abarcan una gran diversidad: Audio, Computadoras, Línea Blanca, Cámaras, Televisores, Accesorios y Smartphones. Esto indica que el problema de bajo rendimiento no es exclusivo de un segmento, sino que hay productos rezagados en casi todas partes.
+   
    > Existen productos de alto valor unitario como laptops, televisores de alta gama, entre otros con solo 1 unidad vendida aparecen en esta lista. Esto sugiere que, aunque su precio sea alto, no están generando volumen de ventas, lo que podría indicar problemas de demanda, precio, competencia o visibilidad.
+   
    > Considerando que hay productos con menos de 10 unidades vendidas en todo el período analizado (que abarca al menos 19 meses, de enero 2024 a julio 2025), es una señal de inventario estancado. Estos artículos ocupan espacio, inmovilizan capital y pueden volverse obsoletos.
+   
    > Pocos Accesorios de Bajo Rendimiento: Solo aparecen dos accesorios en esta lista de bajo rendimiento y ambos tienen 6 u 8 unidades vendidas, lo que no es tan bajo como el resto. Esto refuerza la posición general de la categoría de Accesorios.
 
 3. **Análisis de Comportamiento del Cliente**
@@ -172,7 +175,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 
    > Este resultado de la "cesta de compra" es interesante, pero también presenta un desafío. La consulta buscaba el Top 10, pero todos los pares mostrados solo aparecen una vez juntos. En conclusión, no se observa una correlación directa y no se puede considerar un patrón de compra fuerte o recurrente. Esto podría deberse al volumen de datos, la diversidad de inventario y la naturaleza de los productos. 
 
-4. **Análisis de Rendimiento de Tiendas**
+4. **Análisis de Rendimiento de Tiendas**<br>
    Análisis de tiendas (por ingresos)
    <br><br>
    ![Análisis de tiendas (por ingresos)](/assets/img/AVI/q_4.1.png "Análisis de tiendas (por ingresos)")
@@ -213,7 +216,7 @@ Con el diseño físico de la base de datos completado, podemos comenzar a listar
 
    > **La Región Orinoquía** es la de menor rendimiento en todos los indicadores, representando un desafío y una oportunidad de crecimiento.
 
-5. **Análisis de Precios de Venta**
+5. **Análisis de Precios de Venta**<br>
    Análisis de precio promedio por producto
    <br><br>
    ![Análisis de precio promedio por producto](/assets/img/AVI/q_5.1.png "Análisis de precio promedio por producto")
