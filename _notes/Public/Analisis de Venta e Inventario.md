@@ -294,8 +294,10 @@ Puedes obtener el script del proyecto en el siguiente enlace. [Descargar](../ass
 Encontrarás la definición de los objetos y la data utilizada.
 
 ---
-*Descargo de responsabilidad
 
+
+
+*Descargo de responsabilidad
 Nota: Estos datos se generaron aleatoriamente y su propósito es únicamente para fines de práctica, aprendizaje o evaluación. No reflejan las ventas, los clientes ni las empresas reales, y no deben considerarse fiables para ningún análisis ni toma de decisiones en tiempo real.*
 
 
