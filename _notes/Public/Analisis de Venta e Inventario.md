@@ -23,7 +23,7 @@ Para un **Product Ops Analyst**, procesar estos datos significaría entregar rep
 ---
 Diseñé un pipeline híbrido para garantizar la integridad:
 
-![Diagrama de Flujo del Pipeline](/assets/img/projects/diagrama-firewall.png)
+![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_firewall_claro.png)
 
 1. **Ingesta:** Extracción desde SQLite.
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
@@ -53,10 +53,9 @@ def run_firewall_sales(df_detalle):
     Validación Contable:
     Asegura que Unidad * Precio sea igual al Subtotal reportado.
     """
-    # Calculamos el subtotal esperado
+    
     df_detalle['subtotal_calc'] = df_detalle['unidad'] * df_detalle['precio_unitario']
     
-    # Identificamos discrepancias mayores a un centavo
     mask_error = (df_detalle['subtotal'] - df_detalle['subtotal_calc']).abs() > 0.01
     
     ventas_limpias = df_detalle[~mask_error].copy()
