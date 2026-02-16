@@ -4,7 +4,7 @@ feed: show
 date : 16-02-2026
 ---
 
-> **"Incluso en sets de datos pequeños, inconsistencias sutiles de margen pueden distorsionar los KPIs financieros. Implementé un Firewall de Integridad en Python que detecta y bloquea anomalías de costo/precio antes de que lleguen al Data Warehouse, garantizando que el dashboard operativo muestre una rentabilidad real y saneada del 100% de los productos validados."**
+```**Incluso en sets de datos pequeños, inconsistencias sutiles de margen pueden distorsionar los KPIs financieros. Implementé un Firewall de Integridad en Python que detecta y bloquea anomalías de costo/precio antes de que lleguen al Data Warehouse, garantizando que el dashboard operativo muestre una rentabilidad real y saneada del 100% de los productos validados.**```
 
 * TOC
 {:toc}
@@ -29,14 +29,14 @@ Diseñé un pipeline híbrido para garantizar la integridad:
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
 
 ![Ejecución del Pipeline](/assets/img/projects/ejecucion.png)
-*Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
+> *Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
 
 3. **Staging (DuckDB):** Almacenamiento local de datos limpios y auditoría de errores.
 ![Estructura Local](/assets/img/projects/rs_local.png)
 
 4. **Analytics Cloud (MotherDuck):** Sincronización de datos validados para visualización.
 ![Esquema en MotherDuck](/assets/img/projects/rs_md_dw.png)
-*Organización de la base de datos híbrida: Staging local en DuckDB y Warehouse final en MotherDuck.*
+> *Organización de la base de datos híbrida: Staging local en DuckDB y Warehouse final en MotherDuck.*
 
 
 {:#firewall}
@@ -79,7 +79,7 @@ def run_firewall_sales(df_detalle):
 Al limpiar los datos, las métricas pasaron de ser "ruido" a ser insights accionables:
 
 ![Estado del Firewall](/assets/img/projects/firewall_status.png)
-*Distribución de registros saneados por categoría de datos.*
+> *Distribución de registros saneados por categoría de datos.*
 
 Alerta Operativa de Precios:
 He creado vistas en la nube que detectan desviaciones de margen. Si un producto cae por debajo del 10% de beneficio, el sistema lo marca en rojo para el equipo de compras.
@@ -90,10 +90,10 @@ Salud del Portafolio:
 Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero los errores de carga de precios estaban subestimando la rentabilidad real en un 12%.
 
 ![Análisis de Margen](/assets/img/projects/analisis_margen.png)
-*Detección de productos con rentabilidad crítica y visualización de márgenes netos.*
+> *Detección de productos con rentabilidad crítica y visualización de márgenes netos.*
 
 ![Performance de Ventas](/assets/img/projects/performance_ventas.png)
-*Ranking de ventas basado exclusivamente en datos validados por el firewall.*
+> *Ranking de ventas basado exclusivamente en datos validados por el firewall.*
 
 {:#conclu}
 ### 🧠 Conclusiones e Impacto
