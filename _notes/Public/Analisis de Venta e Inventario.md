@@ -96,7 +96,7 @@ Visión de Negocio: Este proyecto demuestra que el rol de Product Ops no solo co
 
 ✅ Almacenamiento local en DuckDB y Cloud en MotherDuck.
 
-✅ Descargar Script de Calidad y DDBB [Descargar](../assets/download/dq_firewall.zip)
+✅ Descargar Script de Calidad y DDBB [Descargar](../assets/download/firewall.zip)
 
 ---
 <br><br><br>
