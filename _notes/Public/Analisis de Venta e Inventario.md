@@ -53,10 +53,16 @@ def run_firewall_sales(df_detalle):
     Validación Contable:
     Asegura que Unidad * Precio sea igual al Subtotal reportado.
     """
+    # Calculamos el subtotal esperado
     df_detalle['subtotal_calc'] = df_detalle['unidad'] * df_detalle['precio_unitario']
+    
+    # Identificamos discrepancias mayores a un centavo
     mask_error = (df_detalle['subtotal'] - df_detalle['subtotal_calc']).abs() > 0.01
     
-    return df_detalle[~mask_error].copy(), df_detalle[mask_error].copy()
+    ventas_limpias = df_detalle[~mask_error].copy()
+    ventas_rechazadas = df_detalle[mask_error].copy()
+    
+    return ventas_limpias, ventas_rechazadas
 ```
 
 {:#product-ops}
