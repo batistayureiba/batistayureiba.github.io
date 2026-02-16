@@ -22,12 +22,13 @@ Para un **Product Ops Analyst**, procesar estos datos significaría entregar rep
 ### 🛠️ Arquitectura del Sistema
 ---
 Diseñé un pipeline híbrido para garantizar la integridad:
+
+![Diagrama de Flujo del Pipeline](/assets/img/projects/diagrama-firewall.png)
+
 1. **Ingesta:** Extracción desde SQLite.
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
 3. **Staging (DuckDB):** Almacenamiento local de datos limpios y auditoría de errores.
 4. **Analytics Cloud (MotherDuck):** Sincronización de datos validados para visualización.
-
-![Diagrama de Flujo del Pipeline](/assets/img/projects/diagrama_firewall.png)
 
 {:#firewall}
 ### 🐍 Implementación del Firewall (Python)
@@ -58,8 +59,8 @@ def run_firewall_sales(df_detalle):
     return df_detalle[~mask_error].copy(), df_detalle[mask_error].copy()
 ```
 
-:#product-ops}
-### 📈 Métricas de Product Ops (Alto Valor)
+{:#product-ops}
+### 📈 Métricas de Product Ops
 
 Al limpiar los datos, las métricas pasaron de ser "ruido" a ser insights accionables:
 
@@ -74,7 +75,7 @@ Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero l
 
 Confianza Total: El sistema eliminó el 100% de los registros incoherentes, garantizando que el análisis de rentabilidad sea verídico.
 
-Eficiencia (FinOps): El uso de DuckDB local redujo la carga de datos basura en la nube, optimizando costos operativos.
+Eficiencia: El uso de DuckDB local redujo la carga de datos basura en la nube, optimizando costos operativos.
 
 Visión de Negocio: Este proyecto demuestra que el rol de Product Ops no solo consume datos, sino que garantiza que la infraestructura de datos sea robusta y confiable para la toma de decisiones.
 
