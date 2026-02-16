@@ -30,6 +30,9 @@ Diseñé un pipeline híbrido para garantizar la integridad:
 3. **Staging (DuckDB):** Almacenamiento local de datos limpios y auditoría de errores.
 4. **Analytics Cloud (MotherDuck):** Sincronización de datos validados para visualización.
 
+![Ejecución del Pipeline](/assets/img/projects/ejecucion.png)
+*Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
+
 {:#firewall}
 ### 🐍 Implementación del Firewall (Python)
 ---
@@ -63,17 +66,30 @@ def run_firewall_sales(df_detalle):
     
     return ventas_limpias, ventas_rechazadas
 ```
+![Estructura Local](/assets/img/projects/rs_local.png)
+![Esquema en MotherDuck](/assets/img/projects/rs_md_dw.png)
+*Organización de la base de datos híbrida: Staging local en DuckDB y Warehouse final en MotherDuck.*
 
 {:#product-ops}
 ### 📈 Métricas de Product Ops
 
 Al limpiar los datos, las métricas pasaron de ser "ruido" a ser insights accionables:
 
+![Estado del Firewall](/assets/img/projects/firewall_status.png)
+*Distribución de registros saneados por categoría de datos.*
+
 Alerta Operativa de Precios:
 He creado vistas en la nube que detectan desviaciones de margen. Si un producto cae por debajo del 10% de beneficio, el sistema lo marca en rojo para el equipo de compras.
 
+![Alertas Operativas](/assets/img/projects/alertas.png)
+![Análisis de Margen](/assets/img/projects/analisis_margen.png)
+*Detección de productos con rentabilidad crítica y visualización de márgenes netos.*
+
 Salud del Portafolio:
 Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero los errores de carga de precios estaban subestimando la rentabilidad real en un 12%.
+
+![Performance de Ventas](/assets/img/projects/performance_ventas.png)
+*Ranking de ventas basado exclusivamente en datos validados por el firewall.*
 
 {:#conclu}
 ### 🧠 Conclusiones e Impacto
