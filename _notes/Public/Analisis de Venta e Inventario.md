@@ -4,7 +4,7 @@ feed: show
 date : 16-02-2026
 ---
 
-> **"Detecté que el 100% de los productos presentaban inconsistencias de margen en la fuente original. En lugar de procesar datos basura, construí un Firewall de Integridad Automático que asegura la confianza de los stakeholders al rechazar registros con márgenes imposibles en tiempo real."**
+> **"Incluso en sets de datos pequeños, inconsistencias sutiles de margen pueden distorsionar los KPIs financieros. Implementé un Firewall de Integridad en Python que detecta y bloquea anomalías de costo/precio antes de que lleguen al Data Warehouse, garantizando que el dashboard operativo muestre una rentabilidad real y saneada del 100% de los productos validados."**
 
 * TOC
 {:toc}
