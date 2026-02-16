@@ -4,18 +4,15 @@ feed: show
 date : 16-02-2026
 ---
  
-ElectroMarket es una cadena de tiendas de electrónica que busca optimizar su gestión de inventario y mejorar sus estrategias de marketing y ventas basándose en datos. Actualmente, tienen problemas para identificar qué productos se venden bien, en qué regiones y en qué épocas del año, lo que lleva a excesos o faltantes de inventario y a oportunidades de venta perdidas.
+"Detecté que el 100% de los productos presentaban inconsistencias de margen en la fuente original. En lugar de procesar datos basura, construí un Firewall de Integridad Automático que asegura la confianza de los stakeholders al rechazar registros con márgenes imposibles en tiempo real."
 
-Se requiere construir una base de datos con información de ventas simuladas y, a través de análisis SQL, proporcionar información clave que ayude a ElectroMarket a tomar decisiones informadas.
-
-graph LR
-    A[(Source SQL)] --> B[Python Firewall]
-    B -->|Validación de Margen| C{¿Data Limpia?}
-    C -->|No| D[Audit DuckDB: Rechazados]
-    C -->|Sí| E[Fact DuckDB: Staging]
-    E --> F[MotherDuck Cloud]
-    F --> G[Vistas: Alerta Operativa]
-    G --> H[Dashboard: Product Ops Insights]
+graph TD
+    A[Source SQL: Datos Crudos] --> B{Python Firewall}
+    B -->|Margen Negativo| C[Audit: Rechazados]
+    B -->|Data Validada| D[DuckDB: Local Staging]
+    D --> E[MotherDuck: Cloud Warehouse]
+    E --> F[Vistas SQL: Product Ops Insights]
+    F --> G[Dashboard: Alertas de Pricing]
 
 
 * TOC
