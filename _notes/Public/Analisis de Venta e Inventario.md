@@ -83,6 +83,10 @@ Confianza Total: El sistema eliminó el 100% de los registros incoherentes, gara
 
 Eficiencia: El uso de DuckDB local redujo la carga de datos basura en la nube, optimizando costos operativos.
 
+Optimización de Margen: Identificación de productos "fuga" para ajuste inmediato de pricing.
+
+Escalabilidad: Arquitectura lista para integrar nuevas sucursales manteniendo el estándar de calidad.
+
 Visión de Negocio: Este proyecto demuestra que el rol de Product Ops no solo consume datos, sino que garantiza que la infraestructura de datos sea robusta y confiable para la toma de decisiones.
 
 {:#resources}
