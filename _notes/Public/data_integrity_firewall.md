@@ -117,10 +117,10 @@ La auditoría técnica reveló una distorsión del 12% en la rentabilidad de la 
 {:#close}
 ####  🗝️ Cierre
 
-```Este ecosistema de datos no solo resuelve un problema de ingesta; establece un estándar de fiabilidad operativa. Al implementar un Firewall de Integridad, la incertidumbre sobre la veracidad de los KPIs desaparece, transformando los datos crudos en un activo financiero auditable.
+Este ecosistema de datos no solo resuelve un problema de ingesta; establece un estándar de fiabilidad operativa. Al implementar un Firewall de Integridad, la incertidumbre sobre la veracidad de los KPIs desaparece, transformando los datos crudos en un activo financiero auditable.
 
 La arquitectura aquí presentada —híbrida, escalable y con gobernanza integrada— permite que la organización deje de invertir tiempo en la limpieza reactiva y comience a operar de forma proactiva. En un entorno donde la precisión del margen define la supervivencia del negocio, contar con una infraestructura que garantiza el Data Trust desde el origen no es un lujo, sino una ventaja competitiva crítica para el bottom-line.
-```
+
 
 {:#resources}
 ####  🗂️ Recursos
