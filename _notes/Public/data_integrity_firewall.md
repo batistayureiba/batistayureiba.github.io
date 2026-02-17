@@ -27,16 +27,15 @@ Diseñé un pipeline híbrido para garantizar la integridad:
 
 1. **Ingesta:** Extracción desde SQLite a DuckDB.
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
-
-![Ejecución del Pipeline](/assets/img/projects/ejecucion.png)
-*Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
+   ![Ejecución del Pipeline](/assets/img/projects/ejecucion.png)
+   *Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
 
 3. **Staging (DuckDB):** Almacenamiento local de datos limpios y auditoría de errores.
-![Estructura Local](/assets/img/projects/rs_local.png)
+   ![Estructura Local](/assets/img/projects/rs_local.png)
 
 4. **Analytics Cloud (MotherDuck):** Sincronización de datos validados para visualización.
-![Esquema en MotherDuck](/assets/img/projects/rs_md_dw.png)
-###### *Organización de la base de datos híbrida: Staging local en DuckDB y Warehouse final en MotherDuck.*
+   ![Esquema en MotherDuck](/assets/img/projects/rs_md_dw.png)
+   *Organización de la base de datos híbrida: Staging local en DuckDB y Warehouse final en MotherDuck.*
 
 
 {:#firewall}
