@@ -4,7 +4,7 @@ feed: show
 date : 16-02-2026
 ---
 
-```Incluso en sets de datos pequeños, las inconsistencias sutiles de margen pueden distorsionar los KPIs financieros. Implementé un Firewall de Integridad en Python que detecta y bloquea anomalías de costo/precio antes de que lleguen al Data Warehouse, garantizando que el dashboard operativo muestre una rentabilidad real y saneada del 100% de los productos validados.```
+```Este proyecto establece una infraestructura de Gobierno de Datos que garantiza la integridad financiera. No es solo un dashboard; es un mecanismo de control preventivo que asegura que el 100% de las decisiones de pricing se basen en datos auditados y libres de ruido contable.```
 
 * TOC
 {:toc}
@@ -14,7 +14,9 @@ date : 16-02-2026
 {:#problem}
 #### 🔎 Desafío: Calidad de Datos en la Fuente
 ---
-Este proyecto evolucionó de un análisis de ventas tradicional a una solución de **Ingeniería de Datos**. Al explorar la fuente original, identifiqué un problema crítico: la base de datos permitía registros con márgenes negativos y discrepancias en los subtotales de venta. 
+Este proyecto evolucionó de un análisis de ventas tradicional a una solución de **Ingeniería de Datos**. Durante la fase de due diligence de datos, identifiqué una vulnerabilidad crítica en la fuente: la ausencia de validaciones de lógica de negocio en el origen. 
+
+Identificar esta 'fuga de verdad' fue el catalizador para diseñar un pipeline que antepone la calidad al volumen.
 
 Para un **Product Ops Analyst**, procesar estos datos significaría entregar reportes financieros falsos. Por ello, implementé una arquitectura que actúa como un filtro de calidad antes de cualquier análisis.
 
@@ -88,8 +90,8 @@ He creado vistas en la nube que detectan desviaciones de margen. Si un producto 
 
 ![Alertas Operativas](/assets/img/projects/alertas.png)
 
-**Salud del Portafolio:**
-Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero los errores de carga de precios estaban subestimando la rentabilidad real en un 12%.
+**Impacto en Bottom-Line:**
+La auditoría técnica reveló una distorsión del 12% en la rentabilidad de la categoría 'Accesorios'. Al corregir este sesgo mediante el Firewall, el equipo de Producto recuperó visibilidad sobre márgenes que anteriormente se daban por perdidos debido a errores de carga.
 
    ![Análisis de Margen](/assets/img/projects/analisis_margen.png)
    *Detección de productos con rentabilidad crítica y visualización de márgenes netos.*
@@ -99,7 +101,7 @@ Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero l
    *Ranking de ventas basado exclusivamente en datos validados por el firewall.*
 
 {:#conclu}
-#### 🧠 Conclusiones e Impacto
+#### 🧠 Conclusiones
 
 📌 Confianza Total: El sistema eliminó el 100% de los registros incoherentes, garantizando que el análisis de rentabilidad sea verídico.
 
@@ -109,7 +111,16 @@ Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero l
 
 📌 Escalabilidad: Arquitectura lista para integrar nuevas sucursales manteniendo el estándar de calidad.
 
-📌 Visión de Negocio: Este proyecto demuestra que el rol de Product Ops no solo consume datos, sino que garantiza que la infraestructura de datos sea robusta y confiable para la toma de decisiones.
+📌 Visión de Liderazgo: Mi prioridad es transformar los datos de un 'pasivo incierto' a un 'activo estratégico'. Esta arquitectura es el blueprint de cómo escalaremos la operación: automatizando la confianza y liberando a los analistas de la limpieza manual para que se enfoquen exclusivamente en la estrategia de crecimiento.
+
+
+{:#close}
+####  🗝️ Cierre
+
+```Este ecosistema de datos no solo resuelve un problema de ingesta; establece un estándar de fiabilidad operativa. Al implementar un Firewall de Integridad, la incertidumbre sobre la veracidad de los KPIs desaparece, transformando los datos crudos en un activo financiero auditable.
+
+La arquitectura aquí presentada —híbrida, escalable y con gobernanza integrada— permite que la organización deje de invertir tiempo en la limpieza reactiva y comience a operar de forma proactiva. En un entorno donde la precisión del margen define la supervivencia del negocio, contar con una infraestructura que garantiza el Data Trust desde el origen no es un lujo, sino una ventaja competitiva crítica para el bottom-line.
+```
 
 {:#resources}
 ####  🗂️ Recursos
