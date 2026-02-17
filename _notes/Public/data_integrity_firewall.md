@@ -83,13 +83,12 @@ Al limpiar los datos, las métricas pasaron de ser "ruido" a ser insights accion
    *Distribución de registros saneados por categoría de datos.*
 
 
-Alerta Operativa de Precios:
-
+**Alerta Operativa de Precios:**
 He creado vistas en la nube que detectan desviaciones de margen. Si un producto cae por debajo del 10% de beneficio, el sistema lo marca en rojo para el equipo de compras.
 
 ![Alertas Operativas](/assets/img/projects/alertas.png)
 
-Salud del Portafolio:
+**Salud del Portafolio:**
 Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero los errores de carga de precios estaban subestimando la rentabilidad real en un 12%.
 
    ![Análisis de Margen](/assets/img/projects/analisis_margen.png)
@@ -102,21 +101,23 @@ Identifiqué que las categorías de "Accesorios" son el motor de volumen, pero l
 {:#conclu}
 #### 🧠 Conclusiones e Impacto
 
-Confianza Total: El sistema eliminó el 100% de los registros incoherentes, garantizando que el análisis de rentabilidad sea verídico.
+📌 Confianza Total: El sistema eliminó el 100% de los registros incoherentes, garantizando que el análisis de rentabilidad sea verídico.
 
-Eficiencia: El uso de DuckDB local redujo la carga de datos basura en la nube, optimizando costos operativos.
+📌 Eficiencia: El uso de DuckDB local redujo la carga de datos basura en la nube, optimizando costos operativos.
 
-Optimización de Margen: Identificación de productos "fuga" para ajuste inmediato de pricing.
+📌 Optimización de Margen: Identificación de productos "fuga" para ajuste inmediato de pricing.
 
-Escalabilidad: Arquitectura lista para integrar nuevas sucursales manteniendo el estándar de calidad.
+📌 Escalabilidad: Arquitectura lista para integrar nuevas sucursales manteniendo el estándar de calidad.
 
-Visión de Negocio: Este proyecto demuestra que el rol de Product Ops no solo consume datos, sino que garantiza que la infraestructura de datos sea robusta y confiable para la toma de decisiones.
+📌 Visión de Negocio: Este proyecto demuestra que el rol de Product Ops no solo consume datos, sino que garantiza que la infraestructura de datos sea robusta y confiable para la toma de decisiones.
 
 {:#resources}
 ####  🗂️ Recursos
 
 ✅ Pipeline automatizado en Python con Logging y .bat de ejecución.
+
 ✅ Almacenamiento local en DuckDB y Cloud en MotherDuck.
+
 ✅ Descargar Script de Calidad y DDBB [Descargar](../assets/download/firewall.zip)
 
 ---
