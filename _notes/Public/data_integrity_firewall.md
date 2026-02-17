@@ -29,7 +29,7 @@ Diseñé un pipeline híbrido para garantizar la integridad:
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
 
 ![Ejecución del Pipeline](/assets/img/projects/ejecucion.png)
-###### *Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
+*Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
 
 3. **Staging (DuckDB):** Almacenamiento local de datos limpios y auditoría de errores.
 ![Estructura Local](/assets/img/projects/rs_local.png)
