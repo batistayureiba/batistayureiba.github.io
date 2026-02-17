@@ -25,7 +25,7 @@ Para un **Product Ops Analyst**, procesar estos datos significaría entregar rep
 ---
 Diseñé un pipeline híbrido para garantizar la integridad:
 
-![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_firewall_claro.png)
+![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_firewall_oscuro.png)
 
 1. **Ingesta:** Extracción desde SQLite a DuckDB.
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
