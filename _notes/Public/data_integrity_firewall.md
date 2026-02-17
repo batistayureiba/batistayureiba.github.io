@@ -111,7 +111,7 @@ La auditoría técnica reveló una distorsión del 12% en la rentabilidad de la 
 
 📌 Escalabilidad: Arquitectura lista para integrar nuevas sucursales manteniendo el estándar de calidad.
 
-📌 Visión de Liderazgo: Mi prioridad es transformar los datos de un 'pasivo incierto' a un 'activo estratégico'. Esta arquitectura es el blueprint de cómo escalaremos la operación: automatizando la confianza y liberando a los analistas de la limpieza manual para que se enfoquen exclusivamente en la estrategia de crecimiento.
+📌 Visión de Liderazgo: La prioridad estratégica fue transformar los datos de un 'pasivo incierto' a un 'activo estratégico'. Esta arquitectura es el blueprint de cómo escalaremos la operación: automatizando la confianza y liberando a los analistas de la limpieza manual para que se enfoquen exclusivamente en la estrategia de crecimiento.
 
 
 {:#close}
