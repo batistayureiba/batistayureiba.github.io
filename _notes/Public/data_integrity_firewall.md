@@ -4,7 +4,7 @@ feed: show
 date : 16-02-2026
 ---
 
-```**Incluso en sets de datos pequeños, inconsistencias sutiles de margen pueden distorsionar los KPIs financieros. Implementé un Firewall de Integridad en Python que detecta y bloquea anomalías de costo/precio antes de que lleguen al Data Warehouse, garantizando que el dashboard operativo muestre una rentabilidad real y saneada del 100% de los productos validados.**```
+```Incluso en sets de datos pequeños, las inconsistencias sutiles de margen pueden distorsionar los KPIs financieros. Implementé un Firewall de Integridad en Python que detecta y bloquea anomalías de costo/precio antes de que lleguen al Data Warehouse, garantizando que el dashboard operativo muestre una rentabilidad real y saneada del 100% de los productos validados.```
 
 * TOC
 {:toc}
@@ -12,14 +12,14 @@ date : 16-02-2026
 ---
 
 {:#problem}
-### 🔎 El Desafío: Calidad de Datos en la Fuente
+#### 🔎 Desafío: Calidad de Datos en la Fuente
 ---
 Este proyecto evolucionó de un análisis de ventas tradicional a una solución de **Ingeniería de Datos**. Al explorar la fuente original, identifiqué un problema crítico: la base de datos permitía registros con márgenes negativos y discrepancias en los subtotales de venta. 
 
 Para un **Product Ops Analyst**, procesar estos datos significaría entregar reportes financieros falsos. Por ello, implementé una arquitectura que actúa como un filtro de calidad antes de cualquier análisis.
 
 {:#architecture}
-### 🛠️ Arquitectura del Sistema
+#### 🛠️ Arquitectura del Sistema
 ---
 Diseñé un pipeline híbrido para garantizar la integridad:
 
@@ -29,7 +29,7 @@ Diseñé un pipeline híbrido para garantizar la integridad:
 2. **Firewall (Python):** Validación de márgenes y consistencia contable.
 
 ![Ejecución del Pipeline](/assets/img/projects/ejecucion.png)
-> *Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
+*Consola de ejecución: Validación de 112 productos y 1,598 ventas con detección de anomalías.*
 
 3. **Staging (DuckDB):** Almacenamiento local de datos limpios y auditoría de errores.
 ![Estructura Local](/assets/img/projects/rs_local.png)
