@@ -24,13 +24,12 @@ El sector asegurador colombiano opera sobre matrices de datos altamente dispersa
 {:#architecture}
 #### 🛠️ Arquitectura del Sistema
 ---
-El sistema se basa en un motor OLAP de alto rendimiento para garantizar latencias mínimas en consultas complejas:
+El sistema opera bajo un Pipeline de Refinamiento en Cascada, donde el procesamiento no es lineal, sino que se divide en micro-tareas de integridad:
 
-  1. Capa de Almacenamiento: MotherDuck (Nube) para persistencia de tablas Silver y Gold.
-  
-  2. Motor de Procesamiento: DuckDB para la ejecución de lógica de negocio directamente en memoria.
-  
-  3. Frontend Analítico: Streamlit para la renderización de métricas de solvencia.
+1. Ingesta de Tipado Débil (Weak Typing): Recepción de archivos planos con esquemas inconsistentes.
+2. Firewall de Tipado (Casting Layer): El motor DuckDB realiza una conversión forzada a tipos financieros (DOUBLE).
+3. Filtrado de Existencia: Una sub-rutina en Python que escanea la presencia de datos para omitir vectores vacíos.
+4. Entrega Estructurada (Clean Delivery): Los datos finales se presentan bajo una vista SQL normalizada, garantizando que el usuario final siempre reciba información íntegra y sin ruido visual.
    
    ![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_monitor_integridad.png)
 
