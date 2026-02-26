@@ -17,9 +17,7 @@ date : 26-02-2026
 El sector asegurador colombiano opera sobre matrices de datos altamente dispersas. El reto técnico principal radica en la inconsistencia de tipos (Data Type Mismatch) y la polución de registros nulos:
 
 + Matrices Dispersas: Columnas de años (1970-2026) con valores en cero para el 90% de las referencias.
-  
 + Tipado Débil: Cifras financieras importadas como Strings con caracteres especiales ($, .), impidiendo cálculos aritméticos.
-
 + Ruido en Nomenclatura: Nombres de aseguradoras con prefijos numéricos de sistema que ensucian la visualización de BI.
 
 
