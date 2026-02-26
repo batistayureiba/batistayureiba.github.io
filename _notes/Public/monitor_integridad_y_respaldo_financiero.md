@@ -1,5 +1,5 @@
 ---
-title : Monitor de Integridad y Respaldo Financiero: Sector Automotriz
+title : "Monitor de Integridad y Respaldo Financiero: Sector Automotriz"
 feed: show
 date : 26-02-2026
 ---
