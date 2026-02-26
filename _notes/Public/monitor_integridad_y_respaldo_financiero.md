@@ -30,7 +30,7 @@ El sistema opera bajo un Pipeline de Refinamiento en Cascada, donde el procesami
 2. Firewall de Tipado (Casting Layer): El motor DuckDB realiza una conversión forzada a tipos financieros (DOUBLE).
 3. Filtrado de Existencia: Una sub-rutina en Python que escanea la presencia de datos para omitir vectores vacíos.
 4. Entrega Estructurada (Clean Delivery): Los datos finales se presentan bajo una vista SQL normalizada, garantizando que el usuario final siempre reciba información íntegra y sin ruido visual.
-   
+
    ![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_monitor_integridad.png)
 
 
