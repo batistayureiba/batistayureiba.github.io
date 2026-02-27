@@ -31,99 +31,73 @@ El sistema opera bajo un Pipeline de Refinamiento en Cascada, donde el procesami
 3. Filtrado de Existencia: Una sub-rutina en Python que escanea la presencia de datos para omitir vectores vacíos.
 4. Entrega Estructurada (Clean Delivery): Los datos finales se presentan bajo una vista SQL normalizada, garantizando que el usuario final siempre reciba información íntegra y sin ruido visual.
 
-   ![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_monitor_integridad.png)
+
+![Diagrama de Flujo del Pipeline](/assets/img/projects/dg_monitor_integridad.png)
+*Diagrama de Arquitectura de Datos*
 
 
-{:#firewall}
-#### 🐍 Implementación del Firewall (Python)
+{:#rollup}
+#### 🐍 Implementación: Core Engine & Pipeline de Sincronización
 ---
 Este es el núcleo técnico que protege la rentabilidad del negocio. El script intercepta los datos y segrega los errores automáticamente:
 
-```python
-import pandas as pd
+La robustez del proyecto reside en el desacoplamiento de la lógica de procesamiento frente a la capa de visualización. El sistema se divide en dos módulos independientes que garantizan la integridad de los datos y la eficiencia en la nube.
 
-def run_firewall_products(df):
-    """
-    Detecta 'Fuga de Capital': 
-    Identifica productos donde el precio es menor o igual al costo.
-    """
-    mask_error_precio = df['proPrecio'] <= df['proCosto']
-    limpios = df[~mask_error_precio].copy()
-    rechazados = df[mask_error_precio].copy()
-    return limpios, rechazados
+A. Capa de Backend & Orquestación (monitor.py)
+Este módulo actúa como el motor de ETL (Extract, Transform, Load). Su función es garantizar que la "Single Source of Truth" en la nube siempre esté actualizada sin afectar la disponibilidad de la aplicación.
 
-def run_firewall_sales(df_detalle):
-    """
-    Validación Contable:
-    Asegura que Unidad * Precio sea igual al Subtotal reportado.
-    """
-    
-    df_detalle['subtotal_calc'] = df_detalle['unidad'] * df_detalle['precio_unitario']
-    
-    mask_error = (df_detalle['subtotal'] - df_detalle['subtotal_calc']).abs() > 0.01
-    
-    ventas_limpias = df_detalle[~mask_error].copy()
-    ventas_rechazadas = df_detalle[mask_error].copy()
-    
-    return ventas_limpias, ventas_rechazadas
-```
+- Gestión de Infraestructura Dinámica: Implementación de lógica que verifica y crea el catálogo de bases de datos en MotherDuck de forma programática.
+- Normalización de Esquemas: Transformación de datos heterogéneos (Excel + API JSON) hacia un esquema relacional optimizado, resolviendo problemas de Type Casting y consistencia de nombres de columnas.
+- Eficiencia de Carga: Uso de registros temporales en memoria para minimizar la latencia durante la carga de grandes volúmenes de datos a la nube.
+
+B. Capa de Visualización & Analítica (app.py)
+Diseñada bajo el principio de ReadOnly Access, la aplicación de Streamlit consume exclusivamente los activos finales procesados, lo que permite una latencia cercana a cero para el usuario final.
+
+- Estado de Sesión Persistente: Manejo de filtros jerárquicos para una experiencia de usuario fluida.
+- Análisis Comparativo en Tiempo Real: Fusión de la valoración comercial de Fasecolda con el Market Ranking de aseguradoras generado en la capa de transformación.
 
 {:#product-ops}
-#### 📈 Métricas de Product Ops
+#### 📈 Métricas & Business Intelligence
 
-Al limpiar los datos, las métricas pasaron de ser "ruido" a ser insights accionables:
+La verdadera potencia del sistema radica en su capacidad de transformar datos crudos de la Superfinanciera en insights accionables. Para esto, se diseñó un motor analítico que cruza la valoración comercial con el respaldo institucional de las aseguradoras.
 
-   ![Estado del Firewall](/assets/img/projects/firewall_status.png)
-   *Distribución de registros saneados por categoría de datos.*
+A. Algoritmo de Market Share & Solvencia
+Se implementó un motor de agregación que procesa miles de registros de la API pública para determinar la cuota de mercado en tiempo real.
 
+- Agregación Dinámica: Cálculo de participación de mercado basada en la prima emitida para el ramo de automóviles.
+- Indicadores de Riesgo: Clasificación semafórica de las aseguradoras (Nivel de respaldo: 🟢, 🟡, 🔴) según su volumen de activos y market share, permitiendo al usuario final evaluar no solo el precio del vehículo, sino la solidez de quien lo asegura.
 
-**Alerta Operativa de Precios:**
-He creado vistas en la nube que detectan desviaciones de margen. Si un producto cae por debajo del 10% de beneficio, el sistema lo marca en rojo para el equipo de compras.
+B. Segmentación de Datos (Data Slicing)
+A diferencia de un reporte estático, la implementación permite un análisis multidimensional:
 
-![Alertas Operativas](/assets/img/projects/alertas.png)
+- Ficha Técnica vs. Valoración: Correlación entre características físicas (potencia, cilindraje, peso) y la curva de depreciación anual del vehículo (Type Casting de columnas 1970-2027).
+- Filtros Jerárquicos: Reducción del espacio de búsqueda de datos mediante una interfaz reactiva que minimiza la carga cognitiva del usuario.
 
-**Impacto en Bottom-Line:**
-La auditoría técnica reveló una distorsión del 12% en la rentabilidad de la categoría 'Accesorios'. Al corregir este sesgo mediante el Firewall, el equipo de Producto recuperó visibilidad sobre márgenes que anteriormente se daban por perdidos debido a errores de carga.
-
-   ![Análisis de Margen](/assets/img/projects/analisis_margen.png)
-   *Detección de productos con rentabilidad crítica y visualización de márgenes netos.*
-   
-
-   ![Performance de Ventas](/assets/img/projects/performance_ventas.png)
-   *Ranking de ventas basado exclusivamente en datos validados por el firewall.*
 
 {:#conclu}
 #### 🧠 Conclusiones
 
-📌 Confianza Total: El sistema eliminó el 100% de los registros incoherentes, garantizando que el análisis de rentabilidad sea verídico.
+La popuesta de este proyecto no es solo un ejercicio técnico, sino una herramienta lista para el mercado:
 
-📌 Eficiencia: El uso de DuckDB local redujo la carga de datos basura en la nube, optimizando costos operativos.
+📌 Eficiencia en el Acceso a Datos: Se redujo la complejidad de consulta de la Guía Fasecolda (tradicionalmente estática o en PDF) a una interfaz dinámica con tiempos de respuesta de milisegundos, gracias a la indexación en la nube con DuckDB.
 
-📌 Optimización de Margen: Identificación de productos "fuga" para ajuste inmediato de pricing.
+📌 Integridad y Calidad de Datos (Data Quality): La implementación de un motor de Type Casting y normalización garantiza que el 100% de los registros sean operacionales, eliminando errores de visualización comunes en datos financieros crudos.
 
-📌 Escalabilidad: Arquitectura lista para integrar nuevas sucursales manteniendo el estándar de calidad.
-
-📌 Visión de Liderazgo: La prioridad estratégica fue transformar los datos de un 'pasivo incierto' a un 'activo estratégico'. Esta arquitectura es el blueprint de cómo escalaremos la operación: automatizando la confianza y liberando a los analistas de la limpieza manual para que se enfoquen exclusivamente en la estrategia de crecimiento.
+📌 Decisión Informada: El cruce de la valoración comercial con el respaldo institucional (Market Share) permite que el usuario pase de una "comparación de precios" a una "evaluación de riesgo real".
 
 
 {:#close}
 ####  🗝️ Cierre
 
-Este ecosistema de datos no solo resuelve un problema de ingesta; establece un estándar de fiabilidad operativa. Al implementar un Firewall de Integridad, la incertidumbre sobre la veracidad de los KPIs desaparece, transformando los datos crudos en un activo financiero auditable.
+Este Monitor de Seguros no es solo un visualizador de datos; es una Prueba de Concepto (PoC) de cómo la modernización de la arquitectura de datos puede transformar sectores tradicionales.
 
-La arquitectura aquí presentada —híbrida, escalable y con gobernanza integrada— permite que la organización deje de invertir tiempo en la limpieza reactiva y comience a operar de forma proactiva. En un entorno donde la precisión del margen define la supervivencia del negocio, contar con una infraestructura que garantiza el Data Trust desde el origen no es un lujo, sino una ventaja competitiva crítica para el bottom-line.
-
-Detección de inconsistencias en tipos de datos primitivos. Se implementó una capa de Type Casting para mitigar errores de desbordamiento y asegurar que los campos monetarios (originalmente Strings) operen bajo tipos numéricos Double, permitiendo agregaciones precisas de Siniestralidad y Market Share.
+Al integrar una capa de backend robusta con una visualización ágil, hemos creado un activo digital capaz de escalar a otros ramos de seguros o mercados regionales. El proyecto demuestra que es posible democratizar la información financiera compleja, convirtiéndola en una ventaja competitiva mediante el uso inteligente de tecnologías Cloud-Native. En un entorno donde el dato es el nuevo petróleo, esta herramienta es la refinería que entrega valor directo al consumidor y a la gerencia
 
 
 {:#resources}
 ####  🗂️ Recursos
 
-✅ Pipeline automatizado en Python con Logging y .bat de ejecución.
-
-✅ Almacenamiento local en DuckDB y Cloud en MotherDuck.
-
-✅ Descargar Script de Calidad y DDBB [Descargar](../assets/download/firewall.zip)
+✅ Script del proyecto [Descargar](../assets/download/pmonitors.zip)
 
 ---
 <br><br><br>
