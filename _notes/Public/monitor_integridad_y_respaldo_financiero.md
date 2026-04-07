@@ -104,7 +104,7 @@ Al integrar una capa de backend robusta con una visualización ágil, hemos crea
 {:#resources}
 ####  🗂️ Recursos
 
-✅ Script del proyecto [Descargar](../assets/download/pmonitors.zip)
+✅ Scripts del proyecto [Descargar](../assets/download/monitor_seguros.zip)
 
 ---
 <br><br><br>
