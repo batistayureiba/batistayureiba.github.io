@@ -56,7 +56,7 @@ Diseñada bajo el principio de ReadOnly Access, la aplicación de Streamlit cons
 - Estado de Sesión Persistente: Manejo de filtros jerárquicos para una experiencia de usuario fluida.
 - Análisis Comparativo en Tiempo Real: Fusión de la valoración comercial de Fasecolda con el Market Ranking de aseguradoras generado en la capa de transformación.
 
-![Fig 1. Pipeline de ingesta automatizada ejecutando validaciones de esquema y carga optimizada en la nube.](/assets/img/projects/img00_monint.png)
+![Fig 1. Pipeline de ingesta automatizada ejecutando validaciones de esquema y carga optimizada en la nube.](/assets/img/projects/pipeline_seguros.png)
 
 {:#product-ops}
 #### 📈 Métricas & Business Intelligence
@@ -69,7 +69,7 @@ Se implementó un motor de agregación que procesa miles de registros de la API 
 - Agregación Dinámica: Cálculo de participación de mercado basada en la prima emitida para el ramo de automóviles.
 - Indicadores de Riesgo: Clasificación semafórica de las aseguradoras (Nivel de respaldo: 🟢, 🟡, 🔴) según su volumen de activos y market share, permitiendo al usuario final evaluar no solo el precio del vehículo, sino la solidez de quien lo asegura.
 
-![Fig 2. Visualización analítica de Market Share institucional; integración de microdatos de la Superfinanciera para la determinación del nivel de respaldo y solvencia de aseguradoras en tiempo real.](/assets/img/projects/img01_monint.png)
+![Fig 2. Visualización analítica de Market Share institucional; integración de microdatos de la Superfinanciera para la determinación del nivel de respaldo y solvencia de aseguradoras en tiempo real.](/assets/img/projects/dashboard_analitico_seguros.png)
 
 
 B. Segmentación de Datos (Data Slicing)
@@ -78,7 +78,7 @@ A diferencia de un reporte estático, la implementación permite un análisis mu
 - Ficha Técnica vs. Valoración: Correlación entre características físicas (potencia, cilindraje, peso) y la curva de depreciación anual del vehículo (Type Casting de columnas 1970-2027).
 - Filtros Jerárquicos: Reducción del espacio de búsqueda de datos mediante una interfaz reactiva que minimiza la carga cognitiva del usuario.
 
-![Fig 3. Interfaz de consulta de activos normalizados; ejecución de lógica de Type Casting sobre el histórico de valoraciones comerciales y mapeo dinámico de especificaciones técnicas (Cilindraje, Peso, Potencia).](/assets/img/projects/img02_monint.png)
+![Fig 3. Interfaz de consulta de activos normalizados; ejecución de lógica de Type Casting sobre el histórico de valoraciones comerciales y mapeo dinámico de especificaciones técnicas (Cilindraje, Peso, Potencia).](/assets/img/projects/ficha_tecnica_seguros.png)
 
 
 {:#conclu}
